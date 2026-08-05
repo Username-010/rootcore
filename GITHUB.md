@@ -17,14 +17,14 @@ git add .
 git commit -m "RootCore: self-hosted plant care"
 
 git branch -M main
-git remote add origin https://github.com/YOURUSER/rootcore.git
+git remote add origin https://github.com/Username-010/rootcore.git
 git push -u origin main
 ```
 
 SSH:
 
 ```bash
-git remote add origin git@github.com:YOURUSER/rootcore.git
+git remote add origin git@github.com:Username-010/rootcore.git
 git push -u origin main
 ```
 
@@ -39,7 +39,7 @@ Topics: `plants` `self-hosted` `docker` `fastapi` `react` `gardening` `open-mete
 ## 4. Deploy for others
 
 ```bash
-git clone https://github.com/YOURUSER/rootcore.git
+git clone https://github.com/Username-010/rootcore.git
 cd rootcore
 cp .env.example .env
 # SECRET_KEY=$(openssl rand -hex 32)

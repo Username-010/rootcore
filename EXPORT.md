@@ -19,7 +19,7 @@ See **[GITHUB.md](./GITHUB.md)** for exact `git` + Docker steps you can paste in
 ## Fastest path for a friend (development-style)
 
 ```bash
-git clone https://github.com/YOURUSER/rootcore.git
+git clone https://github.com/Username-010/rootcore.git
 cd rootcore
 # Optional: copy and edit secrets
 cp .env.example .env

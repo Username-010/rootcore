@@ -84,7 +84,7 @@ Self-hosters usually want free, documented APIs without accounts for every featu
 ### One command (dev)
 
 ```bash
-git clone https://github.com/YOURUSER/rootcore.git
+git clone https://github.com/Username-010/rootcore.git
 cd rootcore
 chmod +x scripts/rootcore
 ./scripts/rootcore start
