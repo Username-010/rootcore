@@ -1,0 +1,5423 @@
+[
+  {
+    "scientific_name": "Acer palmatum",
+    "common_names": [
+      "Japanese maple"
+    ],
+    "family": "Sapindaceae",
+    "genus": "Acer",
+    "care": {
+      "light": "partial_shade",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 10,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "outdoor",
+        "typical_pot_liters": 20,
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Achillea millefolium",
+    "common_names": [
+      "Yarrow"
+    ],
+    "family": "Asteraceae",
+    "genus": "Achillea",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "dry",
+      "drought_tolerance": "high",
+      "humidity_preference": "low",
+      "baseline_interval_days_min": 7,
+      "baseline_interval_days_max": 14,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          6,
+          7,
+          8,
+          9
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Adiantum raddianum",
+    "common_names": [
+      "Delta maidenhair fern"
+    ],
+    "family": "Pteridaceae",
+    "genus": "Adiantum",
+    "care": {
+      "light": "medium",
+      "moisture_preference": "moist",
+      "drought_tolerance": "low",
+      "humidity_preference": "high",
+      "baseline_interval_days_min": 3,
+      "baseline_interval_days_max": 7,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 1
+      }
+    }
+  },
+  {
+    "scientific_name": "Agapanthus africanus",
+    "common_names": [
+      "African lily"
+    ],
+    "family": "Amaryllidaceae",
+    "genus": "Agapanthus",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "high",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 10,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          7,
+          8
+        ],
+        "default_environment": "outdoor",
+        "typical_pot_liters": 10,
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Aglaonema commutatum",
+    "common_names": [
+      "Chinese evergreen"
+    ],
+    "family": "Araceae",
+    "genus": "Aglaonema",
+    "care": {
+      "light": "low",
+      "moisture_preference": "medium",
+      "drought_tolerance": "high",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 8,
+      "baseline_interval_days_max": 14,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 2
+      }
+    }
+  },
+  {
+    "scientific_name": "Alchemilla mollis",
+    "common_names": [
+      "Lady's mantle"
+    ],
+    "family": "Rosaceae",
+    "genus": "Alchemilla",
+    "care": {
+      "light": "partial_shade",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 10,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          6,
+          7
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Allium cepa",
+    "common_names": [
+      "Onion"
+    ],
+    "family": "Amaryllidaceae",
+    "genus": "Allium",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 4,
+      "baseline_interval_days_max": 8,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "outdoor",
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Allium giganteum",
+    "common_names": [
+      "Giant allium"
+    ],
+    "family": "Amaryllidaceae",
+    "genus": "Allium",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "high",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 7,
+      "baseline_interval_days_max": 14,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          5,
+          6
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Allium sativum",
+    "common_names": [
+      "Garlic"
+    ],
+    "family": "Amaryllidaceae",
+    "genus": "Allium",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 10,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "outdoor",
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Allium schoenoprasum",
+    "common_names": [
+      "Chives"
+    ],
+    "family": "Amaryllidaceae",
+    "genus": "Allium",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 4,
+      "baseline_interval_days_max": 8,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "outdoor",
+        "typical_pot_liters": 2,
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Alocasia amazonica",
+    "common_names": [
+      "Alocasia Polly"
+    ],
+    "family": "Araceae",
+    "genus": "Alocasia",
+    "care": {
+      "light": "bright_indirect",
+      "moisture_preference": "moist",
+      "drought_tolerance": "low",
+      "humidity_preference": "high",
+      "baseline_interval_days_min": 4,
+      "baseline_interval_days_max": 8,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 2
+      }
+    }
+  },
+  {
+    "scientific_name": "Alocasia macrorrhizos",
+    "common_names": [
+      "Giant taro"
+    ],
+    "family": "Araceae",
+    "genus": "Alocasia",
+    "care": {
+      "light": "bright_indirect",
+      "moisture_preference": "moist",
+      "drought_tolerance": "low",
+      "humidity_preference": "high",
+      "baseline_interval_days_min": 4,
+      "baseline_interval_days_max": 8,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 5
+      }
+    }
+  },
+  {
+    "scientific_name": "Aloe barbadensis",
+    "common_names": [
+      "Aloe vera"
+    ],
+    "family": "Asphodelaceae",
+    "genus": "Aloe",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "dry",
+      "drought_tolerance": "high",
+      "humidity_preference": "low",
+      "baseline_interval_days_min": 14,
+      "baseline_interval_days_max": 28,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 2
+      }
+    }
+  },
+  {
+    "scientific_name": "Aloe vera",
+    "common_names": [
+      "Aloe"
+    ],
+    "family": "Asphodelaceae",
+    "genus": "Aloe",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "dry",
+      "drought_tolerance": "high",
+      "humidity_preference": "low",
+      "baseline_interval_days_min": 14,
+      "baseline_interval_days_max": 28,
+      "water_amount_default": "light",
+      "toxic_to_pets": true,
+      "extra": {
+        "default_environment": "outdoor",
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Alstroemeria",
+    "common_names": [
+      "Peruvian lily",
+      "Alstroemeria"
+    ],
+    "family": "Alstroemeriaceae",
+    "genus": "Alstroemeria",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 4,
+      "baseline_interval_days_max": 8,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "extra": {
+        "bloom_months": [
+          6,
+          7,
+          8
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Anethum graveolens",
+    "common_names": [
+      "Dill"
+    ],
+    "family": "Apiaceae",
+    "genus": "Anethum",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 3,
+      "baseline_interval_days_max": 6,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "outdoor",
+        "typical_pot_liters": 2,
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Anthurium andraeanum",
+    "common_names": [
+      "Flamingo flower",
+      "Anthurium"
+    ],
+    "family": "Araceae",
+    "genus": "Anthurium",
+    "care": {
+      "light": "bright_indirect",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "high",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 9,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "extra": {
+        "bloom_months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "default_environment": "indoor",
+        "typical_pot_liters": 2
+      }
+    }
+  },
+  {
+    "scientific_name": "Antirrhinum majus",
+    "common_names": [
+      "Snapdragon"
+    ],
+    "family": "Plantaginaceae",
+    "genus": "Antirrhinum",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 4,
+      "baseline_interval_days_max": 8,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "default_environment": "outdoor",
+        "typical_pot_liters": 2,
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Aquilegia vulgaris",
+    "common_names": [
+      "Columbine"
+    ],
+    "family": "Ranunculaceae",
+    "genus": "Aquilegia",
+    "care": {
+      "light": "partial_shade",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 10,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          5,
+          6
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Armoracia rusticana",
+    "common_names": [
+      "Horseradish"
+    ],
+    "family": "Brassicaceae",
+    "genus": "Armoracia",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "high",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 10,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "outdoor",
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Asparagus officinalis",
+    "common_names": [
+      "Asparagus"
+    ],
+    "family": "Asparagaceae",
+    "genus": "Asparagus",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 10,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "outdoor",
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Aspidistra elatior",
+    "common_names": [
+      "Cast iron plant"
+    ],
+    "family": "Asparagaceae",
+    "genus": "Aspidistra",
+    "care": {
+      "light": "low",
+      "moisture_preference": "medium",
+      "drought_tolerance": "high",
+      "humidity_preference": "low",
+      "baseline_interval_days_min": 12,
+      "baseline_interval_days_max": 21,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 3
+      }
+    }
+  },
+  {
+    "scientific_name": "Asplenium nidus",
+    "common_names": [
+      "Bird's nest fern"
+    ],
+    "family": "Aspleniaceae",
+    "genus": "Asplenium",
+    "care": {
+      "light": "medium",
+      "moisture_preference": "moist",
+      "drought_tolerance": "low",
+      "humidity_preference": "high",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 9,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 2
+      }
+    }
+  },
+  {
+    "scientific_name": "Aster",
+    "common_names": [
+      "Aster",
+      "Michaelmas daisy"
+    ],
+    "family": "Asteraceae",
+    "genus": "Aster",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 4,
+      "baseline_interval_days_max": 8,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "extra": {
+        "bloom_months": [
+          8,
+          9,
+          10
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Astilbe",
+    "common_names": [
+      "False goat's beard"
+    ],
+    "family": "Saxifragaceae",
+    "genus": "Astilbe",
+    "care": {
+      "light": "partial_shade",
+      "moisture_preference": "moist",
+      "drought_tolerance": "low",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 4,
+      "baseline_interval_days_max": 8,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          6,
+          7,
+          8
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Beaucarnea recurvata",
+    "common_names": [
+      "Ponytail palm"
+    ],
+    "family": "Asparagaceae",
+    "genus": "Beaucarnea",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "dry",
+      "drought_tolerance": "high",
+      "humidity_preference": "low",
+      "baseline_interval_days_min": 14,
+      "baseline_interval_days_max": 28,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 3
+      }
+    }
+  },
+  {
+    "scientific_name": "Begonia",
+    "common_names": [
+      "Begonia"
+    ],
+    "family": "Begoniaceae",
+    "genus": "Begonia",
+    "care": {
+      "light": "bright_indirect",
+      "moisture_preference": "medium",
+      "drought_tolerance": "low",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 4,
+      "baseline_interval_days_max": 8,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "extra": {
+        "bloom_months": [
+          6,
+          7,
+          8,
+          9
+        ],
+        "default_environment": "indoor"
+      }
+    }
+  },
+  {
+    "scientific_name": "Begonia maculata",
+    "common_names": [
+      "Polka dot begonia"
+    ],
+    "family": "Begoniaceae",
+    "genus": "Begonia",
+    "care": {
+      "light": "bright_indirect",
+      "moisture_preference": "medium",
+      "drought_tolerance": "low",
+      "humidity_preference": "high",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 9,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "extra": {
+        "default_environment": "indoor",
+        "bloom_months": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "typical_pot_liters": 2
+      }
+    }
+  },
+  {
+    "scientific_name": "Begonia rex",
+    "common_names": [
+      "Rex begonia"
+    ],
+    "family": "Begoniaceae",
+    "genus": "Begonia",
+    "care": {
+      "light": "medium",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "high",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 9,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 2
+      }
+    }
+  },
+  {
+    "scientific_name": "Begonia semperflorens",
+    "common_names": [
+      "Wax begonia"
+    ],
+    "family": "Begoniaceae",
+    "genus": "Begonia",
+    "care": {
+      "light": "partial_shade",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 4,
+      "baseline_interval_days_max": 8,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "default_environment": "outdoor",
+        "typical_pot_liters": 2,
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Bellis perennis",
+    "common_names": [
+      "English daisy"
+    ],
+    "family": "Asteraceae",
+    "genus": "Bellis",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 4,
+      "baseline_interval_days_max": 8,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "default_environment": "outdoor",
+        "typical_pot_liters": 1,
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Beta vulgaris",
+    "common_names": [
+      "Beetroot"
+    ],
+    "family": "Amaranthaceae",
+    "genus": "Beta",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 3,
+      "baseline_interval_days_max": 6,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "outdoor",
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Betula pendula",
+    "common_names": [
+      "Silver birch"
+    ],
+    "family": "Betulaceae",
+    "genus": "Betula",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 7,
+      "baseline_interval_days_max": 14,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "outdoor",
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Borage officinalis",
+    "common_names": [
+      "Borage"
+    ],
+    "family": "Boraginaceae",
+    "genus": "Borago",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 4,
+      "baseline_interval_days_max": 8,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          6,
+          7,
+          8
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Brassica oleracea",
+    "common_names": [
+      "Cabbage / kale family"
+    ],
+    "family": "Brassicaceae",
+    "genus": "Brassica",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "moist",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 3,
+      "baseline_interval_days_max": 6,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "outdoor",
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Buddleja davidii",
+    "common_names": [
+      "Butterfly bush"
+    ],
+    "family": "Scrophulariaceae",
+    "genus": "Buddleja",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "high",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 10,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          7,
+          8,
+          9
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Buxus microphylla",
+    "common_names": [
+      "Japanese boxwood"
+    ],
+    "family": "Buxaceae",
+    "genus": "Buxus",
+    "care": {
+      "light": "partial_shade",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 6,
+      "baseline_interval_days_max": 12,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "outdoor",
+        "typical_pot_liters": 10,
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Buxus sempervirens",
+    "common_names": [
+      "Boxwood",
+      "Box"
+    ],
+    "family": "Buxaceae",
+    "genus": "Buxus",
+    "care": {
+      "light": "medium",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 10,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "extra": {
+        "default_environment": "outdoor",
+        "typical_pot_liters": 10,
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Calathea makoyana",
+    "common_names": [
+      "Peacock plant"
+    ],
+    "family": "Marantaceae",
+    "genus": "Calathea",
+    "care": {
+      "light": "medium",
+      "moisture_preference": "moist",
+      "drought_tolerance": "low",
+      "humidity_preference": "high",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 9,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 2
+      }
+    }
+  },
+  {
+    "scientific_name": "Calathea orbifolia",
+    "common_names": [
+      "Prayer plant",
+      "Orbifolia"
+    ],
+    "family": "Marantaceae",
+    "genus": "Calathea",
+    "care": {
+      "light": "medium",
+      "moisture_preference": "moist",
+      "drought_tolerance": "low",
+      "humidity_preference": "high",
+      "baseline_interval_days_min": 4,
+      "baseline_interval_days_max": 8,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 2
+      }
+    }
+  },
+  {
+    "scientific_name": "Calendula officinalis",
+    "common_names": [
+      "Pot marigold"
+    ],
+    "family": "Asteraceae",
+    "genus": "Calendula",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "high",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 4,
+      "baseline_interval_days_max": 8,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "default_environment": "outdoor",
+        "typical_pot_liters": 2,
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Camellia japonica",
+    "common_names": [
+      "Camellia"
+    ],
+    "family": "Theaceae",
+    "genus": "Camellia",
+    "care": {
+      "light": "partial_shade",
+      "moisture_preference": "moist",
+      "drought_tolerance": "low",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 10,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          2,
+          3,
+          4
+        ],
+        "default_environment": "outdoor",
+        "typical_pot_liters": 10,
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Campanula",
+    "common_names": [
+      "Bellflower"
+    ],
+    "family": "Campanulaceae",
+    "genus": "Campanula",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 10,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          6,
+          7,
+          8
+        ],
+        "default_environment": "outdoor",
+        "typical_pot_liters": 3,
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Capsicum annuum",
+    "common_names": [
+      "Pepper",
+      "Chili pepper"
+    ],
+    "family": "Solanaceae",
+    "genus": "Capsicum",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 2,
+      "baseline_interval_days_max": 5,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "extra": {
+        "default_environment": "outdoor",
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring",
+        "fertilize_interval_days": 14,
+        "typical_pot_liters": 10
+      }
+    }
+  },
+  {
+    "scientific_name": "Chlorophytum comosum",
+    "common_names": [
+      "Spider plant"
+    ],
+    "family": "Asparagaceae",
+    "genus": "Chlorophytum",
+    "care": {
+      "light": "medium",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 10,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 2
+      }
+    }
+  },
+  {
+    "scientific_name": "Chlorophytum comosum 'Variegatum'",
+    "common_names": [
+      "Variegated spider plant"
+    ],
+    "family": "Asparagaceae",
+    "genus": "Chlorophytum",
+    "care": {
+      "light": "medium",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 10,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "extra": {
+        "default_environment": "indoor"
+      }
+    }
+  },
+  {
+    "scientific_name": "Citrus limon",
+    "common_names": [
+      "Lemon tree"
+    ],
+    "family": "Rutaceae",
+    "genus": "Citrus",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 4,
+      "baseline_interval_days_max": 8,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          4,
+          5
+        ],
+        "fertilize_interval_days": 21,
+        "default_environment": "outdoor",
+        "typical_pot_liters": 20,
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Citrus × sinensis",
+    "common_names": [
+      "Orange tree"
+    ],
+    "family": "Rutaceae",
+    "genus": "Citrus",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 4,
+      "baseline_interval_days_max": 8,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          4,
+          5
+        ],
+        "fertilize_interval_days": 21,
+        "default_environment": "outdoor",
+        "typical_pot_liters": 20,
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Clematis",
+    "common_names": [
+      "Clematis"
+    ],
+    "family": "Ranunculaceae",
+    "genus": "Clematis",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 4,
+      "baseline_interval_days_max": 8,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "default_environment": "outdoor",
+        "typical_pot_liters": 10,
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Codiaeum variegatum",
+    "common_names": [
+      "Croton"
+    ],
+    "family": "Euphorbiaceae",
+    "genus": "Codiaeum",
+    "care": {
+      "light": "bright_indirect",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "high",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 10,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 3
+      }
+    }
+  },
+  {
+    "scientific_name": "Colocasia esculenta",
+    "common_names": [
+      "Elephant ear",
+      "Taro"
+    ],
+    "family": "Araceae",
+    "genus": "Colocasia",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "moist",
+      "drought_tolerance": "low",
+      "humidity_preference": "high",
+      "baseline_interval_days_min": 3,
+      "baseline_interval_days_max": 6,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          7,
+          8
+        ],
+        "default_environment": "outdoor",
+        "typical_pot_liters": 10,
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Coreopsis grandiflora",
+    "common_names": [
+      "Large-flowered tickseed",
+      "Coreopsis"
+    ],
+    "family": "Asteraceae",
+    "genus": "Coreopsis",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "high",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 4,
+      "baseline_interval_days_max": 8,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": "Well-drained garden soil",
+      "extra": {
+        "bloom_months": [
+          6,
+          7,
+          8,
+          9
+        ],
+        "fertilize_interval_days": 28,
+        "repot_every_months": 36,
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Coreopsis grandiflora 'Early Sunrise'",
+    "common_names": [
+      "Early Sunrise Coreopsis",
+      "Coreopsis Early Sunrise"
+    ],
+    "family": "Asteraceae",
+    "genus": "Coreopsis",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "high",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 4,
+      "baseline_interval_days_max": 8,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "extra": {
+        "bloom_months": [
+          6,
+          7,
+          8,
+          9
+        ],
+        "fertilize_interval_days": 28,
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Coriandrum sativum",
+    "common_names": [
+      "Cilantro",
+      "Coriander"
+    ],
+    "family": "Apiaceae",
+    "genus": "Coriandrum",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 3,
+      "baseline_interval_days_max": 6,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "outdoor",
+        "typical_pot_liters": 2,
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Cosmos bipinnatus",
+    "common_names": [
+      "Cosmos"
+    ],
+    "family": "Asteraceae",
+    "genus": "Cosmos",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "high",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 4,
+      "baseline_interval_days_max": 8,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Crassula ovata",
+    "common_names": [
+      "Jade plant",
+      "Money plant"
+    ],
+    "family": "Crassulaceae",
+    "genus": "Crassula",
+    "care": {
+      "light": "bright_indirect",
+      "moisture_preference": "dry",
+      "drought_tolerance": "high",
+      "humidity_preference": "low",
+      "baseline_interval_days_min": 14,
+      "baseline_interval_days_max": 25,
+      "water_amount_default": "light",
+      "toxic_to_pets": true,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 2
+      }
+    }
+  },
+  {
+    "scientific_name": "Crocosmia",
+    "common_names": [
+      "Montbretia"
+    ],
+    "family": "Iridaceae",
+    "genus": "Crocosmia",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 10,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          7,
+          8,
+          9
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Crocus vernus",
+    "common_names": [
+      "Spring crocus"
+    ],
+    "family": "Iridaceae",
+    "genus": "Crocus",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 10,
+      "baseline_interval_days_max": 18,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          2,
+          3
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Ctenanthe burle-marxii",
+    "common_names": [
+      "Fishbone prayer plant"
+    ],
+    "family": "Marantaceae",
+    "genus": "Ctenanthe",
+    "care": {
+      "light": "medium",
+      "moisture_preference": "moist",
+      "drought_tolerance": "low",
+      "humidity_preference": "high",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 9,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 2
+      }
+    }
+  },
+  {
+    "scientific_name": "Cucumis sativus",
+    "common_names": [
+      "Cucumber"
+    ],
+    "family": "Cucurbitaceae",
+    "genus": "Cucumis",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "moist",
+      "drought_tolerance": "low",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 1,
+      "baseline_interval_days_max": 3,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "extra": {
+        "default_environment": "outdoor",
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring",
+        "typical_pot_liters": 20
+      }
+    }
+  },
+  {
+    "scientific_name": "Cucurbita pepo",
+    "common_names": [
+      "Zucchini",
+      "Courgette"
+    ],
+    "family": "Cucurbitaceae",
+    "genus": "Cucurbita",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "moist",
+      "drought_tolerance": "low",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 2,
+      "baseline_interval_days_max": 4,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "outdoor",
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Cynara scolymus",
+    "common_names": [
+      "Artichoke"
+    ],
+    "family": "Asteraceae",
+    "genus": "Cynara",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 4,
+      "baseline_interval_days_max": 8,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          7,
+          8
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Dahlia",
+    "common_names": [
+      "Dahlia"
+    ],
+    "family": "Asteraceae",
+    "genus": "Dahlia",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "moist",
+      "drought_tolerance": "low",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 2,
+      "baseline_interval_days_max": 5,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "extra": {
+        "bloom_months": [
+          7,
+          8,
+          9,
+          10
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring",
+        "fertilize_interval_days": 21,
+        "typical_pot_liters": 10
+      }
+    }
+  },
+  {
+    "scientific_name": "Daucus carota",
+    "common_names": [
+      "Carrot"
+    ],
+    "family": "Apiaceae",
+    "genus": "Daucus",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 3,
+      "baseline_interval_days_max": 6,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "outdoor",
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Dianthus caryophyllus",
+    "common_names": [
+      "Carnation"
+    ],
+    "family": "Caryophyllaceae",
+    "genus": "Dianthus",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 10,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          6,
+          7,
+          8
+        ],
+        "default_environment": "outdoor",
+        "typical_pot_liters": 2,
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Dieffenbachia seguine",
+    "common_names": [
+      "Dumb cane"
+    ],
+    "family": "Araceae",
+    "genus": "Dieffenbachia",
+    "care": {
+      "light": "medium",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "high",
+      "baseline_interval_days_min": 6,
+      "baseline_interval_days_max": 11,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 3
+      }
+    }
+  },
+  {
+    "scientific_name": "Digitalis purpurea",
+    "common_names": [
+      "Foxglove"
+    ],
+    "family": "Plantaginaceae",
+    "genus": "Digitalis",
+    "care": {
+      "light": "partial_shade",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 10,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          6,
+          7
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Dracaena fragrans",
+    "common_names": [
+      "Corn plant",
+      "Dracaena"
+    ],
+    "family": "Asparagaceae",
+    "genus": "Dracaena",
+    "care": {
+      "light": "medium",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 8,
+      "baseline_interval_days_max": 14,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 5
+      }
+    }
+  },
+  {
+    "scientific_name": "Dracaena marginata",
+    "common_names": [
+      "Dragon tree"
+    ],
+    "family": "Asparagaceae",
+    "genus": "Dracaena",
+    "care": {
+      "light": "bright_indirect",
+      "moisture_preference": "dry",
+      "drought_tolerance": "high",
+      "humidity_preference": "low",
+      "baseline_interval_days_min": 12,
+      "baseline_interval_days_max": 21,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 3
+      }
+    }
+  },
+  {
+    "scientific_name": "Echeveria elegans",
+    "common_names": [
+      "Mexican snowball"
+    ],
+    "family": "Crassulaceae",
+    "genus": "Echeveria",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "dry",
+      "drought_tolerance": "high",
+      "humidity_preference": "low",
+      "baseline_interval_days_min": 12,
+      "baseline_interval_days_max": 21,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 1
+      }
+    }
+  },
+  {
+    "scientific_name": "Echinacea purpurea",
+    "common_names": [
+      "Purple coneflower",
+      "Echinacea"
+    ],
+    "family": "Asteraceae",
+    "genus": "Echinacea",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "high",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 10,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "extra": {
+        "bloom_months": [
+          7,
+          8,
+          9
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring",
+        "fertilize_interval_days": 28
+      }
+    }
+  },
+  {
+    "scientific_name": "Epiphyllum oxypetalum",
+    "common_names": [
+      "Queen of the night"
+    ],
+    "family": "Cactaceae",
+    "genus": "Epiphyllum",
+    "care": {
+      "light": "bright_indirect",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 7,
+      "baseline_interval_days_max": 12,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          6,
+          7,
+          8
+        ],
+        "default_environment": "indoor",
+        "typical_pot_liters": 2
+      }
+    }
+  },
+  {
+    "scientific_name": "Epipremnum aureum",
+    "common_names": [
+      "Golden pothos",
+      "Devil's ivy"
+    ],
+    "family": "Araceae",
+    "genus": "Epipremnum",
+    "care": {
+      "light": "low",
+      "moisture_preference": "medium",
+      "drought_tolerance": "high",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 7,
+      "baseline_interval_days_max": 14,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "extra": {
+        "default_environment": "indoor"
+      }
+    }
+  },
+  {
+    "scientific_name": "Ficus benjamina",
+    "common_names": [
+      "Weeping fig"
+    ],
+    "family": "Moraceae",
+    "genus": "Ficus",
+    "care": {
+      "light": "bright_indirect",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 7,
+      "baseline_interval_days_max": 12,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 5
+      }
+    }
+  },
+  {
+    "scientific_name": "Ficus elastica",
+    "common_names": [
+      "Rubber plant",
+      "Rubber tree"
+    ],
+    "family": "Moraceae",
+    "genus": "Ficus",
+    "care": {
+      "light": "bright_indirect",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 7,
+      "baseline_interval_days_max": 14,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 5
+      }
+    }
+  },
+  {
+    "scientific_name": "Ficus lyrata",
+    "common_names": [
+      "Fiddle-leaf fig"
+    ],
+    "family": "Moraceae",
+    "genus": "Ficus",
+    "care": {
+      "light": "bright_indirect",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 7,
+      "baseline_interval_days_max": 12,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "extra": {
+        "default_environment": "indoor"
+      }
+    }
+  },
+  {
+    "scientific_name": "Ficus microcarpa",
+    "common_names": [
+      "Ginseng ficus"
+    ],
+    "family": "Moraceae",
+    "genus": "Ficus",
+    "care": {
+      "light": "bright_indirect",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 7,
+      "baseline_interval_days_max": 12,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 2
+      }
+    }
+  },
+  {
+    "scientific_name": "Fragaria × ananassa",
+    "common_names": [
+      "Strawberry",
+      "Garden strawberry"
+    ],
+    "family": "Rosaceae",
+    "genus": "Fragaria",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 2,
+      "baseline_interval_days_max": 5,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "extra": {
+        "bloom_months": [
+          4,
+          5,
+          6
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring",
+        "fertilize_interval_days": 21,
+        "typical_pot_liters": 5
+      }
+    }
+  },
+  {
+    "scientific_name": "Fuchsia",
+    "common_names": [
+      "Fuchsia"
+    ],
+    "family": "Onagraceae",
+    "genus": "Fuchsia",
+    "care": {
+      "light": "bright_indirect",
+      "moisture_preference": "moist",
+      "drought_tolerance": "low",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 2,
+      "baseline_interval_days_max": 5,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "extra": {
+        "bloom_months": [
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "default_environment": "outdoor",
+        "typical_pot_liters": 3,
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Geranium",
+    "common_names": [
+      "Cranesbill",
+      "Hardy geranium"
+    ],
+    "family": "Geraniaceae",
+    "genus": "Geranium",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 4,
+      "baseline_interval_days_max": 8,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "extra": {
+        "bloom_months": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Gladiolus",
+    "common_names": [
+      "Gladiolus"
+    ],
+    "family": "Iridaceae",
+    "genus": "Gladiolus",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 4,
+      "baseline_interval_days_max": 8,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          7,
+          8,
+          9
+        ],
+        "default_environment": "outdoor",
+        "typical_pot_liters": 3,
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Goeppertia zebrina",
+    "common_names": [
+      "Zebra plant",
+      "Calathea zebrina"
+    ],
+    "family": "Marantaceae",
+    "genus": "Goeppertia",
+    "care": {
+      "light": "medium",
+      "moisture_preference": "moist",
+      "drought_tolerance": "low",
+      "humidity_preference": "high",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 9,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 2
+      }
+    }
+  },
+  {
+    "scientific_name": "Gypsophila paniculata",
+    "common_names": [
+      "Baby's breath"
+    ],
+    "family": "Caryophyllaceae",
+    "genus": "Gypsophila",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "dry",
+      "drought_tolerance": "high",
+      "humidity_preference": "low",
+      "baseline_interval_days_min": 6,
+      "baseline_interval_days_max": 12,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          6,
+          7,
+          8
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Haworthia fasciata",
+    "common_names": [
+      "Zebra haworthia"
+    ],
+    "family": "Asphodelaceae",
+    "genus": "Haworthia",
+    "care": {
+      "light": "bright_indirect",
+      "moisture_preference": "dry",
+      "drought_tolerance": "high",
+      "humidity_preference": "low",
+      "baseline_interval_days_min": 14,
+      "baseline_interval_days_max": 28,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 0.5
+      }
+    }
+  },
+  {
+    "scientific_name": "Hedera helix",
+    "common_names": [
+      "English ivy",
+      "Ivy"
+    ],
+    "family": "Araliaceae",
+    "genus": "Hedera",
+    "care": {
+      "light": "medium",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 10,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 2
+      }
+    }
+  },
+  {
+    "scientific_name": "Helianthus annuus",
+    "common_names": [
+      "Sunflower"
+    ],
+    "family": "Asteraceae",
+    "genus": "Helianthus",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 3,
+      "baseline_interval_days_max": 6,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "extra": {
+        "bloom_months": [
+          7,
+          8,
+          9
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Hemerocallis",
+    "common_names": [
+      "Daylily"
+    ],
+    "family": "Asphodelaceae",
+    "genus": "Hemerocallis",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "high",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 10,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          6,
+          7,
+          8
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Heuchera",
+    "common_names": [
+      "Coral bells",
+      "Heuchera"
+    ],
+    "family": "Saxifragaceae",
+    "genus": "Heuchera",
+    "care": {
+      "light": "medium",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 4,
+      "baseline_interval_days_max": 8,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "extra": {
+        "bloom_months": [
+          5,
+          6,
+          7
+        ],
+        "default_environment": "outdoor",
+        "typical_pot_liters": 3,
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Hosta",
+    "common_names": [
+      "Hosta",
+      "Plantain lily"
+    ],
+    "family": "Asparagaceae",
+    "genus": "Hosta",
+    "care": {
+      "light": "medium",
+      "moisture_preference": "moist",
+      "drought_tolerance": "low",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 3,
+      "baseline_interval_days_max": 7,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "extra": {
+        "bloom_months": [
+          7,
+          8
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Hoya carnosa",
+    "common_names": [
+      "Wax plant",
+      "Porcelain flower"
+    ],
+    "family": "Apocynaceae",
+    "genus": "Hoya",
+    "care": {
+      "light": "bright_indirect",
+      "moisture_preference": "dry",
+      "drought_tolerance": "high",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 10,
+      "baseline_interval_days_max": 18,
+      "water_amount_default": "light",
+      "toxic_to_pets": false,
+      "extra": {
+        "default_environment": "indoor",
+        "bloom_months": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "typical_pot_liters": 1
+      }
+    }
+  },
+  {
+    "scientific_name": "Hoya kerrii",
+    "common_names": [
+      "Sweetheart hoya"
+    ],
+    "family": "Apocynaceae",
+    "genus": "Hoya",
+    "care": {
+      "light": "bright_indirect",
+      "moisture_preference": "dry",
+      "drought_tolerance": "high",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 12,
+      "baseline_interval_days_max": 21,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 1
+      }
+    }
+  },
+  {
+    "scientific_name": "Hyacinthus orientalis",
+    "common_names": [
+      "Hyacinth"
+    ],
+    "family": "Asparagaceae",
+    "genus": "Hyacinthus",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 7,
+      "baseline_interval_days_max": 14,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          3,
+          4
+        ],
+        "default_environment": "outdoor",
+        "typical_pot_liters": 2,
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Hydrangea macrophylla",
+    "common_names": [
+      "Bigleaf hydrangea",
+      "Hydrangea"
+    ],
+    "family": "Hydrangeaceae",
+    "genus": "Hydrangea",
+    "care": {
+      "light": "bright_indirect",
+      "moisture_preference": "moist",
+      "drought_tolerance": "low",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 2,
+      "baseline_interval_days_max": 5,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "extra": {
+        "bloom_months": [
+          6,
+          7,
+          8,
+          9
+        ],
+        "default_environment": "outdoor",
+        "fertilize_interval_days": 28,
+        "typical_pot_liters": 10,
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Ilex aquifolium",
+    "common_names": [
+      "English holly"
+    ],
+    "family": "Aquifoliaceae",
+    "genus": "Ilex",
+    "care": {
+      "light": "partial_shade",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 7,
+      "baseline_interval_days_max": 14,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "outdoor",
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Impatiens walleriana",
+    "common_names": [
+      "Busy Lizzie",
+      "Impatiens"
+    ],
+    "family": "Balsaminaceae",
+    "genus": "Impatiens",
+    "care": {
+      "light": "medium",
+      "moisture_preference": "moist",
+      "drought_tolerance": "low",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 2,
+      "baseline_interval_days_max": 4,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "extra": {
+        "bloom_months": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "default_environment": "outdoor",
+        "typical_pot_liters": 2,
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Ipomoea batatas",
+    "common_names": [
+      "Sweet potato vine"
+    ],
+    "family": "Convolvulaceae",
+    "genus": "Ipomoea",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 4,
+      "baseline_interval_days_max": 8,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "outdoor",
+        "typical_pot_liters": 5,
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Iris germanica",
+    "common_names": [
+      "Bearded iris"
+    ],
+    "family": "Iridaceae",
+    "genus": "Iris",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "high",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 6,
+      "baseline_interval_days_max": 12,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          5,
+          6
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Kniphofia uvaria",
+    "common_names": [
+      "Red hot poker"
+    ],
+    "family": "Asphodelaceae",
+    "genus": "Kniphofia",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "high",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 6,
+      "baseline_interval_days_max": 12,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          6,
+          7,
+          8,
+          9
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Lactuca sativa",
+    "common_names": [
+      "Lettuce"
+    ],
+    "family": "Asteraceae",
+    "genus": "Lactuca",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "moist",
+      "drought_tolerance": "low",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 1,
+      "baseline_interval_days_max": 3,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "extra": {
+        "default_environment": "outdoor",
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring",
+        "typical_pot_liters": 5
+      }
+    }
+  },
+  {
+    "scientific_name": "Lathyrus odoratus",
+    "common_names": [
+      "Sweet pea"
+    ],
+    "family": "Fabaceae",
+    "genus": "Lathyrus",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 3,
+      "baseline_interval_days_max": 6,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Laurus nobilis",
+    "common_names": [
+      "Bay laurel"
+    ],
+    "family": "Lauraceae",
+    "genus": "Laurus",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "high",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 8,
+      "baseline_interval_days_max": 14,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "outdoor",
+        "typical_pot_liters": 10,
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Lavandula angustifolia",
+    "common_names": [
+      "English lavender",
+      "Lavender"
+    ],
+    "family": "Lamiaceae",
+    "genus": "Lavandula",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "dry",
+      "drought_tolerance": "high",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 8,
+      "baseline_interval_days_max": 14,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "extra": {
+        "bloom_months": [
+          6,
+          7,
+          8
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring",
+        "typical_pot_liters": 5
+      }
+    }
+  },
+  {
+    "scientific_name": "Levisticum officinale",
+    "common_names": [
+      "Lovage"
+    ],
+    "family": "Apiaceae",
+    "genus": "Levisticum",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 10,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "outdoor",
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Lilium",
+    "common_names": [
+      "Lily"
+    ],
+    "family": "Liliaceae",
+    "genus": "Lilium",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 10,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          6,
+          7,
+          8
+        ],
+        "default_environment": "outdoor",
+        "typical_pot_liters": 5,
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Limonium sinuatum",
+    "common_names": [
+      "Statice"
+    ],
+    "family": "Plumbaginaceae",
+    "genus": "Limonium",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "dry",
+      "drought_tolerance": "high",
+      "humidity_preference": "low",
+      "baseline_interval_days_min": 6,
+      "baseline_interval_days_max": 12,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          6,
+          7,
+          8,
+          9
+        ],
+        "default_environment": "outdoor",
+        "typical_pot_liters": 2,
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Lobelia erinus",
+    "common_names": [
+      "Edging lobelia"
+    ],
+    "family": "Campanulaceae",
+    "genus": "Lobelia",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "moist",
+      "drought_tolerance": "low",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 3,
+      "baseline_interval_days_max": 6,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "default_environment": "outdoor",
+        "typical_pot_liters": 1,
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Malus domestica",
+    "common_names": [
+      "Apple"
+    ],
+    "family": "Rosaceae",
+    "genus": "Malus",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 10,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          4,
+          5
+        ],
+        "fertilize_interval_days": 28,
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Maranta leuconeura",
+    "common_names": [
+      "Prayer plant",
+      "Rabbit's foot"
+    ],
+    "family": "Marantaceae",
+    "genus": "Maranta",
+    "care": {
+      "light": "medium",
+      "moisture_preference": "moist",
+      "drought_tolerance": "low",
+      "humidity_preference": "high",
+      "baseline_interval_days_min": 4,
+      "baseline_interval_days_max": 8,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 1
+      }
+    }
+  },
+  {
+    "scientific_name": "Matthiola incana",
+    "common_names": [
+      "Stock"
+    ],
+    "family": "Brassicaceae",
+    "genus": "Matthiola",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 4,
+      "baseline_interval_days_max": 8,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          5,
+          6,
+          7
+        ],
+        "default_environment": "outdoor",
+        "typical_pot_liters": 2,
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Melissa officinalis",
+    "common_names": [
+      "Lemon balm"
+    ],
+    "family": "Lamiaceae",
+    "genus": "Melissa",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 10,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "outdoor",
+        "typical_pot_liters": 3,
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Mentha spicata",
+    "common_names": [
+      "Spearmint",
+      "Mint"
+    ],
+    "family": "Lamiaceae",
+    "genus": "Mentha",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "moist",
+      "drought_tolerance": "low",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 2,
+      "baseline_interval_days_max": 4,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "extra": {
+        "default_environment": "outdoor",
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring",
+        "typical_pot_liters": 3
+      }
+    }
+  },
+  {
+    "scientific_name": "Monstera deliciosa",
+    "common_names": [
+      "Swiss cheese plant",
+      "Monstera"
+    ],
+    "family": "Araceae",
+    "genus": "Monstera",
+    "care": {
+      "light": "bright_indirect",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "high",
+      "baseline_interval_days_min": 7,
+      "baseline_interval_days_max": 12,
+      "water_amount_default": "normal",
+      "soil_notes": "Well-draining aroid mix",
+      "toxic_to_pets": true,
+      "extra": {
+        "default_environment": "indoor"
+      }
+    }
+  },
+  {
+    "scientific_name": "Musa acuminata",
+    "common_names": [
+      "Banana plant"
+    ],
+    "family": "Musaceae",
+    "genus": "Musa",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "moist",
+      "drought_tolerance": "low",
+      "humidity_preference": "high",
+      "baseline_interval_days_min": 3,
+      "baseline_interval_days_max": 6,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "outdoor",
+        "typical_pot_liters": 20,
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Myosotis sylvatica",
+    "common_names": [
+      "Forget-me-not"
+    ],
+    "family": "Boraginaceae",
+    "genus": "Myosotis",
+    "care": {
+      "light": "partial_shade",
+      "moisture_preference": "moist",
+      "drought_tolerance": "low",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 4,
+      "baseline_interval_days_max": 8,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          4,
+          5,
+          6
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Narcissus",
+    "common_names": [
+      "Daffodil",
+      "Narcissus"
+    ],
+    "family": "Amaryllidaceae",
+    "genus": "Narcissus",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 10,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "extra": {
+        "bloom_months": [
+          3,
+          4
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Nepeta cataria",
+    "common_names": [
+      "Catnip"
+    ],
+    "family": "Lamiaceae",
+    "genus": "Nepeta",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "high",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 10,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          6,
+          7,
+          8
+        ],
+        "default_environment": "outdoor",
+        "typical_pot_liters": 2,
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Nephrolepis exaltata",
+    "common_names": [
+      "Boston fern"
+    ],
+    "family": "Nephrolepidaceae",
+    "genus": "Nephrolepis",
+    "care": {
+      "light": "medium",
+      "moisture_preference": "moist",
+      "drought_tolerance": "low",
+      "humidity_preference": "high",
+      "baseline_interval_days_min": 3,
+      "baseline_interval_days_max": 7,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 2
+      }
+    }
+  },
+  {
+    "scientific_name": "Nicotiana alata",
+    "common_names": [
+      "Flowering tobacco"
+    ],
+    "family": "Solanaceae",
+    "genus": "Nicotiana",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 3,
+      "baseline_interval_days_max": 6,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          6,
+          7,
+          8,
+          9
+        ],
+        "default_environment": "outdoor",
+        "typical_pot_liters": 3,
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Ocimum basilicum",
+    "common_names": [
+      "Basil"
+    ],
+    "family": "Lamiaceae",
+    "genus": "Ocimum",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "moist",
+      "drought_tolerance": "low",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 2,
+      "baseline_interval_days_max": 5,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "extra": {
+        "default_environment": "outdoor",
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring",
+        "typical_pot_liters": 2
+      }
+    }
+  },
+  {
+    "scientific_name": "Olea europaea",
+    "common_names": [
+      "Olive tree"
+    ],
+    "family": "Oleaceae",
+    "genus": "Olea",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "dry",
+      "drought_tolerance": "high",
+      "humidity_preference": "low",
+      "baseline_interval_days_min": 10,
+      "baseline_interval_days_max": 18,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "outdoor",
+        "typical_pot_liters": 20,
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Opuntia microdasys",
+    "common_names": [
+      "Bunny ears cactus"
+    ],
+    "family": "Cactaceae",
+    "genus": "Opuntia",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "dry",
+      "drought_tolerance": "high",
+      "humidity_preference": "low",
+      "baseline_interval_days_min": 18,
+      "baseline_interval_days_max": 30,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 1
+      }
+    }
+  },
+  {
+    "scientific_name": "Orchidaceae",
+    "common_names": [
+      "Orchid"
+    ],
+    "family": "Orchidaceae",
+    "genus": "Orchidaceae",
+    "care": {
+      "light": "bright_indirect",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "high",
+      "baseline_interval_days_min": 7,
+      "baseline_interval_days_max": 12,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "extra": {
+        "bloom_months": [
+          2,
+          3,
+          4
+        ],
+        "default_environment": "indoor"
+      }
+    }
+  },
+  {
+    "scientific_name": "Origanum vulgare",
+    "common_names": [
+      "Oregano"
+    ],
+    "family": "Lamiaceae",
+    "genus": "Origanum",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "dry",
+      "drought_tolerance": "high",
+      "humidity_preference": "low",
+      "baseline_interval_days_min": 7,
+      "baseline_interval_days_max": 14,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          6,
+          7,
+          8
+        ],
+        "default_environment": "outdoor",
+        "typical_pot_liters": 2,
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Pachira aquatica",
+    "common_names": [
+      "Money tree"
+    ],
+    "family": "Malvaceae",
+    "genus": "Pachira",
+    "care": {
+      "light": "bright_indirect",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 7,
+      "baseline_interval_days_max": 12,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 3
+      }
+    }
+  },
+  {
+    "scientific_name": "Paeonia lactiflora",
+    "common_names": [
+      "Garden peony"
+    ],
+    "family": "Paeoniaceae",
+    "genus": "Paeonia",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 10,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          5,
+          6
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Passiflora caerulea",
+    "common_names": [
+      "Blue passionflower"
+    ],
+    "family": "Passifloraceae",
+    "genus": "Passiflora",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 4,
+      "baseline_interval_days_max": 8,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          6,
+          7,
+          8,
+          9
+        ],
+        "default_environment": "outdoor",
+        "typical_pot_liters": 10,
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Pelargonium × hortorum",
+    "common_names": [
+      "Geranium",
+      "Zonal geranium"
+    ],
+    "family": "Geraniaceae",
+    "genus": "Pelargonium",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 4,
+      "baseline_interval_days_max": 8,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "extra": {
+        "bloom_months": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring",
+        "fertilize_interval_days": 21,
+        "typical_pot_liters": 3
+      }
+    }
+  },
+  {
+    "scientific_name": "Peperomia argyreia",
+    "common_names": [
+      "Watermelon peperomia"
+    ],
+    "family": "Piperaceae",
+    "genus": "Peperomia",
+    "care": {
+      "light": "medium",
+      "moisture_preference": "medium",
+      "drought_tolerance": "high",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 8,
+      "baseline_interval_days_max": 14,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 1
+      }
+    }
+  },
+  {
+    "scientific_name": "Peperomia obtusifolia",
+    "common_names": [
+      "Baby rubber plant"
+    ],
+    "family": "Piperaceae",
+    "genus": "Peperomia",
+    "care": {
+      "light": "medium",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 7,
+      "baseline_interval_days_max": 14,
+      "water_amount_default": "light",
+      "toxic_to_pets": false,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 1
+      }
+    }
+  },
+  {
+    "scientific_name": "Petroselinum crispum",
+    "common_names": [
+      "Parsley"
+    ],
+    "family": "Apiaceae",
+    "genus": "Petroselinum",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 3,
+      "baseline_interval_days_max": 6,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "outdoor",
+        "typical_pot_liters": 2,
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Petunia × hybrida",
+    "common_names": [
+      "Petunia"
+    ],
+    "family": "Solanaceae",
+    "genus": "Petunia",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 2,
+      "baseline_interval_days_max": 5,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "extra": {
+        "bloom_months": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring",
+        "typical_pot_liters": 3
+      }
+    }
+  },
+  {
+    "scientific_name": "Phalaenopsis",
+    "common_names": [
+      "Moth orchid",
+      "Phalaenopsis"
+    ],
+    "family": "Orchidaceae",
+    "genus": "Phalaenopsis",
+    "care": {
+      "light": "bright_indirect",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "high",
+      "baseline_interval_days_min": 7,
+      "baseline_interval_days_max": 12,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "extra": {
+        "bloom_months": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "default_environment": "indoor"
+      }
+    }
+  },
+  {
+    "scientific_name": "Phaseolus vulgaris",
+    "common_names": [
+      "Common bean"
+    ],
+    "family": "Fabaceae",
+    "genus": "Phaseolus",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 3,
+      "baseline_interval_days_max": 6,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "outdoor",
+        "typical_pot_liters": 10,
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Philodendron bipinnatifidum",
+    "common_names": [
+      "Tree philodendron",
+      "Selloum"
+    ],
+    "family": "Araceae",
+    "genus": "Philodendron",
+    "care": {
+      "light": "bright_indirect",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "high",
+      "baseline_interval_days_min": 7,
+      "baseline_interval_days_max": 14,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 10
+      }
+    }
+  },
+  {
+    "scientific_name": "Philodendron hederaceum",
+    "common_names": [
+      "Heartleaf philodendron"
+    ],
+    "family": "Araceae",
+    "genus": "Philodendron",
+    "care": {
+      "light": "medium",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "high",
+      "baseline_interval_days_min": 7,
+      "baseline_interval_days_max": 12,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 2
+      }
+    }
+  },
+  {
+    "scientific_name": "Philodendron scandens",
+    "common_names": [
+      "Sweetheart plant"
+    ],
+    "family": "Araceae",
+    "genus": "Philodendron",
+    "care": {
+      "light": "bright_indirect",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "high",
+      "baseline_interval_days_min": 7,
+      "baseline_interval_days_max": 12,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 2
+      }
+    }
+  },
+  {
+    "scientific_name": "Phlox paniculata",
+    "common_names": [
+      "Garden phlox",
+      "Phlox Rosa Spier",
+      "Summer phlox"
+    ],
+    "family": "Polemoniaceae",
+    "genus": "Phlox",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "moist",
+      "drought_tolerance": "low",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 3,
+      "baseline_interval_days_max": 6,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "extra": {
+        "bloom_months": [
+          7,
+          8,
+          9
+        ],
+        "fertilize_interval_days": 28,
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Picea abies",
+    "common_names": [
+      "Norway spruce"
+    ],
+    "family": "Pinaceae",
+    "genus": "Picea",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 10,
+      "baseline_interval_days_max": 18,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "outdoor",
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Pilea peperomioides",
+    "common_names": [
+      "Chinese money plant",
+      "Pancake plant"
+    ],
+    "family": "Urticaceae",
+    "genus": "Pilea",
+    "care": {
+      "light": "bright_indirect",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 6,
+      "baseline_interval_days_max": 10,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 1
+      }
+    }
+  },
+  {
+    "scientific_name": "Pisum sativum",
+    "common_names": [
+      "Pea"
+    ],
+    "family": "Fabaceae",
+    "genus": "Pisum",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 3,
+      "baseline_interval_days_max": 6,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "outdoor",
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Prunus avium",
+    "common_names": [
+      "Sweet cherry"
+    ],
+    "family": "Rosaceae",
+    "genus": "Prunus",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 10,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          4
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Prunus domestica",
+    "common_names": [
+      "Plum"
+    ],
+    "family": "Rosaceae",
+    "genus": "Prunus",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 10,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          4
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Pteris cretica",
+    "common_names": [
+      "Cretan brake fern"
+    ],
+    "family": "Pteridaceae",
+    "genus": "Pteris",
+    "care": {
+      "light": "medium",
+      "moisture_preference": "moist",
+      "drought_tolerance": "low",
+      "humidity_preference": "high",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 9,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 2
+      }
+    }
+  },
+  {
+    "scientific_name": "Pyrus communis",
+    "common_names": [
+      "Pear"
+    ],
+    "family": "Rosaceae",
+    "genus": "Pyrus",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 10,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          4,
+          5
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Rheum rhabarbarum",
+    "common_names": [
+      "Rhubarb"
+    ],
+    "family": "Polygonaceae",
+    "genus": "Rheum",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "moist",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 4,
+      "baseline_interval_days_max": 8,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "outdoor",
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Rhododendron",
+    "common_names": [
+      "Azalea / rhododendron"
+    ],
+    "family": "Ericaceae",
+    "genus": "Rhododendron",
+    "care": {
+      "light": "partial_shade",
+      "moisture_preference": "moist",
+      "drought_tolerance": "low",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 4,
+      "baseline_interval_days_max": 8,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          4,
+          5,
+          6
+        ],
+        "default_environment": "outdoor",
+        "typical_pot_liters": 10,
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Rosa",
+    "common_names": [
+      "Rose"
+    ],
+    "family": "Rosaceae",
+    "genus": "Rosa",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 3,
+      "baseline_interval_days_max": 7,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "extra": {
+        "bloom_months": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "fertilize_interval_days": 21,
+        "repot_every_months": 24,
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Rosa (Miniature Group)",
+    "common_names": [
+      "Miniature rose",
+      "Mini rose"
+    ],
+    "family": "Rosaceae",
+    "genus": "Rosa",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 3,
+      "baseline_interval_days_max": 6,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "extra": {
+        "bloom_months": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "fertilize_interval_days": 21,
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Rosmarinus officinalis",
+    "common_names": [
+      "Rosemary",
+      "Salvia rosmarinus"
+    ],
+    "family": "Lamiaceae",
+    "genus": "Rosmarinus",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "dry",
+      "drought_tolerance": "high",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 7,
+      "baseline_interval_days_max": 14,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "extra": {
+        "bloom_months": [
+          4,
+          5
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring",
+        "typical_pot_liters": 5
+      }
+    }
+  },
+  {
+    "scientific_name": "Rubus idaeus",
+    "common_names": [
+      "Raspberry"
+    ],
+    "family": "Rosaceae",
+    "genus": "Rubus",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 4,
+      "baseline_interval_days_max": 8,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          5,
+          6
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Rudbeckia hirta",
+    "common_names": [
+      "Black-eyed Susan"
+    ],
+    "family": "Asteraceae",
+    "genus": "Rudbeckia",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "high",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 9,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "extra": {
+        "bloom_months": [
+          6,
+          7,
+          8,
+          9
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Saintpaulia ionantha",
+    "common_names": [
+      "African violet"
+    ],
+    "family": "Gesneriaceae",
+    "genus": "Saintpaulia",
+    "care": {
+      "light": "bright_indirect",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 9,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "extra": {
+        "bloom_months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "default_environment": "indoor",
+        "fertilize_interval_days": 21,
+        "typical_pot_liters": 1
+      }
+    }
+  },
+  {
+    "scientific_name": "Salvia microphylla",
+    "common_names": [
+      "Baby sage",
+      "Blackcurrant sage"
+    ],
+    "family": "Lamiaceae",
+    "genus": "Salvia",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "high",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 10,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "extra": {
+        "bloom_months": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "fertilize_interval_days": 30,
+        "default_environment": "outdoor",
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Salvia microphylla 'Hot Lips'",
+    "common_names": [
+      "Hot Lips Sage",
+      "Hot Lips"
+    ],
+    "family": "Lamiaceae",
+    "genus": "Salvia",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "high",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 10,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "extra": {
+        "bloom_months": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "fertilize_interval_days": 30,
+        "default_environment": "outdoor",
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Salvia nemorosa",
+    "common_names": [
+      "Woodland sage"
+    ],
+    "family": "Lamiaceae",
+    "genus": "Salvia",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "high",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 10,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          6,
+          7,
+          8,
+          9
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Salvia officinalis",
+    "common_names": [
+      "Common sage"
+    ],
+    "family": "Lamiaceae",
+    "genus": "Salvia",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "dry",
+      "drought_tolerance": "high",
+      "humidity_preference": "low",
+      "baseline_interval_days_min": 8,
+      "baseline_interval_days_max": 14,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "outdoor",
+        "typical_pot_liters": 3,
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Sansevieria trifasciata",
+    "common_names": [
+      "Snake plant",
+      "Mother-in-law's tongue",
+      "Dracaena trifasciata"
+    ],
+    "family": "Asparagaceae",
+    "genus": "Dracaena",
+    "care": {
+      "light": "low",
+      "moisture_preference": "dry",
+      "drought_tolerance": "high",
+      "humidity_preference": "low",
+      "baseline_interval_days_min": 14,
+      "baseline_interval_days_max": 28,
+      "water_amount_default": "light",
+      "toxic_to_pets": true,
+      "extra": {
+        "default_environment": "indoor"
+      }
+    }
+  },
+  {
+    "scientific_name": "Satureja hortensis",
+    "common_names": [
+      "Summer savory"
+    ],
+    "family": "Lamiaceae",
+    "genus": "Satureja",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "dry",
+      "drought_tolerance": "high",
+      "humidity_preference": "low",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 10,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "outdoor",
+        "typical_pot_liters": 2,
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Schefflera arboricola",
+    "common_names": [
+      "Dwarf umbrella tree",
+      "Schefflera"
+    ],
+    "family": "Araliaceae",
+    "genus": "Schefflera",
+    "care": {
+      "light": "bright_indirect",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 7,
+      "baseline_interval_days_max": 12,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 5
+      }
+    }
+  },
+  {
+    "scientific_name": "Schlumbergera truncata",
+    "common_names": [
+      "Thanksgiving cactus"
+    ],
+    "family": "Cactaceae",
+    "genus": "Schlumbergera",
+    "care": {
+      "light": "bright_indirect",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 8,
+      "baseline_interval_days_max": 14,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          11,
+          12,
+          1
+        ],
+        "default_environment": "indoor",
+        "typical_pot_liters": 1
+      }
+    }
+  },
+  {
+    "scientific_name": "Scindapsus pictus",
+    "common_names": [
+      "Satin pothos"
+    ],
+    "family": "Araceae",
+    "genus": "Scindapsus",
+    "care": {
+      "light": "medium",
+      "moisture_preference": "medium",
+      "drought_tolerance": "high",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 8,
+      "baseline_interval_days_max": 14,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 2
+      }
+    }
+  },
+  {
+    "scientific_name": "Sedum",
+    "common_names": [
+      "Stonecrop",
+      "Sedum"
+    ],
+    "family": "Crassulaceae",
+    "genus": "Sedum",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "dry",
+      "drought_tolerance": "high",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 10,
+      "baseline_interval_days_max": 18,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "extra": {
+        "bloom_months": [
+          8,
+          9
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Sedum spectabile",
+    "common_names": [
+      "Showy stonecrop"
+    ],
+    "family": "Crassulaceae",
+    "genus": "Hylotelephium",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "dry",
+      "drought_tolerance": "high",
+      "humidity_preference": "low",
+      "baseline_interval_days_min": 8,
+      "baseline_interval_days_max": 14,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          8,
+          9
+        ],
+        "default_environment": "outdoor",
+        "typical_pot_liters": 3,
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Sempervivum",
+    "common_names": [
+      "Houseleek",
+      "Hens and chicks"
+    ],
+    "family": "Crassulaceae",
+    "genus": "Sempervivum",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "dry",
+      "drought_tolerance": "high",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 12,
+      "baseline_interval_days_max": 21,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "extra": {
+        "default_environment": "outdoor",
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Sempervivum tectorum",
+    "common_names": [
+      "Houseleek",
+      "Hens and chicks"
+    ],
+    "family": "Crassulaceae",
+    "genus": "Sempervivum",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "dry",
+      "drought_tolerance": "high",
+      "humidity_preference": "low",
+      "baseline_interval_days_min": 14,
+      "baseline_interval_days_max": 28,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "outdoor",
+        "typical_pot_liters": 1,
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Solanum lycopersicum",
+    "common_names": [
+      "Tomato"
+    ],
+    "family": "Solanaceae",
+    "genus": "Solanum",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "moist",
+      "drought_tolerance": "low",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 1,
+      "baseline_interval_days_max": 3,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "extra": {
+        "bloom_months": [
+          6,
+          7,
+          8
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring",
+        "fertilize_interval_days": 14,
+        "typical_pot_liters": 20
+      }
+    }
+  },
+  {
+    "scientific_name": "Solanum tuberosum",
+    "common_names": [
+      "Potato"
+    ],
+    "family": "Solanaceae",
+    "genus": "Solanum",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 4,
+      "baseline_interval_days_max": 8,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "outdoor",
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Spathiphyllum",
+    "common_names": [
+      "Peace lily"
+    ],
+    "family": "Araceae",
+    "genus": "Spathiphyllum",
+    "care": {
+      "light": "medium",
+      "moisture_preference": "moist",
+      "drought_tolerance": "low",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 9,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "extra": {
+        "bloom_months": [
+          4,
+          5,
+          6
+        ],
+        "default_environment": "indoor",
+        "typical_pot_liters": 2
+      }
+    }
+  },
+  {
+    "scientific_name": "Spathiphyllum wallisii",
+    "common_names": [
+      "Peace lily"
+    ],
+    "family": "Araceae",
+    "genus": "Spathiphyllum",
+    "care": {
+      "light": "medium",
+      "moisture_preference": "moist",
+      "drought_tolerance": "low",
+      "humidity_preference": "high",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 9,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "extra": {
+        "default_environment": "indoor"
+      }
+    }
+  },
+  {
+    "scientific_name": "Spinacia oleracea",
+    "common_names": [
+      "Spinach"
+    ],
+    "family": "Amaranthaceae",
+    "genus": "Spinacia",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "moist",
+      "drought_tolerance": "low",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 2,
+      "baseline_interval_days_max": 4,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "outdoor",
+        "typical_pot_liters": 5,
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Strelitzia nicolai",
+    "common_names": [
+      "White bird of paradise"
+    ],
+    "family": "Strelitziaceae",
+    "genus": "Strelitzia",
+    "care": {
+      "light": "bright_indirect",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 6,
+      "baseline_interval_days_max": 11,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 10
+      }
+    }
+  },
+  {
+    "scientific_name": "Strelitzia reginae",
+    "common_names": [
+      "Bird of paradise"
+    ],
+    "family": "Strelitziaceae",
+    "genus": "Strelitzia",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 6,
+      "baseline_interval_days_max": 11,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "default_environment": "indoor",
+        "typical_pot_liters": 10
+      }
+    }
+  },
+  {
+    "scientific_name": "Streptocarpus",
+    "common_names": [
+      "Cape primrose"
+    ],
+    "family": "Gesneriaceae",
+    "genus": "Streptocarpus",
+    "care": {
+      "light": "bright_indirect",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 9,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "default_environment": "indoor",
+        "typical_pot_liters": 1
+      }
+    }
+  },
+  {
+    "scientific_name": "Syngonium podophyllum",
+    "common_names": [
+      "Arrowhead plant"
+    ],
+    "family": "Araceae",
+    "genus": "Syngonium",
+    "care": {
+      "light": "medium",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "high",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 10,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 2
+      }
+    }
+  },
+  {
+    "scientific_name": "Tagetes erecta",
+    "common_names": [
+      "Marigold",
+      "African marigold"
+    ],
+    "family": "Asteraceae",
+    "genus": "Tagetes",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 3,
+      "baseline_interval_days_max": 6,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "extra": {
+        "bloom_months": [
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring",
+        "typical_pot_liters": 2
+      }
+    }
+  },
+  {
+    "scientific_name": "Taxus baccata",
+    "common_names": [
+      "English yew"
+    ],
+    "family": "Taxaceae",
+    "genus": "Taxus",
+    "care": {
+      "light": "partial_shade",
+      "moisture_preference": "medium",
+      "drought_tolerance": "high",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 10,
+      "baseline_interval_days_max": 18,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "outdoor",
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Thuja occidentalis",
+    "common_names": [
+      "Arborvitae"
+    ],
+    "family": "Cupressaceae",
+    "genus": "Thuja",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 7,
+      "baseline_interval_days_max": 14,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "outdoor",
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Thymus vulgaris",
+    "common_names": [
+      "Thyme"
+    ],
+    "family": "Lamiaceae",
+    "genus": "Thymus",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "dry",
+      "drought_tolerance": "high",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 7,
+      "baseline_interval_days_max": 14,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "extra": {
+        "default_environment": "outdoor",
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring",
+        "typical_pot_liters": 1
+      }
+    }
+  },
+  {
+    "scientific_name": "Tradescantia fluminensis",
+    "common_names": [
+      "Small-leaf spiderwort"
+    ],
+    "family": "Commelinaceae",
+    "genus": "Tradescantia",
+    "care": {
+      "light": "bright_indirect",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 10,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 1
+      }
+    }
+  },
+  {
+    "scientific_name": "Tradescantia zebrina",
+    "common_names": [
+      "Wandering jew",
+      "Inch plant"
+    ],
+    "family": "Commelinaceae",
+    "genus": "Tradescantia",
+    "care": {
+      "light": "bright_indirect",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 10,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 1
+      }
+    }
+  },
+  {
+    "scientific_name": "Tropaeolum majus",
+    "common_names": [
+      "Nasturtium"
+    ],
+    "family": "Tropaeolaceae",
+    "genus": "Tropaeolum",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "high",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 4,
+      "baseline_interval_days_max": 8,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          6,
+          7,
+          8,
+          9
+        ],
+        "default_environment": "outdoor",
+        "typical_pot_liters": 3,
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Tulipa",
+    "common_names": [
+      "Tulip"
+    ],
+    "family": "Liliaceae",
+    "genus": "Tulipa",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 10,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "extra": {
+        "bloom_months": [
+          3,
+          4,
+          5
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Vaccinium corymbosum",
+    "common_names": [
+      "Blueberry"
+    ],
+    "family": "Ericaceae",
+    "genus": "Vaccinium",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "moist",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 4,
+      "baseline_interval_days_max": 8,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          5
+        ],
+        "fertilize_interval_days": 28,
+        "default_environment": "outdoor",
+        "typical_pot_liters": 20,
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Viola × wittrockiana",
+    "common_names": [
+      "Pansy"
+    ],
+    "family": "Violaceae",
+    "genus": "Viola",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 3,
+      "baseline_interval_days_max": 6,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          3,
+          4,
+          5,
+          9,
+          10
+        ],
+        "default_environment": "outdoor",
+        "typical_pot_liters": 1,
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Vitis vinifera",
+    "common_names": [
+      "Grape vine"
+    ],
+    "family": "Vitaceae",
+    "genus": "Vitis",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "high",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 10,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          5,
+          6
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Wisteria sinensis",
+    "common_names": [
+      "Chinese wisteria"
+    ],
+    "family": "Fabaceae",
+    "genus": "Wisteria",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 5,
+      "baseline_interval_days_max": 10,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          4,
+          5
+        ],
+        "default_environment": "outdoor",
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Yucca elephantipes",
+    "common_names": [
+      "Spineless yucca"
+    ],
+    "family": "Asparagaceae",
+    "genus": "Yucca",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "dry",
+      "drought_tolerance": "high",
+      "humidity_preference": "low",
+      "baseline_interval_days_min": 12,
+      "baseline_interval_days_max": 21,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "soil_notes": null,
+      "extra": {
+        "default_environment": "indoor",
+        "typical_pot_liters": 5
+      }
+    }
+  },
+  {
+    "scientific_name": "Zamioculcas zamiifolia",
+    "common_names": [
+      "ZZ plant"
+    ],
+    "family": "Araceae",
+    "genus": "Zamioculcas",
+    "care": {
+      "light": "low",
+      "moisture_preference": "dry",
+      "drought_tolerance": "high",
+      "humidity_preference": "low",
+      "baseline_interval_days_min": 14,
+      "baseline_interval_days_max": 30,
+      "water_amount_default": "light",
+      "toxic_to_pets": true,
+      "extra": {
+        "default_environment": "indoor"
+      }
+    }
+  },
+  {
+    "scientific_name": "Zantedeschia aethiopica",
+    "common_names": [
+      "Calla lily"
+    ],
+    "family": "Araceae",
+    "genus": "Zantedeschia",
+    "care": {
+      "light": "partial_shade",
+      "moisture_preference": "moist",
+      "drought_tolerance": "low",
+      "humidity_preference": "high",
+      "baseline_interval_days_min": 4,
+      "baseline_interval_days_max": 8,
+      "water_amount_default": "normal",
+      "toxic_to_pets": true,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          5,
+          6,
+          7
+        ],
+        "default_environment": "outdoor",
+        "typical_pot_liters": 5,
+        "prune_months": [
+          3,
+          11
+        ],
+        "prune_season": "spring"
+      }
+    }
+  },
+  {
+    "scientific_name": "Zinnia elegans",
+    "common_names": [
+      "Zinnia"
+    ],
+    "family": "Asteraceae",
+    "genus": "Zinnia",
+    "care": {
+      "light": "full_sun",
+      "moisture_preference": "medium",
+      "drought_tolerance": "medium",
+      "humidity_preference": "medium",
+      "baseline_interval_days_min": 3,
+      "baseline_interval_days_max": 6,
+      "water_amount_default": "normal",
+      "toxic_to_pets": false,
+      "soil_notes": null,
+      "extra": {
+        "bloom_months": [
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "default_environment": "outdoor",
+        "typical_pot_liters": 3,
+        "prune_months": [
+          3
+        ],
+        "prune_season": "spring"
+      }
+    }
+  }
+]

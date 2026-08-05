@@ -37,9 +37,12 @@ frontend/dist-ssr/
 *~
 .DS_Store
 
-# Media & data (runtime)
-data/
+# Media & data (runtime) — keep catalog seed tracked
+/data/
 backend/data/
+# do NOT ignore backend/app/data/taxa_seed.json (species catalog)
+!backend/app/data/
+!backend/app/data/taxa_seed.json
 *.db
 *.sqlite3
 
