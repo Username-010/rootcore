@@ -1,0 +1,62 @@
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.cover
+.hypothesis/
+
+# Node
+node_modules/
+frontend/dist/
+frontend/dist-ssr/
+*.local
+.npm
+.pnpm-store/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Media & data (runtime)
+data/
+backend/data/
+*.db
+*.sqlite3
+
+# Local process manager
+.run/
+
+# Logs
+*.log
+logs/
+
+# OS
+Thumbs.db
+
+# Coverage / tooling
+coverage/
+.turbo/
+.cache/
+
+# Docker overrides
+docker-compose.override.yml

@@ -1,0 +1,53 @@
+# PlantPilot production-oriented Compose stack.
+# Usage:
+#   docker compose up -d --build
+#   # or with Podman:
+#   DOCKER_HOST=unix://$XDG_RUNTIME_DIR/podman/podman.sock docker-compose up -d --build
+
+services:
+  db:
+    image: docker.io/library/postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-plantpilot}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-plantpilot}
+      POSTGRES_DB: ${POSTGRES_DB:-plantpilot}
+    volumes:
+      # Fixed external-friendly volume name — never removed by `compose down`
+      - plantpilot_pgdata:/var/lib/postgresql/data
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-plantpilot} -d ${POSTGRES_DB:-plantpilot}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  api:
+    build:
+      context: .
+      dockerfile: deploy/Dockerfile
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      APP_ENV: ${APP_ENV:-production}
+      APP_DEBUG: ${APP_DEBUG:-false}
+      SECRET_KEY: ${SECRET_KEY:-change-me-in-production-use-openssl-rand-hex-32}
+      DATABASE_URL: postgresql+asyncpg://${POSTGRES_USER:-plantpilot}:${POSTGRES_PASSWORD:-plantpilot}@db:5432/${POSTGRES_DB:-plantpilot}
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:8000}
+      PUBLIC_BASE_URL: ${PUBLIC_BASE_URL:-http://localhost:8000}
+      REGISTRATION_MODE: ${REGISTRATION_MODE:-open}
+      MEDIA_ROOT: /data/media
+      STATIC_DIR: /app/static
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+    volumes:
+      - plantpilot_media:/data/media
+    ports:
+      - "${API_PORT:-8000}:8000"
+
+volumes:
+  # Keep default project-prefixed names so existing data is reused
+  plantpilot_pgdata:
+  plantpilot_media:

@@ -1,0 +1,28 @@
+# Development overrides: API with bind mounts + hot reload.
+# Usage:
+#   docker compose -f docker-compose.yml -f docker-compose.dev.yml up --build
+#
+# Frontend still runs on the host (npm run dev) for best Vite HMR:
+#   make web
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: deploy/Dockerfile.dev
+    environment:
+      APP_ENV: development
+      APP_DEBUG: "true"
+      SECRET_KEY: ${SECRET_KEY:-dev-secret-key-at-least-32-characters-long!!}
+      DATABASE_URL: postgresql+asyncpg://${POSTGRES_USER:-plantpilot}:${POSTGRES_PASSWORD:-plantpilot}@db:5432/${POSTGRES_DB:-plantpilot}
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:5173,http://localhost:8000}
+      MEDIA_ROOT: /data/media
+      STATIC_DIR: ""
+      LOG_LEVEL: debug
+    volumes:
+      - ./backend/app:/app/app
+      - ./backend/alembic:/app/alembic
+      - plantpilot_media:/data/media
+    command: >
+      sh -c "alembic upgrade head &&
+             uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload"
