@@ -1,13 +1,13 @@
 import { useCallback, useEffect, useState } from "react";
 
-const KEY_ON = "plantpilot-ambient";
-const KEY_INTENSITY = "plantpilot-ambient-intensity";
+const KEY_ON = "rootcore-ambient";
+const KEY_INTENSITY = "rootcore-ambient-intensity";
 
 type AmbientState = { enabled: boolean; intensity: number };
 
 function readEnabled(): boolean {
   try {
-    const v = localStorage.getItem(KEY_ON);
+    const v = localStorage.getItem(KEY_ON) ?? localStorage.getItem("plantpilot-ambient");
     if (v === null) return true;
     return v === "1" || v === "true";
   } catch {
@@ -17,7 +17,9 @@ function readEnabled(): boolean {
 
 function readIntensity(): number {
   try {
-    const raw = localStorage.getItem(KEY_INTENSITY);
+    const raw =
+      localStorage.getItem(KEY_INTENSITY) ??
+      localStorage.getItem("plantpilot-ambient-intensity");
     if (raw === null) return 40;
     const n = Number(raw);
     if (!Number.isFinite(n)) return 40;

@@ -263,7 +263,7 @@ export function SettingsPage() {
   async function enableBrowserNotifications() {
     if (typeof Notification === "undefined") {
       setMessage(
-        "This browser does not support notifications. On iPhone: add PlantPilot to your Home Screen (Share → Add to Home Screen), then open it from there — Safari alone often blocks web notifications.",
+        "This browser does not support notifications. On iPhone: add RootCore to your Home Screen (Share → Add to Home Screen), then open it from there — Safari alone often blocks web notifications.",
       );
       return;
     }
@@ -271,7 +271,7 @@ export function SettingsPage() {
       const perm = await Notification.requestPermission();
       setNotifStatus(perm);
       if (perm === "granted") {
-        new Notification("PlantPilot", {
+        new Notification("RootCore", {
           body: "Notifications enabled. You’ll get a local reminder when you open the app and care is due (full push while closed needs a future server setup).",
           icon: "/favicon.svg",
         });
@@ -747,7 +747,7 @@ export function SettingsPage() {
           </Button>
           <ul className="text-xs text-muted-foreground list-disc pl-4 space-y-1">
             <li>
-              <strong>iPhone:</strong> Safari → Share → Add to Home Screen → open PlantPilot from
+              <strong>iPhone:</strong> Safari → Share → Add to Home Screen → open RootCore from
               the icon → enable notifications here.
             </li>
             <li>

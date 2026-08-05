@@ -1,11 +1,11 @@
 [project]
-name = "plantpilot"
+name = "rootcore"
 version = "0.1.0"
 description = "Self-hosted plant care platform — API server"
 readme = "README.md"
 requires-python = ">=3.12"
 license = { text = "AGPL-3.0-or-later" }
-authors = [{ name = "PlantPilot contributors" }]
+authors = [{ name = "RootCore contributors" }]
 dependencies = [
     "fastapi>=0.115.0",
     "uvicorn[standard]>=0.32.0",

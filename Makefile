@@ -1,4 +1,4 @@
-# PlantPilot developer commands
+# RootCore developer commands
 # Requires: Python 3.12+, Node 20+, Docker or Podman + docker-compose
 
 export PATH := $(HOME)/.local/node/bin:$(HOME)/.local/bin:$(PATH)
@@ -12,7 +12,7 @@ DOCKER_HOST_PODMAN := unix://$(XDG_RUNTIME_DIR)/podman/podman.sock
 	build podman-socket start stop restart status
 
 help:
-	@echo "PlantPilot make targets"
+	@echo "RootCore make targets"
 	@echo "  make start            ONE command: DB + migrate + API + web"
 	@echo "  make stop             Stop API + web (DB keeps running)"
 	@echo "  make stop-all         Stop API + web + Postgres"
@@ -27,24 +27,24 @@ help:
 	@echo "  make build            Build production Compose images"
 
 start:
-	@chmod +x scripts/plantpilot
-	./scripts/plantpilot start
+	@chmod +x scripts/rootcore
+	./scripts/rootcore start
 
 stop:
-	@chmod +x scripts/plantpilot
-	./scripts/plantpilot stop
+	@chmod +x scripts/rootcore
+	./scripts/rootcore stop
 
 stop-all:
-	@chmod +x scripts/plantpilot
-	./scripts/plantpilot stop --all
+	@chmod +x scripts/rootcore
+	./scripts/rootcore stop --all
 
 restart:
-	@chmod +x scripts/plantpilot
-	./scripts/plantpilot restart
+	@chmod +x scripts/rootcore
+	./scripts/rootcore restart
 
 status:
-	@chmod +x scripts/plantpilot
-	./scripts/plantpilot status
+	@chmod +x scripts/rootcore
+	./scripts/rootcore status
 
 env:
 	@test -f .env || cp .env.example .env

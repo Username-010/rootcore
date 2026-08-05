@@ -891,7 +891,7 @@ function WateringCard({
           <div className="rounded-xl border border-border bg-background/80 p-3 space-y-2">
             <p className="font-medium">How was the soil when you watered?</p>
             <p className="text-xs text-muted-foreground">
-              This helps PlantPilot learn your plant — optional, takes one tap.
+              This helps RootCore learn your plant — optional, takes one tap.
             </p>
             <div className="flex flex-wrap gap-2">
               <Button size="sm" variant="outline" disabled={busy} onClick={() => onFeedback("too_dry")}>

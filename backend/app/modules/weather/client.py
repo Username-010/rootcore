@@ -94,7 +94,7 @@ async def fetch_met_norway(latitude: float, longitude: float) -> WeatherSnapshot
     """
     url = "https://api.met.no/weatherapi/locationforecast/2.0/compact"
     headers = {
-        "User-Agent": "PlantPilot/1.0 self-hosted plant care (https://github.com/plantpilot)",
+        "User-Agent": "RootCore/1.0 self-hosted plant care (https://github.com/rootcore)",
         "Accept": "application/json",
     }
     params = {"lat": latitude, "lon": longitude}

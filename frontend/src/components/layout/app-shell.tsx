@@ -38,7 +38,7 @@ export function AppShell() {
             <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary text-primary-foreground shadow-sm shadow-primary/25">
               <Leaf className="h-5 w-5" aria-hidden />
             </span>
-            <span className="font-semibold tracking-tight hidden sm:inline">PlantPilot</span>
+            <span className="font-semibold tracking-tight hidden sm:inline">RootCore</span>
           </Link>
 
           {households.length > 0 && (
@@ -132,7 +132,7 @@ export function AppShell() {
       </main>
 
       <footer className="relative z-10 border-t border-border/60 py-4 text-center text-xs text-muted-foreground">
-        PlantPilot · self-hosted · AGPL-3.0
+        RootCore · self-hosted · AGPL-3.0
       </footer>
     </div>
   );

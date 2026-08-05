@@ -1,6 +1,6 @@
-# PlantPilot — Project Plan & Architecture
+# RootCore — Project Plan & Architecture
 
-**Product name:** PlantPilot  
+**Product name:** RootCore  
 **Tagline:** Self-hosted plant care intelligence — not just a plant inventory.  
 **License:** AGPL-3.0 (see Key Decisions)  
 **Status:** Design phase — no application code yet  
@@ -9,11 +9,11 @@
 
 ## 1. Vision
 
-PlantPilot is an open-source, self-hosted platform for people who care for plants seriously: houseplant collectors, balcony gardeners, greenhouse hobbyists, and multi-person households. It is **not** a clone of HortusFox.
+RootCore is an open-source, self-hosted platform for people who care for plants seriously: houseplant collectors, balcony gardeners, greenhouse hobbyists, and multi-person households. It is **not** a clone of HortusFox.
 
-HortusFox is a capable collaborative plant *inventory* with locations, tasks, chat, and themes. PlantPilot competes by being a **care engine first**: adaptive watering recommendations that improve with feedback, a spatial layout model that matches how people actually arrange plants, a clean API-first architecture that self-hosters and integrators can trust, and a modern React UX that feels fast and accessible.
+HortusFox is a capable collaborative plant *inventory* with locations, tasks, chat, and themes. RootCore competes by being a **care engine first**: adaptive watering recommendations that improve with feedback, a spatial layout model that matches how people actually arrange plants, a clean API-first architecture that self-hosters and integrators can trust, and a modern React UX that feels fast and accessible.
 
-Someone should choose PlantPilot because:
+Someone should choose RootCore because:
 
 1. Watering advice is smarter than “every N days.”
 2. Multi-user households have real permissions, not just “admin vs user.”
@@ -25,7 +25,7 @@ Someone should choose PlantPilot because:
 
 ## 2. Competitive Differentiation
 
-| Dimension | HortusFox (inspiration) | PlantPilot (this project) |
+| Dimension | HortusFox (inspiration) | RootCore (this project) |
 |-----------|-------------------------|---------------------------|
 | Stack | PHP / Asatru / MariaDB / Vue / Bulma | FastAPI / PostgreSQL / React / Tailwind / shadcn |
 | Architecture | Monolithic PHP app + optional REST | REST API first; SPA is a client |
@@ -284,7 +284,7 @@ class PlantIdentifier(Protocol):
     async def identify(self, image: bytes) -> list[IdentificationCandidate]: ...
 ```
 
-v2: entry-point discovery (`plantpilot.plugins`), installable packages, webhook emitters on events.
+v2: entry-point discovery (`rootcore.plugins`), installable packages, webhook emitters on events.
 
 Avoid building a full plugin runtime before core care loops work.
 
@@ -312,7 +312,7 @@ Avoid building a full plugin runtime before core care loops work.
 ## 5. Repository Structure
 
 ```
-plantpilot/
+rootcore/
 ├── PROJECT_PLAN.md          # This document
 ├── SPEC.md                  # Product specification
 ├── DATABASE.md              # Schema design
@@ -430,7 +430,7 @@ plantpilot/
 
 | # | Decision | Rationale |
 |---|----------|-----------|
-| K1 | **Name: PlantPilot** | Care guidance positioning, distinct from HortusFox |
+| K1 | **Name: RootCore** | Care guidance positioning, distinct from HortusFox |
 | K2 | **Modular monolith, not microservices** | Self-host simplicity |
 | K3 | **Household multi-tenancy + RBAC** | Real collaborative care |
 | K4 | **Species catalog ≠ plant specimens** | Clean taxonomy vs personal collection |

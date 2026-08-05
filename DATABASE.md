@@ -1,4 +1,4 @@
-# PlantPilot — Database Design
+# RootCore — Database Design
 
 **Engine:** PostgreSQL 16+  
 **ORM:** SQLAlchemy 2.0 (async)  
@@ -633,7 +633,7 @@ Target: 10k plants / household is extreme; design for 1–2k comfortably.
 3. Seed migration or bootstrap command: common houseplant taxa + care profiles  
 4. Never edit applied revisions  
 
-**Bootstrap command:** `plantpilot seed-taxa` loads `backend/app/data/taxa_seed.json`.
+**Bootstrap command:** `rootcore seed-taxa` loads `backend/app/data/taxa_seed.json`.
 
 ---
 

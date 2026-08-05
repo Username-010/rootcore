@@ -1,30 +1,30 @@
-# Publish PlantPilot on GitHub & deploy
+# Publish RootCore on GitHub & deploy
 
 ## 1. Create an empty GitHub repo
 
 1. Open [github.com/new](https://github.com/new)  
-2. Name it e.g. **plantpilot**  
+2. Name it e.g. **rootcore**  
 3. Leave **without** README (this project already has one)  
 4. Create repository  
 
 ## 2. Push from this folder
 
 ```bash
-cd plantpilot   # this directory
+cd rootcore   # this directory
 
 git init
 git add .
-git commit -m "PlantPilot: self-hosted plant care"
+git commit -m "RootCore: self-hosted plant care"
 
 git branch -M main
-git remote add origin https://github.com/YOURUSER/plantpilot.git
+git remote add origin https://github.com/YOURUSER/rootcore.git
 git push -u origin main
 ```
 
 SSH:
 
 ```bash
-git remote add origin git@github.com:YOURUSER/plantpilot.git
+git remote add origin git@github.com:YOURUSER/rootcore.git
 git push -u origin main
 ```
 
@@ -39,8 +39,8 @@ Topics: `plants` `self-hosted` `docker` `fastapi` `react` `gardening` `open-mete
 ## 4. Deploy for others
 
 ```bash
-git clone https://github.com/YOURUSER/plantpilot.git
-cd plantpilot
+git clone https://github.com/YOURUSER/rootcore.git
+cd rootcore
 cp .env.example .env
 # SECRET_KEY=$(openssl rand -hex 32)
 docker compose up -d --build

@@ -57,7 +57,7 @@ export function RegisterPage() {
     <Card>
       <CardHeader>
         <CardTitle>Create account</CardTitle>
-        <CardDescription>Join this PlantPilot instance, then accept an invite or create a household.</CardDescription>
+        <CardDescription>Join this RootCore instance, then accept an invite or create a household.</CardDescription>
       </CardHeader>
       <CardContent>
         <form className="space-y-4" onSubmit={(e) => void onSubmit(e)}>

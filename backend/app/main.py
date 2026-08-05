@@ -41,12 +41,12 @@ async def lifespan(_app: FastAPI) -> AsyncIterator[None]:
             if inserted:
                 import logging
 
-                logging.getLogger("plantpilot").info("Seeded %s new global taxa", inserted)
+                logging.getLogger("rootcore").info("Seeded %s new global taxa", inserted)
     except Exception as exc:
         # DB may not be ready during certain test imports
         import logging
 
-        logging.getLogger("plantpilot").warning("Taxa seed skipped: %s", exc)
+        logging.getLogger("rootcore").warning("Taxa seed skipped: %s", exc)
     yield
 
 

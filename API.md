@@ -1,4 +1,4 @@
-# PlantPilot — REST API Specification
+# RootCore — REST API Specification
 
 **Style:** REST, JSON, OpenAPI 3 (auto-generated from FastAPI)  
 **Base path:** `/api/v1`  
@@ -96,7 +96,7 @@ ISO-8601 UTC with `Z` suffix, e.g. `2026-07-20T14:30:00Z`.
 
 ```json
 {
-  "type": "https://plantpilot.local/errors/validation",
+  "type": "https://rootcore.local/errors/validation",
   "title": "Validation failed",
   "status": 422,
   "detail": "pot_size_liters must be > 0",
@@ -145,7 +145,7 @@ Legend: **Auth** = requires login; **Role** = minimum household role.
 ```json
 // GET /api/v1/meta
 {
-  "name": "PlantPilot",
+  "name": "RootCore",
   "version": "0.1.0",
   "registration_mode": "invite",
   "features": {

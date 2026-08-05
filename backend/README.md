@@ -1,6 +1,6 @@
-# PlantPilot API
+# RootCore API
 
-FastAPI backend for PlantPilot.
+FastAPI backend for RootCore.
 
 ## Local development
 

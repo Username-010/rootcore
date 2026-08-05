@@ -22,35 +22,55 @@ import type {
   WateringInfo,
 } from "@/lib/types";
 
-const ACCESS_KEY = "plantpilot_access_token";
-const REFRESH_KEY = "plantpilot_refresh_token";
-const HOUSEHOLD_KEY = "plantpilot_active_household";
+const ACCESS_KEY = "rootcore_access_token";
+const REFRESH_KEY = "rootcore_refresh_token";
+const HOUSEHOLD_KEY = "rootcore_active_household";
+// Legacy keys from the PlantPilot name — migrated on first read
+const LEGACY = {
+  access: "plantpilot_access_token",
+  refresh: "plantpilot_refresh_token",
+  household: "plantpilot_active_household",
+} as const;
+
+function migrateKey(next: string, legacy: string): string | null {
+  const v = localStorage.getItem(next) ?? localStorage.getItem(legacy);
+  if (v && !localStorage.getItem(next) && localStorage.getItem(legacy)) {
+    localStorage.setItem(next, v);
+    localStorage.removeItem(legacy);
+  }
+  return v;
+}
 
 export function getAccessToken(): string | null {
-  return localStorage.getItem(ACCESS_KEY);
+  return migrateKey(ACCESS_KEY, LEGACY.access);
 }
 
 export function getRefreshToken(): string | null {
-  return localStorage.getItem(REFRESH_KEY);
+  return migrateKey(REFRESH_KEY, LEGACY.refresh);
 }
 
 export function getActiveHouseholdId(): string | null {
-  return localStorage.getItem(HOUSEHOLD_KEY);
+  return migrateKey(HOUSEHOLD_KEY, LEGACY.household);
 }
 
 export function setActiveHouseholdId(id: string | null) {
   if (id) localStorage.setItem(HOUSEHOLD_KEY, id);
   else localStorage.removeItem(HOUSEHOLD_KEY);
+  localStorage.removeItem(LEGACY.household);
 }
 
 export function storeTokens(access: string, refresh: string) {
   localStorage.setItem(ACCESS_KEY, access);
   localStorage.setItem(REFRESH_KEY, refresh);
+  localStorage.removeItem(LEGACY.access);
+  localStorage.removeItem(LEGACY.refresh);
 }
 
 export function clearTokens() {
   localStorage.removeItem(ACCESS_KEY);
   localStorage.removeItem(REFRESH_KEY);
+  localStorage.removeItem(LEGACY.access);
+  localStorage.removeItem(LEGACY.refresh);
 }
 
 export class ApiError extends Error {

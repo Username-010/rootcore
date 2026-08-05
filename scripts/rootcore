@@ -1,0 +1,238 @@
+#!/usr/bin/env bash
+# RootCore one-command control: start | stop | restart | status
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+cd "$ROOT"
+
+export PATH="${HOME}/.local/node/bin:${HOME}/.local/bin:${PATH}"
+RUN_DIR="${ROOT}/.run"
+PID_API="${RUN_DIR}/api.pid"
+PID_WEB="${RUN_DIR}/web.pid"
+LOG_API="${RUN_DIR}/api.log"
+LOG_WEB="${RUN_DIR}/web.log"
+COMPOSE="${COMPOSE:-docker-compose}"
+
+mkdir -p "$RUN_DIR"
+
+log() { printf '==> %s\n' "$*"; }
+err() { printf 'error: %s\n' "$*" >&2; }
+
+ensure_env() {
+  if [[ ! -f .env ]]; then
+    cp .env.example .env
+    log "Created .env from .env.example"
+  fi
+  # Local-friendly media path
+  if grep -q '^MEDIA_ROOT=/data/media' .env 2>/dev/null; then
+    sed -i 's|^MEDIA_ROOT=.*|MEDIA_ROOT=./data/media|' .env || true
+  fi
+}
+
+ensure_podman() {
+  if [[ -S "${XDG_RUNTIME_DIR:-/run/user/$(id -u)}/podman/podman.sock" ]] \
+    || systemctl --user is-active podman.socket >/dev/null 2>&1; then
+    export DOCKER_HOST="unix://${XDG_RUNTIME_DIR:-/run/user/$(id -u)}/podman/podman.sock"
+    systemctl --user start podman.socket 2>/dev/null || true
+    return 0
+  fi
+  if command -v docker >/dev/null 2>&1; then
+    unset DOCKER_HOST || true
+    return 0
+  fi
+  if command -v podman >/dev/null 2>&1; then
+    systemctl --user enable --now podman.socket 2>/dev/null || true
+    export DOCKER_HOST="unix://${XDG_RUNTIME_DIR:-/run/user/$(id -u)}/podman/podman.sock"
+    return 0
+  fi
+  err "Need Docker or Podman with compose."
+  exit 1
+}
+
+compose() {
+  ensure_podman
+  "$COMPOSE" "$@"
+}
+
+is_running() {
+  local pidfile="$1"
+  [[ -f "$pidfile" ]] || return 1
+  local pid
+  pid="$(cat "$pidfile" 2>/dev/null || true)"
+  [[ -n "${pid:-}" ]] && kill -0 "$pid" 2>/dev/null
+}
+
+start_db() {
+  ensure_env
+  ensure_podman
+  log "Starting Postgres…"
+  compose up -d db
+  # wait for ready
+  for _ in $(seq 1 40); do
+    if compose exec -T db pg_isready -U plantpilot -d plantpilot >/dev/null 2>&1; then
+      log "Postgres is ready"
+      return 0
+    fi
+    sleep 0.5
+  done
+  err "Postgres did not become ready in time"
+  exit 1
+}
+
+migrate() {
+  log "Running migrations…"
+  (cd backend && uv run alembic upgrade head)
+}
+
+start_api() {
+  if is_running "$PID_API"; then
+    log "API already running (pid $(cat "$PID_API"))"
+    return 0
+  fi
+  if [[ ! -d backend/.venv ]]; then
+    log "Installing backend deps…"
+    (cd backend && uv sync --all-extras)
+  fi
+  log "Starting API on :8000…"
+  (
+    cd backend
+    nohup uv run uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload \
+      >"$LOG_API" 2>&1 &
+    echo $! >"$PID_API"
+  )
+  for _ in $(seq 1 30); do
+    if curl -fsS http://127.0.0.1:8000/health >/dev/null 2>&1; then
+      log "API healthy → http://localhost:8000"
+      return 0
+    fi
+    sleep 0.5
+  done
+  err "API failed to start — see $LOG_API"
+  tail -n 40 "$LOG_API" || true
+  exit 1
+}
+
+start_web() {
+  if is_running "$PID_WEB"; then
+    log "Web already running (pid $(cat "$PID_WEB"))"
+    return 0
+  fi
+  if [[ ! -d frontend/node_modules ]]; then
+    log "Installing frontend deps…"
+    (cd frontend && npm install)
+  fi
+  log "Starting web UI on :5173…"
+  (
+    cd frontend
+    nohup npm run dev -- --host 0.0.0.0 --port 5173 \
+      >"$LOG_WEB" 2>&1 &
+    echo $! >"$PID_WEB"
+  )
+  sleep 2
+  log "Web UI → http://localhost:5173"
+}
+
+cmd_start() {
+  start_db
+  migrate
+  start_api
+  start_web
+  cat <<EOF
+
+RootCore is up.
+
+  App:     http://localhost:5173
+  API:     http://localhost:8000
+  Docs:    http://localhost:8000/api/docs
+
+  Stop:    ./scripts/rootcore stop
+  Status:  ./scripts/rootcore status
+  Logs:    $RUN_DIR/*.log
+
+EOF
+}
+
+cmd_stop() {
+  local stop_db="${1:-}"
+  if is_running "$PID_WEB"; then
+    log "Stopping web (pid $(cat "$PID_WEB"))…"
+    kill "$(cat "$PID_WEB")" 2>/dev/null || true
+    # also kill vite children
+    pkill -f "vite.*5173" 2>/dev/null || true
+    rm -f "$PID_WEB"
+  else
+    pkill -f "vite.*5173" 2>/dev/null || true
+    rm -f "$PID_WEB"
+    log "Web was not running"
+  fi
+
+  if is_running "$PID_API"; then
+    log "Stopping API (pid $(cat "$PID_API"))…"
+    kill "$(cat "$PID_API")" 2>/dev/null || true
+    pkill -f "uvicorn app.main:app" 2>/dev/null || true
+    rm -f "$PID_API"
+  else
+    pkill -f "uvicorn app.main:app" 2>/dev/null || true
+    rm -f "$PID_API"
+    log "API was not running"
+  fi
+
+  if [[ "$stop_db" == "--all" || "$stop_db" == "all" ]]; then
+    log "Stopping Postgres…"
+    ensure_podman
+    compose down || true
+  else
+    log "Postgres left running (use: ./scripts/rootcore stop --all)"
+  fi
+  log "Stopped"
+}
+
+cmd_status() {
+  echo "RootCore status"
+  if is_running "$PID_API"; then
+    echo "  API:  running (pid $(cat "$PID_API"))  http://localhost:8000"
+    curl -fsS http://127.0.0.1:8000/health 2>/dev/null && echo || echo "  API:  process up but /health failed"
+  else
+    echo "  API:  stopped"
+  fi
+  if is_running "$PID_WEB"; then
+    echo "  Web:  running (pid $(cat "$PID_WEB"))  http://localhost:5173"
+  else
+    echo "  Web:  stopped"
+  fi
+  ensure_podman 2>/dev/null || true
+  if compose ps 2>/dev/null | grep -q 'plantpilot-db'; then
+    echo "  DB:   running (compose)"
+  else
+    echo "  DB:   stopped (or not via compose)"
+  fi
+}
+
+cmd_restart() {
+  cmd_stop "${1:-}"
+  sleep 1
+  cmd_start
+}
+
+usage() {
+  cat <<EOF
+Usage: ./scripts/rootcore <command>
+
+  start          Start Postgres + migrate + API + web
+  stop           Stop API + web (DB keeps running)
+  stop --all     Stop API + web + Postgres
+  restart        Stop then start
+  status         Show what's running
+
+After start, open http://localhost:5173
+EOF
+}
+
+case "${1:-}" in
+  start) cmd_start ;;
+  stop) shift || true; cmd_stop "${1:-}" ;;
+  restart) shift || true; cmd_restart "${1:-}" ;;
+  status) cmd_status ;;
+  -h|--help|help|"") usage ;;
+  *) err "Unknown command: $1"; usage; exit 1 ;;
+esac

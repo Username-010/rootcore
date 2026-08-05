@@ -1,4 +1,4 @@
-# PlantPilot — Product Specification
+# RootCore — Product Specification
 
 **Version:** 0.1 (design)  
 **Audience:** Engineers, designers, and future contributors  
@@ -10,7 +10,7 @@
 
 ### 1.1 One-sentence pitch
 
-PlantPilot is a self-hosted plant care platform that combines collection management with an adaptive watering engine, spatial layouts, and household collaboration.
+RootCore is a self-hosted plant care platform that combines collection management with an adaptive watering engine, spatial layouts, and household collaboration.
 
 ### 1.2 Goals
 

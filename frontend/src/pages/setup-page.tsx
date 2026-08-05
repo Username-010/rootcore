@@ -117,7 +117,7 @@ export function SetupPage() {
     <div className="space-y-4">
       <div className="text-center space-y-1 pb-1">
         <p className="text-xs font-medium uppercase tracking-wider text-primary">First-time setup</p>
-        <h1 className="text-2xl font-semibold tracking-tight">Welcome to PlantPilot</h1>
+        <h1 className="text-2xl font-semibold tracking-tight">Welcome to RootCore</h1>
         <p className="text-sm text-muted-foreground max-w-md mx-auto">
           Self-hosted plant care for your household. Your account and plants stay on this machine —
           they are not wiped by a normal restart.
@@ -222,7 +222,7 @@ export function SetupPage() {
               </p>
             )}
             <Button type="submit" className="w-full h-11 text-base rounded-xl" disabled={submitting}>
-              {submitting ? "Creating…" : "Start PlantPilot"}
+              {submitting ? "Creating…" : "Start RootCore"}
             </Button>
           </form>
         </CardContent>

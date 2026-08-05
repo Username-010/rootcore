@@ -643,7 +643,7 @@ export function LayoutPage() {
   }
 
   function onDragStart(e: DragEvent, payload: DragPayload) {
-    e.dataTransfer.setData("application/plantpilot", JSON.stringify(payload));
+    e.dataTransfer.setData("application/rootcore", JSON.stringify(payload));
     e.dataTransfer.effectAllowed = "move";
   }
 
@@ -651,7 +651,7 @@ export function LayoutPage() {
     e.preventDefault();
     setDragOver(false);
     if (!activeHousehold || !active) return;
-    const raw = e.dataTransfer.getData("application/plantpilot");
+    const raw = e.dataTransfer.getData("application/rootcore");
     if (!raw) return;
     const payload = JSON.parse(raw) as DragPayload;
     const coords = mapCoords(e);

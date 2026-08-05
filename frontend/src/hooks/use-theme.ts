@@ -44,14 +44,17 @@ function applyTheme(theme: Theme) {
 
 export function useTheme() {
   const [theme, setThemeState] = useState<Theme>(() => {
-    const stored = localStorage.getItem("plantpilot-theme") as Theme | null;
+    const stored =
+      (localStorage.getItem("rootcore-theme") as Theme | null) ||
+      (localStorage.getItem("plantpilot-theme") as Theme | null);
     if (stored && THEME_ORDER.includes(stored)) return stored;
     return "blossom"; // friendly default
   });
 
   useEffect(() => {
     applyTheme(theme);
-    localStorage.setItem("plantpilot-theme", theme);
+    localStorage.setItem("rootcore-theme", theme);
+    localStorage.removeItem("plantpilot-theme");
 
     if (theme !== "system") return;
     const mq = window.matchMedia("(prefers-color-scheme: dark)");

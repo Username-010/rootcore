@@ -15,7 +15,7 @@ export function AuthLayout() {
           <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary text-primary-foreground shadow-sm">
             <Leaf className="h-5 w-5" aria-hidden />
           </span>
-          <span className="font-semibold tracking-tight">PlantPilot</span>
+          <span className="font-semibold tracking-tight">RootCore</span>
         </Link>
         <Button variant="outline" size="sm" className="rounded-full" onClick={cycleTheme}>
           {info.emoji} {info.label}

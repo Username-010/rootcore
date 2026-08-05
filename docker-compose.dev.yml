@@ -14,7 +14,7 @@ services:
       APP_ENV: development
       APP_DEBUG: "true"
       SECRET_KEY: ${SECRET_KEY:-dev-secret-key-at-least-32-characters-long!!}
-      DATABASE_URL: postgresql+asyncpg://${POSTGRES_USER:-plantpilot}:${POSTGRES_PASSWORD:-plantpilot}@db:5432/${POSTGRES_DB:-plantpilot}
+      DATABASE_URL: postgresql+asyncpg://${POSTGRES_USER:-rootcore}:${POSTGRES_PASSWORD:-rootcore}@db:5432/${POSTGRES_DB:-rootcore}
       CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:5173,http://localhost:8000}
       MEDIA_ROOT: /data/media
       STATIC_DIR: ""
@@ -22,7 +22,7 @@ services:
     volumes:
       - ./backend/app:/app/app
       - ./backend/alembic:/app/alembic
-      - plantpilot_media:/data/media
+      - rootcore_media:/data/media
     command: >
       sh -c "alembic upgrade head &&
              uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload"

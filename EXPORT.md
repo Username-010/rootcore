@@ -1,6 +1,6 @@
-# Sharing PlantPilot with others
+# Sharing RootCore with others
 
-PlantPilot is designed for **self-hosting**. Anyone with Docker/Podman (or Python + Node + Postgres) can run their own copy. Your plant data never has to leave their machine.
+RootCore is designed for **self-hosting**. Anyone with Docker/Podman (or Python + Node + Postgres) can run their own copy. Your plant data never has to leave their machine.
 
 ## What they need
 
@@ -19,14 +19,14 @@ See **[GITHUB.md](./GITHUB.md)** for exact `git` + Docker steps you can paste in
 ## Fastest path for a friend (development-style)
 
 ```bash
-git clone https://github.com/YOURUSER/plantpilot.git
-cd plantpilot
+git clone https://github.com/YOURUSER/rootcore.git
+cd rootcore
 # Optional: copy and edit secrets
 cp .env.example .env
 
 # One command (Linux/macOS with Podman or Docker):
-chmod +x scripts/plantpilot
-./scripts/plantpilot start
+chmod +x scripts/rootcore
+./scripts/rootcore start
 # or: make start
 ```
 
@@ -37,8 +37,8 @@ First visit: setup wizard (admin account + household + optional location).
 Stop:
 
 ```bash
-./scripts/plantpilot stop        # API + web
-./scripts/plantpilot stop --all  # also Postgres
+./scripts/rootcore stop        # API + web
+./scripts/rootcore stop --all  # also Postgres
 ```
 
 ## Production-style (single port, easiest to replicate)
@@ -73,8 +73,8 @@ Reverse-proxy with Caddy/nginx using `deploy/Caddyfile.example` if you expose it
 
 | Volume | Contents |
 |--------|----------|
-| `plantpilot_pgdata` | Postgres database |
-| `plantpilot_media` | Plant photos / labels |
+| `rootcore_pgdata` | Postgres database |
+| `rootcore_media` | Plant photos / labels |
 
 `docker compose down` keeps volumes; use `docker compose down -v` only if you intend to wipe data.
 

@@ -1,4 +1,4 @@
-# PlantPilot production-oriented Compose stack.
+# RootCore production-oriented Compose stack.
 # Usage:
 #   docker compose up -d --build
 #   # or with Podman:
@@ -9,16 +9,16 @@ services:
     image: docker.io/library/postgres:16-alpine
     restart: unless-stopped
     environment:
-      POSTGRES_USER: ${POSTGRES_USER:-plantpilot}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-plantpilot}
-      POSTGRES_DB: ${POSTGRES_DB:-plantpilot}
+      POSTGRES_USER: ${POSTGRES_USER:-rootcore}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-rootcore}
+      POSTGRES_DB: ${POSTGRES_DB:-rootcore}
     volumes:
       # Fixed external-friendly volume name — never removed by `compose down`
-      - plantpilot_pgdata:/var/lib/postgresql/data
+      - rootcore_pgdata:/var/lib/postgresql/data
     ports:
       - "${POSTGRES_PORT:-5432}:5432"
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-plantpilot} -d ${POSTGRES_DB:-plantpilot}"]
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-rootcore} -d ${POSTGRES_DB:-rootcore}"]
       interval: 5s
       timeout: 5s
       retries: 10
@@ -35,7 +35,7 @@ services:
       APP_ENV: ${APP_ENV:-production}
       APP_DEBUG: ${APP_DEBUG:-false}
       SECRET_KEY: ${SECRET_KEY:-change-me-in-production-use-openssl-rand-hex-32}
-      DATABASE_URL: postgresql+asyncpg://${POSTGRES_USER:-plantpilot}:${POSTGRES_PASSWORD:-plantpilot}@db:5432/${POSTGRES_DB:-plantpilot}
+      DATABASE_URL: postgresql+asyncpg://${POSTGRES_USER:-rootcore}:${POSTGRES_PASSWORD:-rootcore}@db:5432/${POSTGRES_DB:-rootcore}
       CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:8000}
       PUBLIC_BASE_URL: ${PUBLIC_BASE_URL:-http://localhost:8000}
       REGISTRATION_MODE: ${REGISTRATION_MODE:-open}
@@ -43,11 +43,11 @@ services:
       STATIC_DIR: /app/static
       LOG_LEVEL: ${LOG_LEVEL:-info}
     volumes:
-      - plantpilot_media:/data/media
+      - rootcore_media:/data/media
     ports:
       - "${API_PORT:-8000}:8000"
 
 volumes:
   # Keep default project-prefixed names so existing data is reused
-  plantpilot_pgdata:
-  plantpilot_media:
+  rootcore_pgdata:
+  rootcore_media:

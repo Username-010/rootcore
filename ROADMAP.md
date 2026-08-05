@@ -1,4 +1,4 @@
-# PlantPilot — Implementation Roadmap
+# RootCore — Implementation Roadmap
 
 **Related:** [PROJECT_PLAN.md](./PROJECT_PLAN.md) · [SPEC.md](./SPEC.md) · [DATABASE.md](./DATABASE.md) · [API.md](./API.md)
 

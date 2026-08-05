@@ -20,7 +20,7 @@ os.environ.setdefault(
 # ALWAYS use a dedicated test database — never wipe the real app DB
 os.environ["DATABASE_URL"] = os.environ.get(
     "TEST_DATABASE_URL",
-    "postgresql+asyncpg://plantpilot:plantpilot@localhost:5432/plantpilot_test",
+    "postgresql+asyncpg://rootcore:rootcore@localhost:5432/rootcore_test",
 )
 os.environ.setdefault("REGISTRATION_MODE", "open")
 
@@ -34,9 +34,9 @@ from app.main import create_app  # noqa: E402
 
 
 def pytest_configure():
-    """Create plantpilot_test DB if missing (best-effort)."""
+    """Create rootcore_test DB if missing (best-effort)."""
     url = os.environ["DATABASE_URL"]
-    if "plantpilot_test" not in url:
+    if "rootcore_test" not in url:
         return
     admin_url = url.rsplit("/", 1)[0] + "/postgres"
     # connect to maintenance db and CREATE DATABASE
@@ -47,10 +47,10 @@ def pytest_configure():
         try:
             async with eng.connect() as conn:
                 exists = await conn.execute(
-                    text("SELECT 1 FROM pg_database WHERE datname = 'plantpilot_test'")
+                    text("SELECT 1 FROM pg_database WHERE datname = 'rootcore_test'")
                 )
                 if exists.scalar() is None:
-                    await conn.execute(text("CREATE DATABASE plantpilot_test"))
+                    await conn.execute(text("CREATE DATABASE rootcore_test"))
         finally:
             await eng.dispose()
 
@@ -87,11 +87,11 @@ _TRUNCATE_SQL = (
 @pytest.fixture
 async def clean_db():
     """Truncate app tables between integration tests (keeps migrations)."""
-    # Safety: never truncate the live plantpilot DB
-    if engine.url.database and engine.url.database != "plantpilot_test":
+    # Safety: never truncate the live rootcore DB
+    if engine.url.database and engine.url.database != "rootcore_test":
         raise RuntimeError(
             f"Refusing to truncate non-test database: {engine.url.database}. "
-            "Set TEST_DATABASE_URL to plantpilot_test."
+            "Set TEST_DATABASE_URL to rootcore_test."
         )
     async with engine.begin() as conn:
         await conn.execute(text(_TRUNCATE_SQL))

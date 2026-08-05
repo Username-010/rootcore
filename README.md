@@ -1,22 +1,24 @@
-# PlantPilot
+# RootCore
 
-**Self-hosted plant care** — watering intelligence, garden maps, shared homes, and a calm UI. Your data stays on **your** machine.
+**Self-hosted plant care from the roots up** — watering intelligence, garden maps, shared homes, and a calm UI. Your data stays on **your** machine.
+
+> Formerly prototyped as “PlantPilot” — the product is now **RootCore**.
 
 ![License](https://img.shields.io/badge/license-AGPL--3.0-blue)
 ![Stack](https://img.shields.io/badge/stack-FastAPI%20%2B%20React-green)
 ![Deploy](https://img.shields.io/badge/deploy-Docker-blue)
 
 <p align="center">
-  <img src="docs/screenshots/01-today-dashboard.png" alt="PlantPilot Today dashboard" width="900" />
+  <img src="docs/screenshots/01-today-dashboard.png" alt="RootCore Today dashboard" width="900" />
 </p>
 
 <p align="center"><em>Today: clear water plan (how much · when), weather, tips, and seasonal ideas</em></p>
 
 ---
 
-## Why PlantPilot?
+## Why RootCore?
 
-Most plant apps are cloud-only inventory. PlantPilot is built for **self-hosting**:
+Most plant apps are cloud-only inventory. RootCore is built for **self-hosting**:
 
 | You get | Details |
 |--------|---------|
@@ -55,7 +57,7 @@ Also: **Light garden** and **System** (follow device).
 
 ## Online services & APIs (all optional)
 
-PlantPilot works **offline-first** for your plants, tasks, and maps. Network helpers are opt-in in **Settings**.
+RootCore works **offline-first** for your plants, tasks, and maps. Network helpers are opt-in in **Settings**.
 
 | Service | What it does | API key? | Cost | Where configured |
 |--------|----------------|----------|------|------------------|
@@ -82,17 +84,17 @@ Self-hosters usually want free, documented APIs without accounts for every featu
 ### One command (dev)
 
 ```bash
-git clone https://github.com/YOURUSER/plantpilot.git
-cd plantpilot
-chmod +x scripts/plantpilot
-./scripts/plantpilot start
+git clone https://github.com/YOURUSER/rootcore.git
+cd rootcore
+chmod +x scripts/rootcore
+./scripts/rootcore start
 ```
 
 Open **http://localhost:5173** → create username/password (email optional) → set location → **Settings → Load demo garden**.
 
 ```bash
-./scripts/plantpilot stop        # API + web
-./scripts/plantpilot stop --all  # + Postgres
+./scripts/rootcore stop        # API + web
+./scripts/rootcore stop --all  # + Postgres
 ```
 
 ### Docker (single port, production-style)
@@ -111,7 +113,7 @@ export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/podman/podman.sock
 docker-compose up -d --build
 ```
 
-Data volumes: `plantpilot_pgdata` (database), `plantpilot_media` (photos).
+Data volumes: `rootcore_pgdata` (database), `rootcore_media` (photos).
 
 More: [EXPORT.md](./EXPORT.md) · [GITHUB.md](./GITHUB.md)
 
@@ -140,13 +142,13 @@ More: [EXPORT.md](./EXPORT.md) · [GITHUB.md](./GITHUB.md)
 ## Repository layout
 
 ```
-plantpilot/
+rootcore/
 ├── backend/           # FastAPI · SQLAlchemy · Alembic · watering engine
 ├── frontend/          # React · Vite · Tailwind
 ├── docs/screenshots/  # README images
 ├── deploy/            # Dockerfiles, Caddy example
 ├── docker-compose.yml
-└── scripts/plantpilot # one-command start/stop
+└── scripts/rootcore # one-command start/stop
 ```
 
 Design notes (optional reading): [PROJECT_PLAN.md](./PROJECT_PLAN.md) · [SPEC.md](./SPEC.md) · [API.md](./API.md)

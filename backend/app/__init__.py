@@ -1,3 +1,3 @@
-"""PlantPilot API application package."""
+"""RootCore API application package."""
 
 __version__ = "0.1.0"

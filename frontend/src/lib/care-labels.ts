@@ -135,7 +135,7 @@ export const CARE_GLOSSARY: Array<{ term: string; body: string }> = [
   },
   {
     term: "Baseline water interval",
-    body: "Starting guess for days between waterings. PlantPilot adjusts this from pot size, weather, and your feedback.",
+    body: "Starting guess for days between waterings. RootCore adjusts this from pot size, weather, and your feedback.",
   },
   {
     term: "Bloom months",

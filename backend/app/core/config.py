@@ -14,7 +14,7 @@ class Settings(BaseSettings):
         extra="ignore",
     )
 
-    app_name: str = "PlantPilot"
+    app_name: str = "RootCore"
     app_env: Literal["development", "production", "test"] = "development"
     app_debug: bool = False
     app_version: str = "0.1.0"
@@ -24,7 +24,7 @@ class Settings(BaseSettings):
     secret_key: str = "change-me-in-production-use-openssl-rand-hex-32"
 
     database_url: str = (
-        "postgresql+asyncpg://plantpilot:plantpilot@localhost:5432/plantpilot"
+        "postgresql+asyncpg://rootcore:rootcore@localhost:5432/rootcore"
     )
 
     # Self-hosted comfort default: 7 days (override via ACCESS_TOKEN_EXPIRE_MINUTES)

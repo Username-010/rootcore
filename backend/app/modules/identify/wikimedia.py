@@ -9,7 +9,7 @@ import httpx
 WIKI_API = "https://commons.wikimedia.org/w/api.php"
 WIKI_SUMMARY = "https://en.wikipedia.org/api/rest_v1/page/summary/"
 HEADERS = {
-    "User-Agent": "PlantPilot/0.1 (self-hosted plant care; https://github.com/)",
+    "User-Agent": "RootCore/0.1 (self-hosted plant care; https://github.com/)",
     "Accept": "application/json",
 }
 
