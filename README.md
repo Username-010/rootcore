@@ -2,7 +2,7 @@
 
 **Self-hosted plant care from the roots up** — watering intelligence, garden maps, shared homes, and a calm UI. Your data stays on **your** machine.
 
-> Formerly prototyped as “PlantPilot” — the product is now **RootCore**.
+> the product is **RootCore**.
 
 ![License](https://img.shields.io/badge/license-AGPL--3.0-blue)
 ![Stack](https://img.shields.io/badge/stack-FastAPI%20%2B%20React-green)
