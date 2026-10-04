@@ -395,6 +395,29 @@ export type GardenWatchPlant = {
   space_kind: string;
 };
 
+export type DueCanPlant = {
+  plant_id: string;
+  nickname: string;
+  emoji?: string | null;
+  environment: string;
+  urgency: string;
+  next_due_at: string | null;
+  recommended_amount: string | null;
+};
+
+export type DueCan = {
+  timezone: string;
+  generated_at: string;
+  summary: string;
+  groups: {
+    overdue: DueCanPlant[];
+    due: DueCanPlant[];
+    soon: DueCanPlant[];
+  };
+  counts: { overdue: number; due: number; soon: number };
+  total: number;
+};
+
 export type GardenWatch = {
   timezone: string;
   generated_at: string;

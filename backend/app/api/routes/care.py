@@ -461,6 +461,19 @@ async def watering_due(
     ]
 
 
+@router.get("/households/{household_id}/due-can")
+async def due_can(
+    ctx: Annotated[HouseholdContext, Depends(require_household_role("viewer"))],
+    db: DbSession,
+) -> dict[str, Any]:
+    """Printable overdue / due / soon watering can."""
+    from app.modules.watering.due_can import build_due_can
+
+    tz_name = ctx.household.timezone or "Europe/Amsterdam"
+    now = datetime.now(UTC)
+    rows = await watering_service.list_due(db, household_id=ctx.household.id, limit=100)
+    return build_due_can(rows, timezone=tz_name, now=now)
+
 
 @router.get("/households/{household_id}/week-round")
 async def week_round(

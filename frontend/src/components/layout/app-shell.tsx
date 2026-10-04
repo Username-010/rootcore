@@ -3,6 +3,7 @@ import {
   BookOpen,
   CalendarDays,
   ChevronDown,
+  AlarmClock,
   Droplets,
   History,
   Home,
@@ -107,6 +108,7 @@ export function AppShell() {
           <ShellNav to="/" icon={Home} label="Today" end />
           <ShellNav to="/round" icon={Droplets} label="Round" />
           <ShellNav to="/watch" icon={Snowflake} label="Watch" />
+          <ShellNav to="/due" icon={AlarmClock} label="Due" />
           <ShellNav to="/plants" icon={Sprout} label="Plants" />
           <ShellNav to="/catalog" icon={BookOpen} label="Catalog" />
           <ShellNav to="/layout" icon={LayoutGrid} label="Map" />
@@ -126,6 +128,7 @@ export function AppShell() {
           <ShellNav to="/" icon={Home} label="Today" end mobile />
           <ShellNav to="/round" icon={Droplets} label="Round" mobile />
           <ShellNav to="/watch" icon={Snowflake} label="Watch" mobile />
+          <ShellNav to="/due" icon={AlarmClock} label="Due" mobile />
           <ShellNav to="/plants" icon={Sprout} label="Plants" mobile />
           <ShellNav to="/catalog" icon={BookOpen} label="Catalog" mobile />
           <ShellNav to="/layout" icon={LayoutGrid} label="Map" mobile />

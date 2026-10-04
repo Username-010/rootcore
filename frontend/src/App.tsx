@@ -22,6 +22,7 @@ import { TasksPage } from "@/pages/tasks-page";
 import { TimelinePage } from "@/pages/timeline-page";
 import { WeekRoundPage } from "@/pages/week-round-page";
 import { GardenWatchPage } from "@/pages/garden-watch-page";
+import { DueCanPage } from "@/pages/due-can-page";
 
 export default function App() {
   return (
@@ -40,6 +41,7 @@ export default function App() {
               <Route path="/" element={<DashboardPage />} />
               <Route path="/round" element={<WeekRoundPage />} />
               <Route path="/watch" element={<GardenWatchPage />} />
+              <Route path="/due" element={<DueCanPage />} />
               <Route path="/plants" element={<PlantsPage />} />
               <Route path="/catalog" element={<CatalogPage />} />
               <Route path="/plants/new" element={<PlantFormPage />} />
