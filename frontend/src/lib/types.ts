@@ -363,6 +363,54 @@ export type WeekRound = {
   counts: { plants: number; tasks: number };
 };
 
+
+export type GardenWatchAlert = {
+  kind: string;
+  severity: string;
+  date: string;
+  title: string;
+  detail: string;
+};
+
+export type GardenWatchNight = {
+  date: string;
+  weekday: string;
+  is_today: boolean;
+  temp_min_c: number | null;
+  temp_max_c: number | null;
+  precip_mm: number | null;
+  weather_code: number | null;
+  frost_hard: boolean;
+  frost_risk: boolean;
+  rain_skip: boolean;
+  heat: boolean;
+  flags: string[];
+};
+
+export type GardenWatchPlant = {
+  plant_id: string;
+  nickname: string;
+  emoji?: string | null;
+  space_name: string;
+  space_kind: string;
+};
+
+export type GardenWatch = {
+  timezone: string;
+  generated_at: string;
+  configured: boolean;
+  summary: string;
+  alerts: GardenWatchAlert[];
+  nights: GardenWatchNight[];
+  outdoor_plants: GardenWatchPlant[];
+  counts: {
+    frost_nights: number;
+    rain_days: number;
+    outdoor_plants: number;
+    alerts: number;
+  };
+};
+
 export type LayoutContainer = {
   id: string;
   name: string;

@@ -5,6 +5,7 @@ from __future__ import annotations
 import uuid
 from datetime import UTC, datetime
 from typing import Annotated, Any
+from zoneinfo import ZoneInfo
 
 from fastapi import APIRouter, Depends, HTTPException, Query, Response, status
 from pydantic import BaseModel, Field
@@ -14,11 +15,12 @@ from sqlalchemy.orm import selectinload
 from app.api.deps import DbSession, HouseholdContext, require_household_role
 from app.modules.labels.service import build_labels_pdf
 from app.modules.layout import service as layout_service
-from app.modules.layout.models import Placement
+from app.modules.layout.models import Placement, Space
 from app.modules.layout.service import LayoutError
 from app.modules.plants.models import Plant
 from app.modules.stats import service as stats_service
 from app.modules.weather import service as weather_service
+from app.modules.weather.watch import build_garden_watch, is_outdoor_kind
 
 router = APIRouter(prefix="/api/v1", tags=["extras"])
 
@@ -179,6 +181,58 @@ async def refresh_weather(
             detail="Set household coordinates first (latitude/longitude).",
         )
     return {"configured": True, **data}
+
+
+@router.get("/households/{household_id}/garden-watch")
+async def garden_watch(
+    ctx: Annotated[HouseholdContext, Depends(require_household_role("viewer"))],
+    db: DbSession,
+) -> dict[str, Any]:
+    """Frost nights, rain-skip days, and outdoor plants to protect."""
+    tz_name = ctx.household.timezone or "Europe/Amsterdam"
+    try:
+        tz = ZoneInfo(tz_name)
+    except Exception:
+        tz = ZoneInfo("Europe/Amsterdam")
+        tz_name = "Europe/Amsterdam"
+    now = datetime.now(tz)
+
+    snap = await weather_service.get_household_weather(db, ctx.household)
+    await db.commit()
+    configured = bool(snap is not None)
+
+    result = await db.execute(
+        select(Plant, Space)
+        .join(Placement, Placement.plant_id == Plant.id)
+        .join(Space, Space.id == Placement.space_id)
+        .where(
+            Plant.household_id == ctx.household.id,
+            Plant.status.in_(["active", "dormant"]),
+        )
+    )
+    outdoor_plants = []
+    for plant, space in result.all():
+        if not is_outdoor_kind(space.kind):
+            continue
+        attrs = plant.custom_attributes or {}
+        emoji = attrs.get("emoji") if isinstance(attrs.get("emoji"), str) else "🪴"
+        outdoor_plants.append(
+            {
+                "plant_id": str(plant.id),
+                "nickname": plant.nickname,
+                "emoji": (emoji or "🪴")[:8],
+                "space_name": space.name,
+                "space_kind": space.kind,
+            }
+        )
+
+    return build_garden_watch(
+        timezone=tz_name,
+        now=now,
+        snap=snap,
+        outdoor_plants=outdoor_plants,
+        configured=configured,
+    )
 
 
 # --- Layout ---

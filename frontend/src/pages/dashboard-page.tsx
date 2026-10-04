@@ -1,4 +1,4 @@
-import { AlertTriangle, CheckCircle2, CloudSun, Droplets, ListTodo, Sprout } from "lucide-react";
+import { AlertTriangle, CheckCircle2, CloudSun, Droplets, ListTodo, Snowflake, Sprout } from "lucide-react";
 import { useCallback, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -8,7 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { useAuth } from "@/contexts/auth-context";
 import { api, ApiError } from "@/lib/api";
 import { weatherCodeEmoji } from "@/lib/care-labels";
-import type { Dashboard } from "@/lib/types";
+import type { Dashboard, GardenWatch } from "@/lib/types";
 import { amountCopy, formatNextWater, urgencyCopy } from "@/lib/watering-copy";
 
 export function DashboardPage() {
@@ -17,6 +17,7 @@ export function DashboardPage() {
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
   const [busyId, setBusyId] = useState<string | null>(null);
+  const [watch, setWatch] = useState<GardenWatch | null>(null);
 
   const load = useCallback(async () => {
     if (!activeHousehold) {
@@ -27,7 +28,12 @@ export function DashboardPage() {
     setLoading(true);
     setError(null);
     try {
-      setData(await api.dashboard(activeHousehold.id));
+      const [dash, gw] = await Promise.all([
+        api.dashboard(activeHousehold.id),
+        api.gardenWatch(activeHousehold.id).catch(() => null),
+      ]);
+      setData(dash);
+      setWatch(gw);
     } catch (err) {
       setError(err instanceof ApiError ? err.detail : "Failed to load dashboard");
     } finally {
@@ -194,6 +200,42 @@ export function DashboardPage() {
             <Stat label="Due this week" value={data.counts.open_tasks} icon={ListTodo} />
             <Stat label="Overdue" value={data.counts.overdue_water} icon={AlertTriangle} />
           </div>
+
+
+          {watch && (
+            <Card
+              className={
+                watch.counts.frost_nights > 0
+                  ? "border-sky-600/40 bg-sky-500/10"
+                  : watch.counts.rain_days > 0
+                    ? "border-primary/25 bg-primary/5"
+                    : "border-border"
+              }
+            >
+              <CardHeader className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between space-y-0 pb-2">
+                <div>
+                  <CardTitle className="text-base flex items-center gap-2">
+                    <Snowflake className="h-4 w-4 text-sky-700" />
+                    Garden watch
+                  </CardTitle>
+                  <CardDescription>{watch.summary}</CardDescription>
+                </div>
+                <Button asChild size="sm" variant="outline" className="rounded-xl shrink-0">
+                  <Link to="/watch">Open watch</Link>
+                </Button>
+              </CardHeader>
+              {watch.alerts.length > 0 && (
+                <CardContent className="pt-0 space-y-1">
+                  {watch.alerts.slice(0, 3).map((a) => (
+                    <p key={a.kind + a.date + a.title} className="text-sm">
+                      <span className="font-medium">{a.title}.</span>{" "}
+                      <span className="text-muted-foreground">{a.detail}</span>
+                    </p>
+                  ))}
+                </CardContent>
+              )}
+            </Card>
+          )}
 
           {/* Interactive quick plan — updates when you water / undo / bulk */}
           {data.care_brief && (
