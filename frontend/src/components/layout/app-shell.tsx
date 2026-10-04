@@ -3,6 +3,7 @@ import {
   BookOpen,
   CalendarDays,
   ChevronDown,
+  Droplets,
   History,
   Home,
   LayoutGrid,
@@ -103,6 +104,7 @@ export function AppShell() {
           aria-label="Main"
         >
           <ShellNav to="/" icon={Home} label="Today" end />
+          <ShellNav to="/round" icon={Droplets} label="Round" />
           <ShellNav to="/plants" icon={Sprout} label="Plants" />
           <ShellNav to="/catalog" icon={BookOpen} label="Catalog" />
           <ShellNav to="/layout" icon={LayoutGrid} label="Map" />
@@ -120,6 +122,7 @@ export function AppShell() {
           aria-label="Mobile"
         >
           <ShellNav to="/" icon={Home} label="Today" end mobile />
+          <ShellNav to="/round" icon={Droplets} label="Round" mobile />
           <ShellNav to="/plants" icon={Sprout} label="Plants" mobile />
           <ShellNav to="/catalog" icon={BookOpen} label="Catalog" mobile />
           <ShellNav to="/layout" icon={LayoutGrid} label="Map" mobile />

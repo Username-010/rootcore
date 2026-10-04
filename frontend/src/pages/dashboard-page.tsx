@@ -451,7 +451,11 @@ export function DashboardPage() {
                   Recent care to put a plant back here.
                 </CardDescription>
               </div>
-              {data.attention.length > 0 && (
+              <div className="flex gap-2 shrink-0 print:hidden">
+                <Button asChild size="sm" variant="outline" className="rounded-xl">
+                  <Link to="/round">Week round</Link>
+                </Button>
+                {data.attention.length > 0 && (
                 <Button
                   size="sm"
                   variant="secondary"
@@ -461,7 +465,8 @@ export function DashboardPage() {
                 >
                   {busyId === "bulk-water" ? "…" : "Watered all"}
                 </Button>
-              )}
+                )}
+              </div>
             </CardHeader>
             <CardContent>
               {data.attention.length === 0 ? (

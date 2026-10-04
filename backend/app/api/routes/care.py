@@ -461,6 +461,114 @@ async def watering_due(
     ]
 
 
+
+@router.get("/households/{household_id}/week-round")
+async def week_round(
+    ctx: Annotated[HouseholdContext, Depends(require_household_role("viewer"))],
+    db: DbSession,
+) -> dict[str, Any]:
+    """Seven-day watering + task sheet for a garden walk / print."""
+    from zoneinfo import ZoneInfo
+
+    from app.modules.watering.models import WateringState
+
+    tz_name = ctx.household.timezone or "Europe/Amsterdam"
+    try:
+        tz = ZoneInfo(tz_name)
+    except Exception:
+        tz = ZoneInfo("Europe/Amsterdam")
+        tz_name = "Europe/Amsterdam"
+    now = datetime.now(tz)
+    start = now.replace(hour=0, minute=0, second=0, microsecond=0)
+    end = start + timedelta(days=7)
+
+    result = await db.execute(
+        select(Plant, WateringState)
+        .join(WateringState, WateringState.plant_id == Plant.id)
+        .where(
+            Plant.household_id == ctx.household.id,
+            Plant.status.in_(["active", "dormant"]),
+            WateringState.next_due_at.is_not(None),
+            WateringState.next_due_at <= end.astimezone(UTC),
+        )
+        .order_by(WateringState.next_due_at.asc().nulls_last())
+    )
+    rows = list(result.all())
+
+    days: list[dict[str, Any]] = []
+    for i in range(7):
+        day = (start + timedelta(days=i)).date()
+        plants = []
+        for p, s in rows:
+            due = s.next_due_at
+            if due is None:
+                continue
+            if due.tzinfo is None:
+                due = due.replace(tzinfo=UTC)
+            local = due.astimezone(tz).date()
+            bucket = local if local >= start.date() else start.date()
+            if bucket != day:
+                continue
+            attrs = p.custom_attributes or {}
+            emoji = attrs.get("emoji") if isinstance(attrs.get("emoji"), str) else "🪴"
+            plants.append(
+                {
+                    "plant_id": str(p.id),
+                    "nickname": p.nickname,
+                    "emoji": (emoji or "🪴")[:8],
+                    "urgency": s.urgency,
+                    "next_due_at": s.next_due_at.isoformat() if s.next_due_at else None,
+                    "recommended_amount": s.recommended_amount,
+                    "amount_label": None,
+                    "best_time_label": None,
+                }
+            )
+        days.append(
+            {
+                "date": day.isoformat(),
+                "weekday": day.strftime("%A"),
+                "is_today": day == start.date(),
+                "plants": plants,
+                "tasks": [],
+            }
+        )
+
+    open_tasks = await task_service.list_tasks(
+        db, household_id=ctx.household.id, status="open", limit=200
+    )
+    for t in open_tasks:
+        if t.due_at is None:
+            continue
+        due_t = t.due_at if t.due_at.tzinfo else t.due_at.replace(tzinfo=UTC)
+        local = due_t.astimezone(tz).date()
+        if local > (end.date() - timedelta(days=1)):
+            continue
+        bucket = local if local >= start.date() else start.date()
+        for d in days:
+            if d["date"] == bucket.isoformat():
+                d["tasks"].append(
+                    {
+                        "id": str(t.id),
+                        "title": t.title,
+                        "type": t.type,
+                        "due_at": t.due_at.isoformat(),
+                    }
+                )
+                break
+
+    return {
+        "timezone": tz_name,
+        "generated_at": now.isoformat(),
+        "from": start.date().isoformat(),
+        "to": (end.date() - timedelta(days=1)).isoformat(),
+        "days": days,
+        "counts": {
+            "plants": sum(len(d["plants"]) for d in days),
+            "tasks": sum(len(d["tasks"]) for d in days),
+        },
+    }
+
+
 # --- Tasks ---
 
 

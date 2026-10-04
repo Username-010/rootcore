@@ -7,6 +7,7 @@ import type {
   CareTask,
   Dashboard,
   Household,
+  WeekRound,
   Invitation,
   LayoutSite,
   Member,
@@ -420,6 +421,8 @@ export const api = {
     }),
   dashboard: (householdId: string) =>
     apiRequest<Dashboard>(`/api/v1/households/${householdId}/dashboard`),
+  weekRound: (householdId: string) =>
+    apiRequest<WeekRound>(`/api/v1/households/${householdId}/week-round`),
   listEvents: (householdId: string, opts?: { type?: string; limit?: number }) => {
     const params = new URLSearchParams();
     if (opts?.type) params.set("type", opts.type);

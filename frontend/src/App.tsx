@@ -20,6 +20,7 @@ import { SetupPage } from "@/pages/setup-page";
 import { StatsPage } from "@/pages/stats-page";
 import { TasksPage } from "@/pages/tasks-page";
 import { TimelinePage } from "@/pages/timeline-page";
+import { WeekRoundPage } from "@/pages/week-round-page";
 
 export default function App() {
   return (
@@ -36,6 +37,7 @@ export default function App() {
           <Route element={<RequireAuth />}>
             <Route element={<AppShell />}>
               <Route path="/" element={<DashboardPage />} />
+              <Route path="/round" element={<WeekRoundPage />} />
               <Route path="/plants" element={<PlantsPage />} />
               <Route path="/catalog" element={<CatalogPage />} />
               <Route path="/plants/new" element={<PlantFormPage />} />

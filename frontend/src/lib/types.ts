@@ -328,6 +328,41 @@ export type Dashboard = {
   discover?: DiscoverContent | null;
 };
 
+export type WeekRoundPlant = {
+  plant_id: string;
+  nickname: string;
+  emoji?: string | null;
+  urgency: string;
+  next_due_at: string | null;
+  recommended_amount: string | null;
+  amount_label?: string | null;
+  best_time_label?: string | null;
+};
+
+export type WeekRoundTask = {
+  id: string;
+  title: string;
+  type: string;
+  due_at: string | null;
+};
+
+export type WeekRoundDay = {
+  date: string;
+  weekday: string;
+  is_today: boolean;
+  plants: WeekRoundPlant[];
+  tasks: WeekRoundTask[];
+};
+
+export type WeekRound = {
+  timezone: string;
+  generated_at: string;
+  from: string;
+  to: string;
+  days: WeekRoundDay[];
+  counts: { plants: number; tasks: number };
+};
+
 export type LayoutContainer = {
   id: string;
   name: string;
