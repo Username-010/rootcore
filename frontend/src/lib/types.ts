@@ -509,3 +509,20 @@ export type CatalogTaxon = Taxon & {
   preview_url?: string | null;
   suggested_environment?: string;
 };
+
+export type LabelSheetCard = {
+  plant_id: string;
+  nickname: string;
+  emoji?: string | null;
+  environment: string;
+  scientific_name?: string | null;
+  common_name?: string | null;
+};
+
+export type LabelSheet = {
+  timezone: string;
+  generated_at: string;
+  summary: string;
+  cards: LabelSheetCard[];
+  total: number;
+};

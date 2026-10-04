@@ -663,6 +663,27 @@ async def calendar(
 # --- QR labels ---
 
 
+@router.get("/households/{household_id}/label-sheet")
+async def label_sheet(
+    ctx: Annotated[HouseholdContext, Depends(require_household_role("viewer"))],
+    db: DbSession,
+) -> dict[str, Any]:
+    """Printable nickname / species stickers for active plants."""
+    from app.modules.labels.sheet import build_label_sheet
+    tz_name = ctx.household.timezone or "Europe/Amsterdam"
+    result = await db.execute(
+        select(Plant)
+        .options(selectinload(Plant.taxon))
+        .where(
+            Plant.household_id == ctx.household.id,
+            Plant.status == "active",
+        )
+        .order_by(Plant.nickname.asc())
+    )
+    plants = list(result.scalars())
+    return build_label_sheet(plants, timezone=tz_name, now=datetime.now(UTC))
+
+
 @router.get("/households/{household_id}/plants/{plant_id}/label.pdf")
 async def plant_label_pdf(
     plant_id: uuid.UUID,

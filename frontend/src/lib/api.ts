@@ -9,6 +9,7 @@ import type {
   Household,
   GardenWatch,
   DueCan,
+  LabelSheet,
   WeekRound,
   Invitation,
   LayoutSite,
@@ -429,6 +430,8 @@ export const api = {
     apiRequest<GardenWatch>(`/api/v1/households/${householdId}/garden-watch`),
   dueCan: (householdId: string) =>
     apiRequest<DueCan>(`/api/v1/households/${householdId}/due-can`),
+  labelSheet: (householdId: string) =>
+    apiRequest<LabelSheet>(`/api/v1/households/${householdId}/label-sheet`),
   listEvents: (householdId: string, opts?: { type?: string; limit?: number }) => {
     const params = new URLSearchParams();
     if (opts?.type) params.set("type", opts.type);
