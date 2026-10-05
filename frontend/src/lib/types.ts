@@ -905,3 +905,27 @@ export type FlushList = {
   dump: number;
   skip: number;
 };
+
+export type SplitListPlant = {
+  plant_id: string;
+  nickname: string;
+  emoji?: string | null;
+  environment: string;
+  scientific_name?: string | null;
+  split: string;
+  split_label: string;
+  skip: boolean;
+};
+
+export type SplitList = {
+  timezone: string;
+  generated_at: string;
+  household_name: string;
+  summary: string;
+  plants: SplitListPlant[];
+  total: number;
+  look: number;
+  divide: number;
+  pot: number;
+  skip: number;
+};

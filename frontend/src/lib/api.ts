@@ -26,6 +26,7 @@ import type {
   FrostList,
   GroomList,
   FlushList,
+  SplitList,
   WeekRound,
   Invitation,
   LayoutSite,
@@ -480,6 +481,8 @@ export const api = {
     apiRequest<GroomList>('/api/v1/households/' + householdId + '/groom-list'),
   flushList: (householdId: string) =>
     apiRequest<FlushList>('/api/v1/households/' + householdId + '/flush-list'),
+  splitList: (householdId: string) =>
+    apiRequest<SplitList>('/api/v1/households/' + householdId + '/split-list'),
   listEvents: (householdId: string, opts?: { type?: string; limit?: number }) => {
     const params = new URLSearchParams();
     if (opts?.type) params.set("type", opts.type);
