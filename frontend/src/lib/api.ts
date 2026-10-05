@@ -11,6 +11,7 @@ import type {
   DueCan,
   LabelSheet,
   AwaySheet,
+  NurseryRun,
   WeekRound,
   Invitation,
   LayoutSite,
@@ -435,6 +436,8 @@ export const api = {
     apiRequest<LabelSheet>(`/api/v1/households/${householdId}/label-sheet`),
   awaySheet: (householdId: string) =>
     apiRequest<AwaySheet>(`/api/v1/households/${householdId}/away-sheet`),
+  nurseryRun: (householdId: string) =>
+    apiRequest<NurseryRun>('/api/v1/households/' + householdId + '/nursery-run'),
   listEvents: (householdId: string, opts?: { type?: string; limit?: number }) => {
     const params = new URLSearchParams();
     if (opts?.type) params.set("type", opts.type);

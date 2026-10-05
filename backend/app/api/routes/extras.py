@@ -664,6 +664,32 @@ async def calendar(
 
 
 
+@router.get("/households/{household_id}/nursery-run")
+async def nursery_run(
+    ctx: Annotated[HouseholdContext, Depends(require_household_role("viewer"))],
+    db: DbSession,
+) -> dict[str, Any]:
+    """Printable garden-centre shopping list for active plants."""
+    from app.modules.shop.sheet import build_nursery_run
+    tz_name = ctx.household.timezone or "Europe/Amsterdam"
+    result = await db.execute(
+        select(Plant)
+        .options(selectinload(Plant.taxon))
+        .where(
+            Plant.household_id == ctx.household.id,
+            Plant.status == "active",
+        )
+        .order_by(Plant.nickname.asc())
+    )
+    plants = list(result.scalars())
+    return build_nursery_run(
+        plants,
+        timezone=tz_name,
+        now=datetime.now(UTC),
+        household_name=ctx.household.name,
+    )
+
+
 @router.get("/households/{household_id}/away-sheet")
 async def away_sheet(
     ctx: Annotated[HouseholdContext, Depends(require_household_role("viewer"))],

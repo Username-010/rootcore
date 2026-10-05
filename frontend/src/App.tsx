@@ -25,6 +25,7 @@ import { GardenWatchPage } from "@/pages/garden-watch-page";
 import { DueCanPage } from "@/pages/due-can-page";
 import { LabelsPage } from "@/pages/labels-page";
 import { AwayPage } from "@/pages/away-page";
+import { ShopPage } from "@/pages/shop-page";
 
 export default function App() {
   return (
@@ -46,6 +47,7 @@ export default function App() {
               <Route path="/due" element={<DueCanPage />} />
               <Route path="/labels" element={<LabelsPage />} />
               <Route path="/away" element={<AwayPage />} />
+              <Route path="/shop" element={<ShopPage />} />
               <Route path="/plants" element={<PlantsPage />} />
               <Route path="/catalog" element={<CatalogPage />} />
               <Route path="/plants/new" element={<PlantFormPage />} />

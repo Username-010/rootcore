@@ -16,6 +16,7 @@ import {
   Sprout,
   Tag,
   Luggage,
+  ShoppingBag,
   Users,
 } from "lucide-react";
 import { Link, NavLink, Outlet } from "react-router-dom";
@@ -113,6 +114,7 @@ export function AppShell() {
           <ShellNav to="/due" icon={AlarmClock} label="Due" />
           <ShellNav to="/labels" icon={Tag} label="Labels" />
           <ShellNav to="/away" icon={Luggage} label="Away" />
+          <ShellNav to="/shop" icon={ShoppingBag} label="Shop" />
           <ShellNav to="/plants" icon={Sprout} label="Plants" />
           <ShellNav to="/catalog" icon={BookOpen} label="Catalog" />
           <ShellNav to="/layout" icon={LayoutGrid} label="Map" />
@@ -135,6 +137,7 @@ export function AppShell() {
           <ShellNav to="/due" icon={AlarmClock} label="Due" mobile />
           <ShellNav to="/labels" icon={Tag} label="Labels" mobile />
           <ShellNav to="/away" icon={Luggage} label="Away" mobile />
+          <ShellNav to="/shop" icon={ShoppingBag} label="Shop" mobile />
           <ShellNav to="/plants" icon={Sprout} label="Plants" mobile />
           <ShellNav to="/catalog" icon={BookOpen} label="Catalog" mobile />
           <ShellNav to="/layout" icon={LayoutGrid} label="Map" mobile />

@@ -545,3 +545,32 @@ export type AwaySheet = {
   plants: AwaySheetPlant[];
   total: number;
 };
+
+export type NurseryRunPlant = {
+  plant_id: string;
+  nickname: string;
+  emoji?: string | null;
+  environment: string;
+  pot_size_liters?: number | null;
+  soil_type?: string | null;
+  need_soil: boolean;
+  need_pot: boolean;
+  need_feed: boolean;
+};
+
+export type NurseryRunSoil = {
+  soil_type: string;
+  plants: number;
+  bags: number;
+};
+
+export type NurseryRun = {
+  timezone: string;
+  generated_at: string;
+  household_name: string;
+  summary: string;
+  plants: NurseryRunPlant[];
+  soils: NurseryRunSoil[];
+  total: number;
+  soil_kinds: number;
+};
