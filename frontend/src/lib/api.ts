@@ -29,6 +29,7 @@ import type {
   SplitList,
   SowList,
   HardenList,
+  MulchList,
   WeekRound,
   Invitation,
   LayoutSite,
@@ -489,6 +490,8 @@ export const api = {
     apiRequest<SowList>('/api/v1/households/' + householdId + '/sow-list'),
   hardenList: (householdId: string) =>
     apiRequest<HardenList>('/api/v1/households/' + householdId + '/harden-list'),
+  mulchList: (householdId: string) =>
+    apiRequest<MulchList>('/api/v1/households/' + householdId + '/mulch-list'),
   listEvents: (householdId: string, opts?: { type?: string; limit?: number }) => {
     const params = new URLSearchParams();
     if (opts?.type) params.set("type", opts.type);

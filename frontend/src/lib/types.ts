@@ -977,3 +977,27 @@ export type HardenList = {
   wind: number;
   skip: number;
 };
+
+export type MulchListPlant = {
+  plant_id: string;
+  nickname: string;
+  emoji?: string | null;
+  environment: string;
+  scientific_name?: string | null;
+  mulch: string;
+  mulch_label: string;
+  skip: boolean;
+};
+
+export type MulchList = {
+  timezone: string;
+  generated_at: string;
+  household_name: string;
+  summary: string;
+  plants: MulchListPlant[];
+  total: number;
+  look: number;
+  crown: number;
+  mulch: number;
+  skip: number;
+};

@@ -1106,6 +1106,32 @@ async def harden_list(
     )
 
 
+@router.get("/households/{household_id}/mulch-list")
+async def mulch_list(
+    ctx: Annotated[HouseholdContext, Depends(require_household_role("viewer"))],
+    db: DbSession,
+) -> dict[str, Any]:
+    """Printable mulch list for soil cover."""
+    from app.modules.mulch.sheet import build_mulch_list
+    tz_name = ctx.household.timezone or "Europe/Amsterdam"
+    result = await db.execute(
+        select(Plant)
+        .options(selectinload(Plant.taxon))
+        .where(
+            Plant.household_id == ctx.household.id,
+            Plant.status == "active",
+        )
+        .order_by(Plant.nickname.asc())
+    )
+    plants = list(result.scalars())
+    return build_mulch_list(
+        plants,
+        timezone=tz_name,
+        now=datetime.now(UTC),
+        household_name=ctx.household.name,
+    )
+
+
 @router.get("/households/{household_id}/nursery-run")
 async def nursery_run(
     ctx: Annotated[HouseholdContext, Depends(require_household_role("viewer"))],
