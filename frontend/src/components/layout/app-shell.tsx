@@ -15,6 +15,7 @@ import {
   Snowflake,
   Sprout,
   Flower2,
+  Beaker,
   Tag,
   Luggage,
   ShoppingBag,
@@ -118,6 +119,7 @@ export function AppShell() {
           <ShellNav to="/shop" icon={ShoppingBag} label="Shop" />
           <ShellNav to="/cuttings" icon={Sprout} label="Cuttings" />
           <ShellNav to="/repot" icon={Flower2} label="Repot" />
+          <ShellNav to="/feed" icon={Beaker} label="Feed" />
           <ShellNav to="/plants" icon={Sprout} label="Plants" />
           <ShellNav to="/catalog" icon={BookOpen} label="Catalog" />
           <ShellNav to="/layout" icon={LayoutGrid} label="Map" />
@@ -143,6 +145,7 @@ export function AppShell() {
           <ShellNav to="/shop" icon={ShoppingBag} label="Shop" mobile />
           <ShellNav to="/cuttings" icon={Sprout} label="Cuttings" mobile />
           <ShellNav to="/repot" icon={Flower2} label="Repot" mobile />
+          <ShellNav to="/feed" icon={Beaker} label="Feed" mobile />
           <ShellNav to="/plants" icon={Sprout} label="Plants" mobile />
           <ShellNav to="/catalog" icon={BookOpen} label="Catalog" mobile />
           <ShellNav to="/layout" icon={LayoutGrid} label="Map" mobile />

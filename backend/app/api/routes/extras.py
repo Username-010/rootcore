@@ -716,6 +716,32 @@ async def repot_bench(
     )
 
 
+@router.get("/households/{household_id}/feed-mix")
+async def feed_mix(
+    ctx: Annotated[HouseholdContext, Depends(require_household_role("viewer"))],
+    db: DbSession,
+) -> dict[str, Any]:
+    """Printable fertiliser mix for active plants."""
+    from app.modules.feed.sheet import build_feed_mix
+    tz_name = ctx.household.timezone or "Europe/Amsterdam"
+    result = await db.execute(
+        select(Plant)
+        .options(selectinload(Plant.taxon))
+        .where(
+            Plant.household_id == ctx.household.id,
+            Plant.status == "active",
+        )
+        .order_by(Plant.nickname.asc())
+    )
+    plants = list(result.scalars())
+    return build_feed_mix(
+        plants,
+        timezone=tz_name,
+        now=datetime.now(UTC),
+        household_name=ctx.household.name,
+    )
+
+
 @router.get("/households/{household_id}/nursery-run")
 async def nursery_run(
     ctx: Annotated[HouseholdContext, Depends(require_household_role("viewer"))],

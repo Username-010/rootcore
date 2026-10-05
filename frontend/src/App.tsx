@@ -28,6 +28,7 @@ import { AwayPage } from "@/pages/away-page";
 import { ShopPage } from "@/pages/shop-page";
 import { CuttingsPage } from "@/pages/cuttings-page";
 import { RepotPage } from "@/pages/repot-page";
+import { FeedPage } from "@/pages/feed-page";
 
 export default function App() {
   return (
@@ -52,6 +53,7 @@ export default function App() {
               <Route path="/shop" element={<ShopPage />} />
               <Route path="/cuttings" element={<CuttingsPage />} />
               <Route path="/repot" element={<RepotPage />} />
+              <Route path="/feed" element={<FeedPage />} />
               <Route path="/plants" element={<PlantsPage />} />
               <Route path="/catalog" element={<CatalogPage />} />
               <Route path="/plants/new" element={<PlantFormPage />} />
