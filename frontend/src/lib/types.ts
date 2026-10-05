@@ -786,3 +786,27 @@ export type StakeList = {
   check: number;
   skip: number;
 };
+
+export type HarvestListPlant = {
+  plant_id: string;
+  nickname: string;
+  emoji?: string | null;
+  environment: string;
+  scientific_name?: string | null;
+  harvest: string;
+  harvest_label: string;
+  skip: boolean;
+};
+
+export type HarvestList = {
+  timezone: string;
+  generated_at: string;
+  household_name: string;
+  summary: string;
+  plants: HarvestListPlant[];
+  total: number;
+  leaf: number;
+  fruit: number;
+  look: number;
+  skip: number;
+};
