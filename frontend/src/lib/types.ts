@@ -715,3 +715,26 @@ export type DustList = {
   rinse: number;
   skip: number;
 };
+
+export type RotateListPlant = {
+  plant_id: string;
+  nickname: string;
+  emoji?: string | null;
+  environment: string;
+  scientific_name?: string | null;
+  rotate: string;
+  rotate_label: string;
+  skip: boolean;
+};
+
+export type RotateList = {
+  timezone: string;
+  generated_at: string;
+  household_name: string;
+  summary: string;
+  plants: RotateListPlant[];
+  total: number;
+  quarter: number;
+  half: number;
+  skip: number;
+};
