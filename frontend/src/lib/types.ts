@@ -858,3 +858,26 @@ export type FrostList = {
   dry: number;
   skip: number;
 };
+
+export type GroomListPlant = {
+  plant_id: string;
+  nickname: string;
+  emoji?: string | null;
+  environment: string;
+  scientific_name?: string | null;
+  groom: string;
+  groom_label: string;
+  skip: boolean;
+};
+
+export type GroomList = {
+  timezone: string;
+  generated_at: string;
+  household_name: string;
+  summary: string;
+  plants: GroomListPlant[];
+  total: number;
+  yellow: number;
+  bloom: number;
+  skip: number;
+};

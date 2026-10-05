@@ -976,6 +976,32 @@ async def frost_list(
     )
 
 
+@router.get("/households/{household_id}/groom-list")
+async def groom_list(
+    ctx: Annotated[HouseholdContext, Depends(require_household_role("viewer"))],
+    db: DbSession,
+) -> dict[str, Any]:
+    """Printable groom list for yellow leaves and spent blooms."""
+    from app.modules.groom.sheet import build_groom_list
+    tz_name = ctx.household.timezone or "Europe/Amsterdam"
+    result = await db.execute(
+        select(Plant)
+        .options(selectinload(Plant.taxon))
+        .where(
+            Plant.household_id == ctx.household.id,
+            Plant.status == "active",
+        )
+        .order_by(Plant.nickname.asc())
+    )
+    plants = list(result.scalars())
+    return build_groom_list(
+        plants,
+        timezone=tz_name,
+        now=datetime.now(UTC),
+        household_name=ctx.household.name,
+    )
+
+
 @router.get("/households/{household_id}/nursery-run")
 async def nursery_run(
     ctx: Annotated[HouseholdContext, Depends(require_household_role("viewer"))],

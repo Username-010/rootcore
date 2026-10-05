@@ -24,6 +24,7 @@ import type {
   HarvestList,
   LightMap,
   FrostList,
+  GroomList,
   WeekRound,
   Invitation,
   LayoutSite,
@@ -474,6 +475,8 @@ export const api = {
     apiRequest<LightMap>('/api/v1/households/' + householdId + '/light-map'),
   frostList: (householdId: string) =>
     apiRequest<FrostList>('/api/v1/households/' + householdId + '/frost-list'),
+  groomList: (householdId: string) =>
+    apiRequest<GroomList>('/api/v1/households/' + householdId + '/groom-list'),
   listEvents: (householdId: string, opts?: { type?: string; limit?: number }) => {
     const params = new URLSearchParams();
     if (opts?.type) params.set("type", opts.type);

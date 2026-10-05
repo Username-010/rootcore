@@ -545,6 +545,9 @@ export function DashboardPage() {
                 <Button asChild size="sm" variant="outline" className="rounded-xl">
                   <Link to="/frost">Frost</Link>
                 </Button>
+                <Button asChild size="sm" variant="outline" className="rounded-xl">
+                  <Link to="/groom">Groom</Link>
+                </Button>
                 {data.attention.length > 0 && (
                 <Button
                   size="sm"
