@@ -846,6 +846,32 @@ async def rotate_list(
     )
 
 
+@router.get("/households/{household_id}/pest-walk")
+async def pest_walk(
+    ctx: Annotated[HouseholdContext, Depends(require_household_role("viewer"))],
+    db: DbSession,
+) -> dict[str, Any]:
+    """Printable pest walk for active plants."""
+    from app.modules.pest.sheet import build_pest_walk
+    tz_name = ctx.household.timezone or "Europe/Amsterdam"
+    result = await db.execute(
+        select(Plant)
+        .options(selectinload(Plant.taxon))
+        .where(
+            Plant.household_id == ctx.household.id,
+            Plant.status == "active",
+        )
+        .order_by(Plant.nickname.asc())
+    )
+    plants = list(result.scalars())
+    return build_pest_walk(
+        plants,
+        timezone=tz_name,
+        now=datetime.now(UTC),
+        household_name=ctx.household.name,
+    )
+
+
 @router.get("/households/{household_id}/nursery-run")
 async def nursery_run(
     ctx: Annotated[HouseholdContext, Depends(require_household_role("viewer"))],
