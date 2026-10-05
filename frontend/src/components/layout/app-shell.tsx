@@ -30,6 +30,7 @@ import {
   Bean,
   Wind,
   Layers,
+  CircleDot,
   Tag,
   Luggage,
   ShoppingBag,
@@ -149,6 +150,7 @@ export function AppShell() {
           <ShellNav to="/sow" icon={Bean} label="Sow" />
           <ShellNav to="/harden" icon={Wind} label="Harden" />
           <ShellNav to="/mulch" icon={Layers} label="Mulch" />
+          <ShellNav to="/topdress" icon={CircleDot} label="Topdress" />
           <ShellNav to="/plants" icon={Sprout} label="Plants" />
           <ShellNav to="/catalog" icon={BookOpen} label="Catalog" />
           <ShellNav to="/layout" icon={LayoutGrid} label="Map" />
@@ -190,6 +192,7 @@ export function AppShell() {
           <ShellNav to="/sow" icon={Bean} label="Sow" mobile />
           <ShellNav to="/harden" icon={Wind} label="Harden" mobile />
           <ShellNav to="/mulch" icon={Layers} label="Mulch" mobile />
+          <ShellNav to="/topdress" icon={CircleDot} label="Topdress" mobile />
           <ShellNav to="/plants" icon={Sprout} label="Plants" mobile />
           <ShellNav to="/catalog" icon={BookOpen} label="Catalog" mobile />
           <ShellNav to="/layout" icon={LayoutGrid} label="Map" mobile />

@@ -1001,3 +1001,27 @@ export type MulchList = {
   mulch: number;
   skip: number;
 };
+
+export type TopdressListPlant = {
+  plant_id: string;
+  nickname: string;
+  emoji?: string | null;
+  environment: string;
+  scientific_name?: string | null;
+  topdress: string;
+  topdress_label: string;
+  skip: boolean;
+};
+
+export type TopdressList = {
+  timezone: string;
+  generated_at: string;
+  household_name: string;
+  summary: string;
+  plants: TopdressListPlant[];
+  total: number;
+  look: number;
+  thin: number;
+  topdress: number;
+  skip: number;
+};
