@@ -10,6 +10,7 @@ import type {
   GardenWatch,
   DueCan,
   LabelSheet,
+  AwaySheet,
   WeekRound,
   Invitation,
   LayoutSite,
@@ -432,6 +433,8 @@ export const api = {
     apiRequest<DueCan>(`/api/v1/households/${householdId}/due-can`),
   labelSheet: (householdId: string) =>
     apiRequest<LabelSheet>(`/api/v1/households/${householdId}/label-sheet`),
+  awaySheet: (householdId: string) =>
+    apiRequest<AwaySheet>(`/api/v1/households/${householdId}/away-sheet`),
   listEvents: (householdId: string, opts?: { type?: string; limit?: number }) => {
     const params = new URLSearchParams();
     if (opts?.type) params.set("type", opts.type);

@@ -526,3 +526,22 @@ export type LabelSheet = {
   cards: LabelSheetCard[];
   total: number;
 };
+
+export type AwaySheetPlant = {
+  plant_id: string;
+  nickname: string;
+  emoji?: string | null;
+  environment: string;
+  notes?: string | null;
+  pot_size_liters?: number | null;
+  soil_type?: string | null;
+};
+
+export type AwaySheet = {
+  timezone: string;
+  generated_at: string;
+  household_name: string;
+  summary: string;
+  plants: AwaySheetPlant[];
+  total: number;
+};

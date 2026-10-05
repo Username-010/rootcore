@@ -663,6 +663,32 @@ async def calendar(
 # --- QR labels ---
 
 
+
+@router.get("/households/{household_id}/away-sheet")
+async def away_sheet(
+    ctx: Annotated[HouseholdContext, Depends(require_household_role("viewer"))],
+    db: DbSession,
+) -> dict[str, Any]:
+    """Printable house-sitter list for active plants."""
+    from app.modules.away.sheet import build_away_sheet
+    tz_name = ctx.household.timezone or "Europe/Amsterdam"
+    result = await db.execute(
+        select(Plant)
+        .options(selectinload(Plant.taxon))
+        .where(
+            Plant.household_id == ctx.household.id,
+            Plant.status == "active",
+        )
+        .order_by(Plant.nickname.asc())
+    )
+    plants = list(result.scalars())
+    return build_away_sheet(
+        plants,
+        timezone=tz_name,
+        now=datetime.now(UTC),
+        household_name=ctx.household.name,
+    )
+
 @router.get("/households/{household_id}/label-sheet")
 async def label_sheet(
     ctx: Annotated[HouseholdContext, Depends(require_household_role("viewer"))],
