@@ -45,6 +45,7 @@ import { SowPage } from "@/pages/sow-page";
 import { HardenPage } from "@/pages/harden-page";
 import { MulchPage } from "@/pages/mulch-page";
 import { TopdressPage } from "@/pages/topdress-page";
+import { BottomPage } from "@/pages/bottom-page";
 
 export default function App() {
   return (
@@ -86,6 +87,7 @@ export default function App() {
               <Route path="/harden" element={<HardenPage />} />
               <Route path="/mulch" element={<MulchPage />} />
               <Route path="/topdress" element={<TopdressPage />} />
+              <Route path="/bottom" element={<BottomPage />} />
               <Route path="/plants" element={<PlantsPage />} />
               <Route path="/catalog" element={<CatalogPage />} />
               <Route path="/plants/new" element={<PlantFormPage />} />

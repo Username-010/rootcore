@@ -31,6 +31,7 @@ import type {
   HardenList,
   MulchList,
   TopdressList,
+  BottomList,
   WeekRound,
   Invitation,
   LayoutSite,
@@ -495,6 +496,8 @@ export const api = {
     apiRequest<MulchList>('/api/v1/households/' + householdId + '/mulch-list'),
   topdressList: (householdId: string) =>
     apiRequest<TopdressList>('/api/v1/households/' + householdId + '/topdress-list'),
+  bottomList: (householdId: string) =>
+    apiRequest<BottomList>('/api/v1/households/' + householdId + '/bottom-list'),
   listEvents: (householdId: string, opts?: { type?: string; limit?: number }) => {
     const params = new URLSearchParams();
     if (opts?.type) params.set("type", opts.type);
