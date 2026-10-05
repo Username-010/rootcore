@@ -25,6 +25,7 @@ import {
   Wheat,
   Sun,
   CloudSnow,
+  CloudRain,
   Tag,
   Luggage,
   ShoppingBag,
@@ -139,6 +140,7 @@ export function AppShell() {
           <ShellNav to="/light" icon={Sun} label="Light" />
           <ShellNav to="/frost" icon={CloudSnow} label="Frost" />
           <ShellNav to="/groom" icon={Leaf} label="Groom" />
+          <ShellNav to="/flush" icon={CloudRain} label="Flush" />
           <ShellNav to="/plants" icon={Sprout} label="Plants" />
           <ShellNav to="/catalog" icon={BookOpen} label="Catalog" />
           <ShellNav to="/layout" icon={LayoutGrid} label="Map" />
@@ -175,6 +177,7 @@ export function AppShell() {
           <ShellNav to="/light" icon={Sun} label="Light" mobile />
           <ShellNav to="/frost" icon={CloudSnow} label="Frost" mobile />
           <ShellNav to="/groom" icon={Leaf} label="Groom" mobile />
+          <ShellNav to="/flush" icon={CloudRain} label="Flush" mobile />
           <ShellNav to="/plants" icon={Sprout} label="Plants" mobile />
           <ShellNav to="/catalog" icon={BookOpen} label="Catalog" mobile />
           <ShellNav to="/layout" icon={LayoutGrid} label="Map" mobile />

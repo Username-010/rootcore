@@ -25,6 +25,7 @@ import type {
   LightMap,
   FrostList,
   GroomList,
+  FlushList,
   WeekRound,
   Invitation,
   LayoutSite,
@@ -477,6 +478,8 @@ export const api = {
     apiRequest<FrostList>('/api/v1/households/' + householdId + '/frost-list'),
   groomList: (householdId: string) =>
     apiRequest<GroomList>('/api/v1/households/' + householdId + '/groom-list'),
+  flushList: (householdId: string) =>
+    apiRequest<FlushList>('/api/v1/households/' + householdId + '/flush-list'),
   listEvents: (householdId: string, opts?: { type?: string; limit?: number }) => {
     const params = new URLSearchParams();
     if (opts?.type) params.set("type", opts.type);

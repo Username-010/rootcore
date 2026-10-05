@@ -881,3 +881,27 @@ export type GroomList = {
   bloom: number;
   skip: number;
 };
+
+export type FlushListPlant = {
+  plant_id: string;
+  nickname: string;
+  emoji?: string | null;
+  environment: string;
+  scientific_name?: string | null;
+  flush: string;
+  flush_label: string;
+  skip: boolean;
+};
+
+export type FlushList = {
+  timezone: string;
+  generated_at: string;
+  household_name: string;
+  summary: string;
+  plants: FlushListPlant[];
+  total: number;
+  soak: number;
+  drain: number;
+  dump: number;
+  skip: number;
+};

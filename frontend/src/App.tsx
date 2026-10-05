@@ -39,6 +39,7 @@ import { HarvestPage } from "@/pages/harvest-page";
 import { LightPage } from "@/pages/light-page";
 import { FrostPage } from "@/pages/frost-page";
 import { GroomPage } from "@/pages/groom-page";
+import { FlushPage } from "@/pages/flush-page";
 
 export default function App() {
   return (
@@ -74,6 +75,7 @@ export default function App() {
               <Route path="/light" element={<LightPage />} />
               <Route path="/frost" element={<FrostPage />} />
               <Route path="/groom" element={<GroomPage />} />
+              <Route path="/flush" element={<FlushPage />} />
               <Route path="/plants" element={<PlantsPage />} />
               <Route path="/catalog" element={<CatalogPage />} />
               <Route path="/plants/new" element={<PlantFormPage />} />
