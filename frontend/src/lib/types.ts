@@ -1073,3 +1073,27 @@ export type AirList = {
   fan: number;
   skip: number;
 };
+
+export type HumidityListPlant = {
+  plant_id: string;
+  nickname: string;
+  emoji?: string | null;
+  environment: string;
+  scientific_name?: string | null;
+  humidity: string;
+  humidity_label: string;
+  skip: boolean;
+};
+
+export type HumidityList = {
+  timezone: string;
+  generated_at: string;
+  household_name: string;
+  summary: string;
+  plants: HumidityListPlant[];
+  total: number;
+  look: number;
+  pebble: number;
+  humid: number;
+  skip: number;
+};

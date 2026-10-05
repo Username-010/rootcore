@@ -33,6 +33,7 @@ import {
   CircleDot,
   Bath,
   Fan,
+  Waves,
   Tag,
   Luggage,
   ShoppingBag,
@@ -155,6 +156,7 @@ export function AppShell() {
           <ShellNav to="/topdress" icon={CircleDot} label="Topdress" />
           <ShellNav to="/bottom" icon={Bath} label="Bottom" />
           <ShellNav to="/air" icon={Fan} label="Air" />
+          <ShellNav to="/humidity" icon={Waves} label="Humidity" />
           <ShellNav to="/plants" icon={Sprout} label="Plants" />
           <ShellNav to="/catalog" icon={BookOpen} label="Catalog" />
           <ShellNav to="/layout" icon={LayoutGrid} label="Map" />
@@ -199,6 +201,7 @@ export function AppShell() {
           <ShellNav to="/topdress" icon={CircleDot} label="Topdress" mobile />
           <ShellNav to="/bottom" icon={Bath} label="Bottom" mobile />
           <ShellNav to="/air" icon={Fan} label="Air" mobile />
+          <ShellNav to="/humidity" icon={Waves} label="Humidity" mobile />
           <ShellNav to="/plants" icon={Sprout} label="Plants" mobile />
           <ShellNav to="/catalog" icon={BookOpen} label="Catalog" mobile />
           <ShellNav to="/layout" icon={LayoutGrid} label="Map" mobile />
