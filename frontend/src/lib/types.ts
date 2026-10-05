@@ -574,3 +574,25 @@ export type NurseryRun = {
   total: number;
   soil_kinds: number;
 };
+
+export type CuttingsTrayPlant = {
+  plant_id: string;
+  nickname: string;
+  emoji?: string | null;
+  environment: string;
+  scientific_name?: string | null;
+  method: string;
+  method_label: string;
+  already_child: boolean;
+};
+
+export type CuttingsTray = {
+  timezone: string;
+  generated_at: string;
+  household_name: string;
+  summary: string;
+  plants: CuttingsTrayPlant[];
+  total: number;
+  water_jars: number;
+  soil_pots: number;
+};

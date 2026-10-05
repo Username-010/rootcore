@@ -12,6 +12,7 @@ import type {
   LabelSheet,
   AwaySheet,
   NurseryRun,
+  CuttingsTray,
   WeekRound,
   Invitation,
   LayoutSite,
@@ -438,6 +439,8 @@ export const api = {
     apiRequest<AwaySheet>(`/api/v1/households/${householdId}/away-sheet`),
   nurseryRun: (householdId: string) =>
     apiRequest<NurseryRun>('/api/v1/households/' + householdId + '/nursery-run'),
+  cuttingsTray: (householdId: string) =>
+    apiRequest<CuttingsTray>('/api/v1/households/' + householdId + '/cuttings-tray'),
   listEvents: (householdId: string, opts?: { type?: string; limit?: number }) => {
     const params = new URLSearchParams();
     if (opts?.type) params.set("type", opts.type);
