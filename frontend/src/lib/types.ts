@@ -1049,3 +1049,27 @@ export type BottomList = {
   drain: number;
   skip: number;
 };
+
+export type AirListPlant = {
+  plant_id: string;
+  nickname: string;
+  emoji?: string | null;
+  environment: string;
+  scientific_name?: string | null;
+  air: string;
+  air_label: string;
+  skip: boolean;
+};
+
+export type AirList = {
+  timezone: string;
+  generated_at: string;
+  household_name: string;
+  summary: string;
+  plants: AirListPlant[];
+  total: number;
+  look: number;
+  draft: number;
+  fan: number;
+  skip: number;
+};
