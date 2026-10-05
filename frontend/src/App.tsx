@@ -42,6 +42,7 @@ import { GroomPage } from "@/pages/groom-page";
 import { FlushPage } from "@/pages/flush-page";
 import { SplitPage } from "@/pages/split-page";
 import { SowPage } from "@/pages/sow-page";
+import { HardenPage } from "@/pages/harden-page";
 
 export default function App() {
   return (
@@ -80,6 +81,7 @@ export default function App() {
               <Route path="/flush" element={<FlushPage />} />
               <Route path="/split" element={<SplitPage />} />
               <Route path="/sow" element={<SowPage />} />
+              <Route path="/harden" element={<HardenPage />} />
               <Route path="/plants" element={<PlantsPage />} />
               <Route path="/catalog" element={<CatalogPage />} />
               <Route path="/plants/new" element={<PlantFormPage />} />
