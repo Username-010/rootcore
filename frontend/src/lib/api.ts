@@ -17,6 +17,7 @@ import type {
   FeedMix,
   PruneList,
   MistList,
+  DustList,
   WeekRound,
   Invitation,
   LayoutSite,
@@ -453,6 +454,8 @@ export const api = {
     apiRequest<PruneList>('/api/v1/households/' + householdId + '/prune-list'),
   mistList: (householdId: string) =>
     apiRequest<MistList>('/api/v1/households/' + householdId + '/mist-list'),
+  dustList: (householdId: string) =>
+    apiRequest<DustList>('/api/v1/households/' + householdId + '/dust-list'),
   listEvents: (householdId: string, opts?: { type?: string; limit?: number }) => {
     const params = new URLSearchParams();
     if (opts?.type) params.set("type", opts.type);

@@ -691,3 +691,27 @@ export type MistList = {
   pebble: number;
   skip: number;
 };
+
+export type DustListPlant = {
+  plant_id: string;
+  nickname: string;
+  emoji?: string | null;
+  environment: string;
+  scientific_name?: string | null;
+  dust: string;
+  dust_label: string;
+  skip: boolean;
+};
+
+export type DustList = {
+  timezone: string;
+  generated_at: string;
+  household_name: string;
+  summary: string;
+  plants: DustListPlant[];
+  total: number;
+  cloth: number;
+  damp: number;
+  rinse: number;
+  skip: number;
+};

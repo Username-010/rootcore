@@ -31,6 +31,7 @@ import { RepotPage } from "@/pages/repot-page";
 import { FeedPage } from "@/pages/feed-page";
 import { PrunePage } from "@/pages/prune-page";
 import { MistPage } from "@/pages/mist-page";
+import { DustPage } from "@/pages/dust-page";
 
 export default function App() {
   return (
@@ -58,6 +59,7 @@ export default function App() {
               <Route path="/feed" element={<FeedPage />} />
               <Route path="/prune" element={<PrunePage />} />
               <Route path="/mist" element={<MistPage />} />
+              <Route path="/dust" element={<DustPage />} />
               <Route path="/plants" element={<PlantsPage />} />
               <Route path="/catalog" element={<CatalogPage />} />
               <Route path="/plants/new" element={<PlantFormPage />} />
