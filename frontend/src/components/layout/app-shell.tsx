@@ -27,6 +27,7 @@ import {
   CloudSnow,
   CloudRain,
   Split,
+  Bean,
   Tag,
   Luggage,
   ShoppingBag,
@@ -143,6 +144,7 @@ export function AppShell() {
           <ShellNav to="/groom" icon={Leaf} label="Groom" />
           <ShellNav to="/flush" icon={CloudRain} label="Flush" />
           <ShellNav to="/split" icon={Split} label="Split" />
+          <ShellNav to="/sow" icon={Bean} label="Sow" />
           <ShellNav to="/plants" icon={Sprout} label="Plants" />
           <ShellNav to="/catalog" icon={BookOpen} label="Catalog" />
           <ShellNav to="/layout" icon={LayoutGrid} label="Map" />
@@ -181,6 +183,7 @@ export function AppShell() {
           <ShellNav to="/groom" icon={Leaf} label="Groom" mobile />
           <ShellNav to="/flush" icon={CloudRain} label="Flush" mobile />
           <ShellNav to="/split" icon={Split} label="Split" mobile />
+          <ShellNav to="/sow" icon={Bean} label="Sow" mobile />
           <ShellNav to="/plants" icon={Sprout} label="Plants" mobile />
           <ShellNav to="/catalog" icon={BookOpen} label="Catalog" mobile />
           <ShellNav to="/layout" icon={LayoutGrid} label="Map" mobile />

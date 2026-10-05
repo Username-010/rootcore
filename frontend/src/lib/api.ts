@@ -27,6 +27,7 @@ import type {
   GroomList,
   FlushList,
   SplitList,
+  SowList,
   WeekRound,
   Invitation,
   LayoutSite,
@@ -483,6 +484,8 @@ export const api = {
     apiRequest<FlushList>('/api/v1/households/' + householdId + '/flush-list'),
   splitList: (householdId: string) =>
     apiRequest<SplitList>('/api/v1/households/' + householdId + '/split-list'),
+  sowList: (householdId: string) =>
+    apiRequest<SowList>('/api/v1/households/' + householdId + '/sow-list'),
   listEvents: (householdId: string, opts?: { type?: string; limit?: number }) => {
     const params = new URLSearchParams();
     if (opts?.type) params.set("type", opts.type);
