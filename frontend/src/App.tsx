@@ -36,6 +36,7 @@ import { RotatePage } from "@/pages/rotate-page";
 import { PestPage } from "@/pages/pest-page";
 import { StakePage } from "@/pages/stake-page";
 import { HarvestPage } from "@/pages/harvest-page";
+import { LightPage } from "@/pages/light-page";
 
 export default function App() {
   return (
@@ -68,6 +69,7 @@ export default function App() {
               <Route path="/pest" element={<PestPage />} />
               <Route path="/stake" element={<StakePage />} />
               <Route path="/harvest" element={<HarvestPage />} />
+              <Route path="/light" element={<LightPage />} />
               <Route path="/plants" element={<PlantsPage />} />
               <Route path="/catalog" element={<CatalogPage />} />
               <Route path="/plants/new" element={<PlantFormPage />} />

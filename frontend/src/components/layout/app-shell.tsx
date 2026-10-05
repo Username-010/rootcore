@@ -23,6 +23,7 @@ import {
   Bug,
   Milestone,
   Wheat,
+  Sun,
   Tag,
   Luggage,
   ShoppingBag,
@@ -134,6 +135,7 @@ export function AppShell() {
           <ShellNav to="/pest" icon={Bug} label="Pest" />
           <ShellNav to="/stake" icon={Milestone} label="Stake" />
           <ShellNav to="/harvest" icon={Wheat} label="Harvest" />
+          <ShellNav to="/light" icon={Sun} label="Light" />
           <ShellNav to="/plants" icon={Sprout} label="Plants" />
           <ShellNav to="/catalog" icon={BookOpen} label="Catalog" />
           <ShellNav to="/layout" icon={LayoutGrid} label="Map" />
@@ -167,6 +169,7 @@ export function AppShell() {
           <ShellNav to="/pest" icon={Bug} label="Pest" mobile />
           <ShellNav to="/stake" icon={Milestone} label="Stake" mobile />
           <ShellNav to="/harvest" icon={Wheat} label="Harvest" mobile />
+          <ShellNav to="/light" icon={Sun} label="Light" mobile />
           <ShellNav to="/plants" icon={Sprout} label="Plants" mobile />
           <ShellNav to="/catalog" icon={BookOpen} label="Catalog" mobile />
           <ShellNav to="/layout" icon={LayoutGrid} label="Map" mobile />

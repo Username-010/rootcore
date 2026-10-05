@@ -810,3 +810,27 @@ export type HarvestList = {
   look: number;
   skip: number;
 };
+
+export type LightMapPlant = {
+  plant_id: string;
+  nickname: string;
+  emoji?: string | null;
+  environment: string;
+  scientific_name?: string | null;
+  light: string;
+  light_label: string;
+  skip: boolean;
+};
+
+export type LightMap = {
+  timezone: string;
+  generated_at: string;
+  household_name: string;
+  summary: string;
+  plants: LightMapPlant[];
+  total: number;
+  shade: number;
+  bright: number;
+  direct: number;
+  skip: number;
+};

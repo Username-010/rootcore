@@ -22,6 +22,7 @@ import type {
   PestWalk,
   StakeList,
   HarvestList,
+  LightMap,
   WeekRound,
   Invitation,
   LayoutSite,
@@ -468,6 +469,8 @@ export const api = {
     apiRequest<StakeList>('/api/v1/households/' + householdId + '/stake-list'),
   harvestList: (householdId: string) =>
     apiRequest<HarvestList>('/api/v1/households/' + householdId + '/harvest-list'),
+  lightMap: (householdId: string) =>
+    apiRequest<LightMap>('/api/v1/households/' + householdId + '/light-map'),
   listEvents: (householdId: string, opts?: { type?: string; limit?: number }) => {
     const params = new URLSearchParams();
     if (opts?.type) params.set("type", opts.type);
