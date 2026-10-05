@@ -596,3 +596,27 @@ export type CuttingsTray = {
   water_jars: number;
   soil_pots: number;
 };
+
+export type RepotBenchPlant = {
+  plant_id: string;
+  nickname: string;
+  emoji?: string | null;
+  environment: string;
+  scientific_name?: string | null;
+  pot_size_liters?: number | null;
+  pot_material?: string | null;
+  next_pot_liters?: number | null;
+  next_label: string;
+  needs_measure: boolean;
+};
+
+export type RepotBench = {
+  timezone: string;
+  generated_at: string;
+  household_name: string;
+  summary: string;
+  plants: RepotBenchPlant[];
+  total: number;
+  sized: number;
+  needs_measure: number;
+};
