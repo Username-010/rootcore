@@ -29,6 +29,7 @@ import { ShopPage } from "@/pages/shop-page";
 import { CuttingsPage } from "@/pages/cuttings-page";
 import { RepotPage } from "@/pages/repot-page";
 import { FeedPage } from "@/pages/feed-page";
+import { PrunePage } from "@/pages/prune-page";
 
 export default function App() {
   return (
@@ -54,6 +55,7 @@ export default function App() {
               <Route path="/cuttings" element={<CuttingsPage />} />
               <Route path="/repot" element={<RepotPage />} />
               <Route path="/feed" element={<FeedPage />} />
+              <Route path="/prune" element={<PrunePage />} />
               <Route path="/plants" element={<PlantsPage />} />
               <Route path="/catalog" element={<CatalogPage />} />
               <Route path="/plants/new" element={<PlantFormPage />} />

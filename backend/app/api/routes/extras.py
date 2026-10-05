@@ -742,6 +742,32 @@ async def feed_mix(
     )
 
 
+@router.get("/households/{household_id}/prune-list")
+async def prune_list(
+    ctx: Annotated[HouseholdContext, Depends(require_household_role("viewer"))],
+    db: DbSession,
+) -> dict[str, Any]:
+    """Printable prune list for active plants."""
+    from app.modules.prune.sheet import build_prune_list
+    tz_name = ctx.household.timezone or "Europe/Amsterdam"
+    result = await db.execute(
+        select(Plant)
+        .options(selectinload(Plant.taxon))
+        .where(
+            Plant.household_id == ctx.household.id,
+            Plant.status == "active",
+        )
+        .order_by(Plant.nickname.asc())
+    )
+    plants = list(result.scalars())
+    return build_prune_list(
+        plants,
+        timezone=tz_name,
+        now=datetime.now(UTC),
+        household_name=ctx.household.name,
+    )
+
+
 @router.get("/households/{household_id}/nursery-run")
 async def nursery_run(
     ctx: Annotated[HouseholdContext, Depends(require_household_role("viewer"))],

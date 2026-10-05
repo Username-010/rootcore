@@ -15,6 +15,7 @@ import type {
   CuttingsTray,
   RepotBench,
   FeedMix,
+  PruneList,
   WeekRound,
   Invitation,
   LayoutSite,
@@ -447,6 +448,8 @@ export const api = {
     apiRequest<RepotBench>('/api/v1/households/' + householdId + '/repot-bench'),
   feedMix: (householdId: string) =>
     apiRequest<FeedMix>('/api/v1/households/' + householdId + '/feed-mix'),
+  pruneList: (householdId: string) =>
+    apiRequest<PruneList>('/api/v1/households/' + householdId + '/prune-list'),
   listEvents: (householdId: string, opts?: { type?: string; limit?: number }) => {
     const params = new URLSearchParams();
     if (opts?.type) params.set("type", opts.type);
