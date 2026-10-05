@@ -20,6 +20,7 @@ import type {
   DustList,
   RotateList,
   PestWalk,
+  StakeList,
   WeekRound,
   Invitation,
   LayoutSite,
@@ -462,6 +463,8 @@ export const api = {
     apiRequest<RotateList>('/api/v1/households/' + householdId + '/rotate-list'),
   pestWalk: (householdId: string) =>
     apiRequest<PestWalk>('/api/v1/households/' + householdId + '/pest-walk'),
+  stakeList: (householdId: string) =>
+    apiRequest<StakeList>('/api/v1/households/' + householdId + '/stake-list'),
   listEvents: (householdId: string, opts?: { type?: string; limit?: number }) => {
     const params = new URLSearchParams();
     if (opts?.type) params.set("type", opts.type);

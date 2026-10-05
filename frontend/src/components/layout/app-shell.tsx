@@ -21,6 +21,7 @@ import {
   Brush,
   RotateCw,
   Bug,
+  Milestone,
   Tag,
   Luggage,
   ShoppingBag,
@@ -130,6 +131,7 @@ export function AppShell() {
           <ShellNav to="/dust" icon={Brush} label="Dust" />
           <ShellNav to="/rotate" icon={RotateCw} label="Rotate" />
           <ShellNav to="/pest" icon={Bug} label="Pest" />
+          <ShellNav to="/stake" icon={Milestone} label="Stake" />
           <ShellNav to="/plants" icon={Sprout} label="Plants" />
           <ShellNav to="/catalog" icon={BookOpen} label="Catalog" />
           <ShellNav to="/layout" icon={LayoutGrid} label="Map" />
@@ -161,6 +163,7 @@ export function AppShell() {
           <ShellNav to="/dust" icon={Brush} label="Dust" mobile />
           <ShellNav to="/rotate" icon={RotateCw} label="Rotate" mobile />
           <ShellNav to="/pest" icon={Bug} label="Pest" mobile />
+          <ShellNav to="/stake" icon={Milestone} label="Stake" mobile />
           <ShellNav to="/plants" icon={Sprout} label="Plants" mobile />
           <ShellNav to="/catalog" icon={BookOpen} label="Catalog" mobile />
           <ShellNav to="/layout" icon={LayoutGrid} label="Map" mobile />

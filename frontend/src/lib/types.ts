@@ -762,3 +762,27 @@ export type PestWalk = {
   isolate: number;
   skip: number;
 };
+
+export type StakeListPlant = {
+  plant_id: string;
+  nickname: string;
+  emoji?: string | null;
+  environment: string;
+  scientific_name?: string | null;
+  stake: string;
+  stake_label: string;
+  skip: boolean;
+};
+
+export type StakeList = {
+  timezone: string;
+  generated_at: string;
+  household_name: string;
+  summary: string;
+  plants: StakeListPlant[];
+  total: number;
+  moss: number;
+  cane: number;
+  check: number;
+  skip: number;
+};
