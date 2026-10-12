@@ -1,4 +1,5 @@
 import {
+  Search,
   BarChart3,
   BookOpen,
   CalendarDays,
@@ -129,6 +130,7 @@ export function AppShell() {
           aria-label="Main"
         >
           <ShellNav to="/" icon={Home} label="Today" end />
+          <ShellNav to="/finder" icon={Search} label="Find care" />
           <ShellNav to="/round" icon={Droplets} label="Round" />
           <ShellNav to="/watch" icon={Snowflake} label="Watch" />
           <ShellNav to="/due" icon={AlarmClock} label="Due" />
@@ -174,6 +176,7 @@ export function AppShell() {
           aria-label="Mobile"
         >
           <ShellNav to="/" icon={Home} label="Today" end mobile />
+          <ShellNav to="/finder" icon={Search} label="Find care" mobile />
           <ShellNav to="/round" icon={Droplets} label="Round" mobile />
           <ShellNav to="/watch" icon={Snowflake} label="Watch" mobile />
           <ShellNav to="/due" icon={AlarmClock} label="Due" mobile />

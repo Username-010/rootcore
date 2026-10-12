@@ -495,6 +495,9 @@ export function DashboardPage() {
               </div>
               <div className="flex gap-2 shrink-0 print:hidden">
                 <Button asChild size="sm" variant="outline" className="rounded-xl">
+                  <Link to="/finder">Find care</Link>
+                </Button>
+                <Button asChild size="sm" variant="outline" className="rounded-xl">
                   <Link to="/round">Week round</Link>
                 </Button>
                 <Button asChild size="sm" variant="outline" className="rounded-xl">

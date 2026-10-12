@@ -49,6 +49,8 @@ import { BottomPage } from "@/pages/bottom-page";
 import { AirPage } from "@/pages/air-page";
 import { HumidityPage } from "@/pages/humidity-page";
 
+import { FinderPage } from "@/pages/finder-page";
+
 export default function App() {
   return (
     <AuthProvider>
@@ -64,6 +66,7 @@ export default function App() {
           <Route element={<RequireAuth />}>
             <Route element={<AppShell />}>
               <Route path="/" element={<DashboardPage />} />
+              <Route path="/finder" element={<FinderPage />} />
               <Route path="/round" element={<WeekRoundPage />} />
               <Route path="/watch" element={<GardenWatchPage />} />
               <Route path="/due" element={<DueCanPage />} />
