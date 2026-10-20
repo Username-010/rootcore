@@ -170,45 +170,66 @@ export function AppShell() {
           <ShellNav to="/settings" icon={Settings} label="Settings" />
         </nav>
 
-        {/* Mobile nav */}
+        {/* Four everyday destinations; everything else remains one tap away. */}
         <nav
-          className="md:hidden flex border-t border-border/80 px-1 py-1 gap-0.5 justify-around overflow-x-auto"
+          className="relative md:hidden grid grid-cols-5 items-start border-t border-border/80 px-1 py-1"
           aria-label="Mobile"
         >
           <ShellNav to="/" icon={Home} label="Today" end mobile />
           <ShellNav to="/finder" icon={Search} label="Find care" mobile />
-          <ShellNav to="/round" icon={Droplets} label="Round" mobile />
-          <ShellNav to="/watch" icon={Snowflake} label="Watch" mobile />
-          <ShellNav to="/due" icon={AlarmClock} label="Due" mobile />
-          <ShellNav to="/labels" icon={Tag} label="Labels" mobile />
-          <ShellNav to="/away" icon={Luggage} label="Away" mobile />
-          <ShellNav to="/shop" icon={ShoppingBag} label="Shop" mobile />
-          <ShellNav to="/cuttings" icon={Sprout} label="Cuttings" mobile />
-          <ShellNav to="/repot" icon={Flower2} label="Repot" mobile />
-          <ShellNav to="/feed" icon={Beaker} label="Feed" mobile />
-          <ShellNav to="/prune" icon={Scissors} label="Prune" mobile />
-          <ShellNav to="/mist" icon={CloudFog} label="Mist" mobile />
-          <ShellNav to="/dust" icon={Brush} label="Dust" mobile />
-          <ShellNav to="/rotate" icon={RotateCw} label="Rotate" mobile />
-          <ShellNav to="/pest" icon={Bug} label="Pest" mobile />
-          <ShellNav to="/stake" icon={Milestone} label="Stake" mobile />
-          <ShellNav to="/harvest" icon={Wheat} label="Harvest" mobile />
-          <ShellNav to="/light" icon={Sun} label="Light" mobile />
-          <ShellNav to="/frost" icon={CloudSnow} label="Frost" mobile />
-          <ShellNav to="/groom" icon={Leaf} label="Groom" mobile />
-          <ShellNav to="/flush" icon={CloudRain} label="Flush" mobile />
-          <ShellNav to="/split" icon={Split} label="Split" mobile />
-          <ShellNav to="/sow" icon={Bean} label="Sow" mobile />
-          <ShellNav to="/harden" icon={Wind} label="Harden" mobile />
-          <ShellNav to="/mulch" icon={Layers} label="Mulch" mobile />
-          <ShellNav to="/topdress" icon={CircleDot} label="Topdress" mobile />
-          <ShellNav to="/bottom" icon={Bath} label="Bottom" mobile />
-          <ShellNav to="/air" icon={Fan} label="Air" mobile />
-          <ShellNav to="/humidity" icon={Waves} label="Humidity" mobile />
           <ShellNav to="/plants" icon={Sprout} label="Plants" mobile />
-          <ShellNav to="/catalog" icon={BookOpen} label="Catalog" mobile />
-          <ShellNav to="/layout" icon={LayoutGrid} label="Map" mobile />
-          <ShellNav to="/settings" icon={Settings} label="More" mobile />
+          <ShellNav to="/tasks" icon={ListTodo} label="Tasks" mobile />
+          <details className="group" onClick={(event) => {
+            if ((event.target as HTMLElement).closest("a")) event.currentTarget.open = false;
+          }}>
+            <summary
+              aria-label="More tools and pages"
+              className="flex min-h-11 cursor-pointer list-none flex-col items-center gap-0.5 rounded-xl px-2 py-1.5 text-[11px] font-medium text-muted-foreground hover:bg-muted focus-visible:outline-2 focus-visible:outline-primary [&::-webkit-details-marker]:hidden"
+            >
+              <ChevronDown className="h-4 w-4 group-open:rotate-180" aria-hidden />
+              More
+            </summary>
+            <div className="absolute inset-x-0 top-full max-h-[65dvh] overflow-y-auto border-b border-border bg-card p-3 shadow-lg">
+              <p className="mb-2 text-xs font-semibold text-muted-foreground">More tools and pages</p>
+              <div className="grid grid-cols-2 gap-1">
+                <ShellNav to="/round" icon={Droplets} label="Round" />
+                <ShellNav to="/watch" icon={Snowflake} label="Watch" />
+                <ShellNav to="/due" icon={AlarmClock} label="Due" />
+                <ShellNav to="/labels" icon={Tag} label="Labels" />
+                <ShellNav to="/away" icon={Luggage} label="Away" />
+                <ShellNav to="/shop" icon={ShoppingBag} label="Shop" />
+                <ShellNav to="/cuttings" icon={Sprout} label="Cuttings" />
+                <ShellNav to="/repot" icon={Flower2} label="Repot" />
+                <ShellNav to="/feed" icon={Beaker} label="Feed" />
+                <ShellNav to="/prune" icon={Scissors} label="Prune" />
+                <ShellNav to="/mist" icon={CloudFog} label="Mist" />
+                <ShellNav to="/dust" icon={Brush} label="Dust" />
+                <ShellNav to="/rotate" icon={RotateCw} label="Rotate" />
+                <ShellNav to="/pest" icon={Bug} label="Pest" />
+                <ShellNav to="/stake" icon={Milestone} label="Stake" />
+                <ShellNav to="/harvest" icon={Wheat} label="Harvest" />
+                <ShellNav to="/light" icon={Sun} label="Light" />
+                <ShellNav to="/frost" icon={CloudSnow} label="Frost" />
+                <ShellNav to="/groom" icon={Leaf} label="Groom" />
+                <ShellNav to="/flush" icon={CloudRain} label="Flush" />
+                <ShellNav to="/split" icon={Split} label="Split" />
+                <ShellNav to="/sow" icon={Bean} label="Sow" />
+                <ShellNav to="/harden" icon={Wind} label="Harden" />
+                <ShellNav to="/mulch" icon={Layers} label="Mulch" />
+                <ShellNav to="/topdress" icon={CircleDot} label="Topdress" />
+                <ShellNav to="/bottom" icon={Bath} label="Bottom" />
+                <ShellNav to="/air" icon={Fan} label="Air" />
+                <ShellNav to="/humidity" icon={Waves} label="Humidity" />
+                <ShellNav to="/catalog" icon={BookOpen} label="Catalog" />
+                <ShellNav to="/layout" icon={LayoutGrid} label="Map" />
+                <ShellNav to="/calendar" icon={CalendarDays} label="Calendar" />
+                <ShellNav to="/stats" icon={BarChart3} label="Stats" />
+                <ShellNav to="/timeline" icon={History} label="History" />
+                <ShellNav to="/household" icon={Users} label="Homes" />
+                <ShellNav to="/settings" icon={Settings} label="Settings" />
+              </div>
+            </div>
+          </details>
         </nav>
       </header>
 
