@@ -32,7 +32,7 @@ describe("mobile navigation", () => {
     const paths = (markup: string) => [...markup.matchAll(/href="([^"]+)"/g)].map((match) => match[1]).sort();
     expect(paths(html)).toEqual(paths(desktop));
     expect(new Set(paths(html)).size).toBe(paths(html).length);
-    for (const path of ["/calendar", "/timeline", "/stats", "/household", "/settings", "/round", "/humidity"]) {
+    for (const path of ["/sensors", "/calendar", "/timeline", "/stats", "/household", "/settings", "/round", "/humidity"]) {
       expect(html).toContain(`href="${path}"`);
     }
   });

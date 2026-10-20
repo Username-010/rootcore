@@ -3,7 +3,7 @@
 from functools import lru_cache
 from typing import Literal
 
-from pydantic import Field, field_validator
+from pydantic import Field, SecretStr, field_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
@@ -17,7 +17,7 @@ class Settings(BaseSettings):
     app_name: str = "RootCore"
     app_env: Literal["development", "production", "test"] = "development"
     app_debug: bool = False
-    app_version: str = "0.1.0"
+    app_version: str = "0.2.0"
     public_base_url: str = "http://localhost:8000"
     cors_origins: str = "http://localhost:5173,http://localhost:8000"
     registration_mode: Literal["open", "invite", "closed"] = "open"
@@ -35,6 +35,10 @@ class Settings(BaseSettings):
     max_upload_mb: int = 15
 
     plantnet_api_key: str | None = None
+
+    rootcore_ha_url: str | None = None
+    rootcore_ha_token: SecretStr | None = None
+    rootcore_ha_household_id: str | None = None
 
     api_host: str = "0.0.0.0"
     api_port: int = 8000

@@ -10,9 +10,10 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 
 from app import __version__
-from app.api.routes import auth, care, extras, health, households, meta, plants
+from app.api.routes import auth, care, extras, health, households, meta, plants, sensors
 from app.core.config import get_settings
 from app.core.logging import setup_logging
+from app.core.sensor_body_limit import SensorBodyLimitMiddleware
 from app.db.session import AsyncSessionLocal
 from app.modules.households import models as household_models  # noqa: F401
 from app.modules.identity import models as identity_models  # noqa: F401
@@ -66,6 +67,7 @@ def create_app() -> FastAPI:
         openapi_url="/api/openapi.json",
     )
 
+    application.add_middleware(SensorBodyLimitMiddleware)
     application.add_middleware(
         CORSMiddleware,
         allow_origins=settings.cors_origin_list,
@@ -81,6 +83,7 @@ def create_app() -> FastAPI:
     application.include_router(plants.router)
     application.include_router(care.router)
     application.include_router(extras.router)
+    application.include_router(sensors.router)
 
     # Production: serve built SPA (assets + SPA fallback)
     if settings.static_dir:

@@ -208,9 +208,10 @@ async def list_plants(
     tag: str | None = None,
     limit: int = Query(50, ge=1, le=200),
     offset: int = Query(0, ge=0),
+    backfill_covers: bool = Query(True),
 ) -> PaginatedPlants:
     # First page: backfill a few missing covers so the grid isn't empty
-    if offset == 0 and not q:
+    if backfill_covers and offset == 0 and not q:
         try:
             settings = ctx.household.settings or {}
             if settings.get("auto_cover_images", True):

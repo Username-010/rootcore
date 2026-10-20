@@ -16,6 +16,12 @@
 
 ---
 
+## New in 0.2.0: sensors & integrations
+
+**Sensors** (mobile: **More → Sensors**) connects real Home Assistant readings to your existing plants: search device channels, view source-time history graphs and link sensors manually. Tuya Cloud / Tuya Local / LocalTuya, ESPHome and MQTT/Zigbee work **through Home Assistant**, not unimplemented native adapters. Tokens stay server-side; one admin-managed connection is explicitly scoped to one household. Missing lux is never displayed as zero and uncalibrated humidity does not trigger watering advice.
+
+See [setup, capabilities, security and plugin contract](docs/INTEGRATIONS.md) and [release notes](CHANGELOG.md).
+
 ## Why RootCore?
 
 Most plant apps are cloud-only inventory. RootCore is built for **self-hosting**:

@@ -12,7 +12,7 @@ async def test_meta(client):
     assert response.status_code == 200
     data = response.json()
     assert data["name"] == "RootCore"
-    assert data["version"] == "0.1.0"
+    assert data["version"] == "0.2.0"
     assert data["registration_mode"] in {"open", "invite", "closed"}
     assert "initialized" in data
     assert "features" in data

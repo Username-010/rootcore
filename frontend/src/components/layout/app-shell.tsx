@@ -1,5 +1,6 @@
 import {
   Search,
+  Radio,
   BarChart3,
   BookOpen,
   CalendarDays,
@@ -132,6 +133,7 @@ export function AppShell() {
           <ShellNav to="/" icon={Home} label="Today" end />
           <ShellNav to="/finder" icon={Search} label="Find care" />
           <ShellNav to="/round" icon={Droplets} label="Round" />
+          <ShellNav to="/sensors" icon={Radio} label="Sensors" />
           <ShellNav to="/watch" icon={Snowflake} label="Watch" />
           <ShellNav to="/due" icon={AlarmClock} label="Due" />
           <ShellNav to="/labels" icon={Tag} label="Labels" />
@@ -193,7 +195,8 @@ export function AppShell() {
               <p className="mb-2 text-xs font-semibold text-muted-foreground">More tools and pages</p>
               <div className="grid grid-cols-2 gap-1">
                 <ShellNav to="/round" icon={Droplets} label="Round" />
-                <ShellNav to="/watch" icon={Snowflake} label="Watch" />
+                <ShellNav to="/sensors" icon={Radio} label="Sensors" />
+          <ShellNav to="/watch" icon={Snowflake} label="Watch" />
                 <ShellNav to="/due" icon={AlarmClock} label="Due" />
                 <ShellNav to="/labels" icon={Tag} label="Labels" />
                 <ShellNav to="/away" icon={Luggage} label="Away" />

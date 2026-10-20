@@ -49,6 +49,7 @@ import { BottomPage } from "@/pages/bottom-page";
 import { AirPage } from "@/pages/air-page";
 import { HumidityPage } from "@/pages/humidity-page";
 
+import { SensorsPage } from "@/pages/sensors-page";
 import { FinderPage } from "@/pages/finder-page";
 
 export default function App() {
@@ -68,6 +69,7 @@ export default function App() {
               <Route path="/" element={<DashboardPage />} />
               <Route path="/finder" element={<FinderPage />} />
               <Route path="/round" element={<WeekRoundPage />} />
+              <Route path="/sensors" element={<SensorsPage />} />
               <Route path="/watch" element={<GardenWatchPage />} />
               <Route path="/due" element={<DueCanPage />} />
               <Route path="/labels" element={<LabelsPage />} />

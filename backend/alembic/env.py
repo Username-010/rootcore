@@ -10,6 +10,7 @@ from sqlalchemy.ext.asyncio import async_engine_from_config
 
 from app.core.config import get_settings
 from app.db.base import Base
+from app.modules.sensors.models import SensorBinding  # noqa: F401
 from app.modules.identity.models import RefreshToken, User  # noqa: F401
 from app.modules.households.models import Household, Invitation, Membership  # noqa: F401
 from app.modules.taxonomy.models import CareProfile, Taxon  # noqa: F401

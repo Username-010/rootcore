@@ -658,3 +658,10 @@ GET  /api/v1/households/{hid}/plants/{pid}/watering
 ---
 
 *Implementation generates live OpenAPI from code. This document is the contract; if code and doc diverge, fix code or update this file in the same PR.*
+
+
+## Implemented sensor endpoints (0.2.0)
+
+The current sensor API, role matrix, limits and examples are documented in [docs/INTEGRATIONS.md](docs/INTEGRATIONS.md#api-added-in-020). All sensor routes require household membership; the Home Assistant connection is server-configured and available only to its explicitly authorized household. No token is returned by sensor APIs.
+
+Plant listing accepts `backfill_covers=false` for read-only selectors; the ordinary plant browser retains its existing default.
