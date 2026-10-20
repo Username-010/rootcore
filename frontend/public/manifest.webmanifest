@@ -1,0 +1,17 @@
+{
+  "name": "RootCore",
+  "short_name": "RootCore",
+  "description": "Self-hosted plant care",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f4ef",
+  "theme_color": "#2f8f4e",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

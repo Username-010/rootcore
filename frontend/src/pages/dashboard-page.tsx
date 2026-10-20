@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { useAuth } from "@/contexts/auth-context";
 import { api, ApiError } from "@/lib/api";
+import { showDueNotification } from "@/lib/device-notify";
 import { weatherCodeEmoji } from "@/lib/care-labels";
 import type { Dashboard, GardenWatch } from "@/lib/types";
 import { amountCopy, formatNextWater, urgencyCopy } from "@/lib/watering-copy";
@@ -44,6 +45,10 @@ export function DashboardPage() {
   useEffect(() => {
     void load();
   }, [load]);
+
+  useEffect(() => {
+    if (data?.attention?.length) showDueNotification(data.attention.length);
+  }, [data]);
 
   async function completeTask(taskId: string) {
     if (!activeHousehold) return;
@@ -501,6 +506,12 @@ export function DashboardPage() {
                   <Link to="/round">Week round</Link>
                 </Button>
                 <Button asChild size="sm" variant="outline" className="rounded-xl">
+                  <Link to="/sensors">Sensors</Link>
+                </Button>
+                <details className="rounded-xl border border-border/80 bg-background px-3 py-1.5 text-sm">
+                  <summary className="cursor-pointer font-medium text-muted-foreground">More care tools</summary>
+                  <div className="mt-2 flex flex-wrap gap-2 pb-1">
+                <Button asChild size="sm" variant="outline" className="rounded-xl">
                   <Link to="/due">Due can</Link>
                 </Button>
                 <Button asChild size="sm" variant="outline" className="rounded-xl">
@@ -578,6 +589,8 @@ export function DashboardPage() {
                 <Button asChild size="sm" variant="outline" className="rounded-xl">
                   <Link to="/humidity">Humidity</Link>
                 </Button>
+                  </div>
+                </details>
                 {data.attention.length > 0 && (
                 <Button
                   size="sm"

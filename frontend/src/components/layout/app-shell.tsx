@@ -50,6 +50,72 @@ import { useAmbient } from "@/hooks/use-ambient";
 import { THEME_META, useTheme } from "@/hooks/use-theme";
 import { cn } from "@/lib/utils";
 
+const PRIMARY = [
+  { to: "/", icon: Home, label: "Today", end: true },
+  { to: "/finder", icon: Search, label: "Find care" },
+  { to: "/plants", icon: Sprout, label: "Plants" },
+  { to: "/tasks", icon: ListTodo, label: "Tasks" },
+] as const;
+
+export const TOOL_GROUPS = [
+  {
+    title: "Care",
+    items: [
+      { to: "/round", icon: Droplets, label: "Round" },
+      { to: "/sensors", icon: Radio, label: "Sensors" },
+      { to: "/watch", icon: Snowflake, label: "Watch" },
+      { to: "/due", icon: AlarmClock, label: "Due" },
+    ],
+  },
+  {
+    title: "Jobs",
+    items: [
+      { to: "/mist", icon: CloudFog, label: "Mist" },
+      { to: "/dust", icon: Brush, label: "Dust" },
+      { to: "/rotate", icon: RotateCw, label: "Rotate" },
+      { to: "/prune", icon: Scissors, label: "Prune" },
+      { to: "/groom", icon: Leaf, label: "Groom" },
+      { to: "/pest", icon: Bug, label: "Pest" },
+      { to: "/flush", icon: CloudRain, label: "Flush" },
+      { to: "/light", icon: Sun, label: "Light" },
+      { to: "/frost", icon: CloudSnow, label: "Frost" },
+      { to: "/humidity", icon: Waves, label: "Humidity" },
+      { to: "/air", icon: Fan, label: "Air" },
+      { to: "/bottom", icon: Bath, label: "Bottom" },
+    ],
+  },
+  {
+    title: "Grow",
+    items: [
+      { to: "/feed", icon: Beaker, label: "Feed" },
+      { to: "/repot", icon: Flower2, label: "Repot" },
+      { to: "/cuttings", icon: Sprout, label: "Cuttings" },
+      { to: "/sow", icon: Bean, label: "Sow" },
+      { to: "/split", icon: Split, label: "Split" },
+      { to: "/harden", icon: Wind, label: "Harden" },
+      { to: "/stake", icon: Milestone, label: "Stake" },
+      { to: "/harvest", icon: Wheat, label: "Harvest" },
+      { to: "/mulch", icon: Layers, label: "Mulch" },
+      { to: "/topdress", icon: CircleDot, label: "Topdress" },
+    ],
+  },
+  {
+    title: "Home",
+    items: [
+      { to: "/labels", icon: Tag, label: "Labels" },
+      { to: "/away", icon: Luggage, label: "Away" },
+      { to: "/shop", icon: ShoppingBag, label: "Shop" },
+      { to: "/catalog", icon: BookOpen, label: "Catalog" },
+      { to: "/layout", icon: LayoutGrid, label: "Map" },
+      { to: "/calendar", icon: CalendarDays, label: "Calendar" },
+      { to: "/stats", icon: BarChart3, label: "Stats" },
+      { to: "/timeline", icon: History, label: "History" },
+      { to: "/household", icon: Users, label: "Homes" },
+      { to: "/settings", icon: Settings, label: "Settings" },
+    ],
+  },
+] as const;
+
 export function AppShell() {
   const { user, households, activeHousehold, setActiveHousehold, logout } = useAuth();
   const { theme, cycleTheme, meta } = useTheme();
@@ -60,7 +126,6 @@ export function AppShell() {
     <div className="min-h-dvh flex flex-col relative">
       {ambientLevel > 0 && <AmbientFx intensity={ambientLevel} />}
       <header className="border-b border-border/80 bg-card/90 backdrop-blur-md sticky top-0 z-20 shadow-sm shadow-primary/5">
-        {/* Row 1: brand + household + actions */}
         <div className="mx-auto flex max-w-6xl items-center gap-3 px-4 py-2">
           <Link to="/" className="flex items-center gap-2 shrink-0">
             <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary text-primary-foreground shadow-sm shadow-primary/25">
@@ -90,13 +155,6 @@ export function AppShell() {
                 </select>
                 <ChevronDown className="pointer-events-none absolute right-2 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-muted-foreground" />
               </label>
-              <Link
-                to="/household"
-                className="hidden sm:inline text-xs text-primary hover:underline shrink-0 px-1"
-                title="Add, rename, or manage homes"
-              >
-                Manage
-              </Link>
             </div>
           )}
 
@@ -125,114 +183,24 @@ export function AppShell() {
           </div>
         </div>
 
-        {/* Row 2: primary nav — full width, no overlap with household */}
         <nav
-          className="hidden md:flex border-t border-border/60 mx-auto max-w-6xl px-2 py-1 gap-0.5 overflow-x-auto"
+          className="hidden md:flex border-t border-border/60 mx-auto max-w-6xl px-2 py-1 gap-0.5 items-center"
           aria-label="Main"
         >
-          <ShellNav to="/" icon={Home} label="Today" end />
-          <ShellNav to="/finder" icon={Search} label="Find care" />
-          <ShellNav to="/round" icon={Droplets} label="Round" />
-          <ShellNav to="/sensors" icon={Radio} label="Sensors" />
-          <ShellNav to="/watch" icon={Snowflake} label="Watch" />
-          <ShellNav to="/due" icon={AlarmClock} label="Due" />
-          <ShellNav to="/labels" icon={Tag} label="Labels" />
-          <ShellNav to="/away" icon={Luggage} label="Away" />
-          <ShellNav to="/shop" icon={ShoppingBag} label="Shop" />
-          <ShellNav to="/cuttings" icon={Sprout} label="Cuttings" />
-          <ShellNav to="/repot" icon={Flower2} label="Repot" />
-          <ShellNav to="/feed" icon={Beaker} label="Feed" />
-          <ShellNav to="/prune" icon={Scissors} label="Prune" />
-          <ShellNav to="/mist" icon={CloudFog} label="Mist" />
-          <ShellNav to="/dust" icon={Brush} label="Dust" />
-          <ShellNav to="/rotate" icon={RotateCw} label="Rotate" />
-          <ShellNav to="/pest" icon={Bug} label="Pest" />
-          <ShellNav to="/stake" icon={Milestone} label="Stake" />
-          <ShellNav to="/harvest" icon={Wheat} label="Harvest" />
-          <ShellNav to="/light" icon={Sun} label="Light" />
-          <ShellNav to="/frost" icon={CloudSnow} label="Frost" />
-          <ShellNav to="/groom" icon={Leaf} label="Groom" />
-          <ShellNav to="/flush" icon={CloudRain} label="Flush" />
-          <ShellNav to="/split" icon={Split} label="Split" />
-          <ShellNav to="/sow" icon={Bean} label="Sow" />
-          <ShellNav to="/harden" icon={Wind} label="Harden" />
-          <ShellNav to="/mulch" icon={Layers} label="Mulch" />
-          <ShellNav to="/topdress" icon={CircleDot} label="Topdress" />
-          <ShellNav to="/bottom" icon={Bath} label="Bottom" />
-          <ShellNav to="/air" icon={Fan} label="Air" />
-          <ShellNav to="/humidity" icon={Waves} label="Humidity" />
-          <ShellNav to="/plants" icon={Sprout} label="Plants" />
-          <ShellNav to="/catalog" icon={BookOpen} label="Catalog" />
-          <ShellNav to="/layout" icon={LayoutGrid} label="Map" />
-          <ShellNav to="/calendar" icon={CalendarDays} label="Calendar" />
-          <ShellNav to="/tasks" icon={ListTodo} label="Tasks" />
-          <ShellNav to="/stats" icon={BarChart3} label="Stats" />
-          <ShellNav to="/timeline" icon={History} label="History" />
-          <ShellNav to="/household" icon={Users} label="Homes" />
-          <ShellNav to="/settings" icon={Settings} label="Settings" />
+          {PRIMARY.map((item) => (
+            <ShellNav key={item.to} {...item} />
+          ))}
+          <ToolMenu className="relative" />
         </nav>
 
-        {/* Four everyday destinations; everything else remains one tap away. */}
         <nav
           className="relative md:hidden grid grid-cols-5 items-start border-t border-border/80 px-1 py-1"
           aria-label="Mobile"
         >
-          <ShellNav to="/" icon={Home} label="Today" end mobile />
-          <ShellNav to="/finder" icon={Search} label="Find care" mobile />
-          <ShellNav to="/plants" icon={Sprout} label="Plants" mobile />
-          <ShellNav to="/tasks" icon={ListTodo} label="Tasks" mobile />
-          <details className="group" onClick={(event) => {
-            if ((event.target as HTMLElement).closest("a")) event.currentTarget.open = false;
-          }}>
-            <summary
-              aria-label="More tools and pages"
-              className="flex min-h-11 cursor-pointer list-none flex-col items-center gap-0.5 rounded-xl px-2 py-1.5 text-[11px] font-medium text-muted-foreground hover:bg-muted focus-visible:outline-2 focus-visible:outline-primary [&::-webkit-details-marker]:hidden"
-            >
-              <ChevronDown className="h-4 w-4 group-open:rotate-180" aria-hidden />
-              More
-            </summary>
-            <div className="absolute inset-x-0 top-full max-h-[65dvh] overflow-y-auto border-b border-border bg-card p-3 shadow-lg">
-              <p className="mb-2 text-xs font-semibold text-muted-foreground">More tools and pages</p>
-              <div className="grid grid-cols-2 gap-1">
-                <ShellNav to="/round" icon={Droplets} label="Round" />
-                <ShellNav to="/sensors" icon={Radio} label="Sensors" />
-          <ShellNav to="/watch" icon={Snowflake} label="Watch" />
-                <ShellNav to="/due" icon={AlarmClock} label="Due" />
-                <ShellNav to="/labels" icon={Tag} label="Labels" />
-                <ShellNav to="/away" icon={Luggage} label="Away" />
-                <ShellNav to="/shop" icon={ShoppingBag} label="Shop" />
-                <ShellNav to="/cuttings" icon={Sprout} label="Cuttings" />
-                <ShellNav to="/repot" icon={Flower2} label="Repot" />
-                <ShellNav to="/feed" icon={Beaker} label="Feed" />
-                <ShellNav to="/prune" icon={Scissors} label="Prune" />
-                <ShellNav to="/mist" icon={CloudFog} label="Mist" />
-                <ShellNav to="/dust" icon={Brush} label="Dust" />
-                <ShellNav to="/rotate" icon={RotateCw} label="Rotate" />
-                <ShellNav to="/pest" icon={Bug} label="Pest" />
-                <ShellNav to="/stake" icon={Milestone} label="Stake" />
-                <ShellNav to="/harvest" icon={Wheat} label="Harvest" />
-                <ShellNav to="/light" icon={Sun} label="Light" />
-                <ShellNav to="/frost" icon={CloudSnow} label="Frost" />
-                <ShellNav to="/groom" icon={Leaf} label="Groom" />
-                <ShellNav to="/flush" icon={CloudRain} label="Flush" />
-                <ShellNav to="/split" icon={Split} label="Split" />
-                <ShellNav to="/sow" icon={Bean} label="Sow" />
-                <ShellNav to="/harden" icon={Wind} label="Harden" />
-                <ShellNav to="/mulch" icon={Layers} label="Mulch" />
-                <ShellNav to="/topdress" icon={CircleDot} label="Topdress" />
-                <ShellNav to="/bottom" icon={Bath} label="Bottom" />
-                <ShellNav to="/air" icon={Fan} label="Air" />
-                <ShellNav to="/humidity" icon={Waves} label="Humidity" />
-                <ShellNav to="/catalog" icon={BookOpen} label="Catalog" />
-                <ShellNav to="/layout" icon={LayoutGrid} label="Map" />
-                <ShellNav to="/calendar" icon={CalendarDays} label="Calendar" />
-                <ShellNav to="/stats" icon={BarChart3} label="Stats" />
-                <ShellNav to="/timeline" icon={History} label="History" />
-                <ShellNav to="/household" icon={Users} label="Homes" />
-                <ShellNav to="/settings" icon={Settings} label="Settings" />
-              </div>
-            </div>
-          </details>
+          {PRIMARY.map((item) => (
+            <ShellNav key={item.to} {...item} mobile />
+          ))}
+          <ToolMenu className="contents" overlay />
         </nav>
       </header>
 
@@ -244,6 +212,52 @@ export function AppShell() {
         RootCore · self-hosted · AGPL-3.0
       </footer>
     </div>
+  );
+}
+
+function ToolMenu({ className, overlay }: { className?: string; overlay?: boolean }) {
+  return (
+    <details
+      className={cn("group", className)}
+      onClick={(event) => {
+        if ((event.target as HTMLElement).closest("a")) event.currentTarget.open = false;
+      }}
+    >
+      <summary
+        aria-label="More tools and pages"
+        className={cn(
+          "flex cursor-pointer list-none items-center gap-1 rounded-xl px-2.5 py-1.5 text-sm font-medium text-muted-foreground hover:bg-muted [&::-webkit-details-marker]:hidden",
+          overlay && "min-h-11 flex-col gap-0.5 text-[11px] px-2",
+        )}
+      >
+        <ChevronDown className="h-4 w-4 group-open:rotate-180" aria-hidden />
+        More
+      </summary>
+      <div
+        className={cn(
+          "z-30 border border-border bg-card p-3 shadow-lg",
+          overlay
+            ? "absolute inset-x-0 top-full max-h-[70dvh] overflow-y-auto border-x-0 border-t-0"
+            : "absolute right-0 top-full mt-1 w-[min(36rem,calc(100vw-2rem))] max-h-[70dvh] overflow-y-auto rounded-2xl",
+        )}
+      >
+        <p className="mb-2 text-xs font-semibold text-muted-foreground">More tools and pages</p>
+        <div className="grid gap-3 sm:grid-cols-2">
+          {TOOL_GROUPS.map((group) => (
+            <section key={group.title}>
+              <h2 className="mb-1 px-1 text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">
+                {group.title}
+              </h2>
+              <div className="grid grid-cols-2 gap-1">
+                {group.items.map((item) => (
+                  <ShellNav key={item.to} {...item} />
+                ))}
+              </div>
+            </section>
+          ))}
+        </div>
+      </div>
+    </details>
   );
 }
 

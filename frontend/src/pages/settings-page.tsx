@@ -10,6 +10,7 @@ import { useAuth } from "@/contexts/auth-context";
 import { useAmbient } from "@/hooks/use-ambient";
 import { THEME_META, useTheme, type Theme } from "@/hooks/use-theme";
 import { api, ApiError } from "@/lib/api";
+import { enableDueNotify } from "@/lib/device-notify";
 import type { Plant } from "@/lib/types";
 
 const IMPORT_PLACEHOLDER = `Hot Lips Sage (1)
@@ -268,7 +269,7 @@ export function SettingsPage() {
       return;
     }
     try {
-      const perm = await Notification.requestPermission();
+      const perm = await enableDueNotify();
       setNotifStatus(perm);
       if (perm === "granted") {
         new Notification("RootCore", {

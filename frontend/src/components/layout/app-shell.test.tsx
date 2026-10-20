@@ -13,12 +13,16 @@ vi.mock("@/hooks/use-theme", () => ({
 vi.mock("@/hooks/use-ambient", () => ({ useAmbient: () => ({ level: 0 }) }));
 
 function mobileMarkup(path = "/") {
-  const html = renderToStaticMarkup(<MemoryRouter initialEntries={[path]}><AppShell /></MemoryRouter>);
+  const html = renderToStaticMarkup(
+    <MemoryRouter initialEntries={[path]}>
+      <AppShell />
+    </MemoryRouter>,
+  );
   return html.match(/<nav[^>]*aria-label="Mobile"[^>]*>([\s\S]*?)<\/nav>/)?.[1] ?? "";
 }
 
-describe("mobile navigation", () => {
-  it("keeps four essentials visible and exposes every other destination in a labelled More menu", () => {
+describe("navigation", () => {
+  it("keeps four essentials visible and groups every other destination", () => {
     const html = mobileMarkup();
     expect(html).toContain("More tools and pages");
     const primary = html.split("<details")[0];
@@ -27,8 +31,19 @@ describe("mobile navigation", () => {
       expect(primary).toContain(`href="${path}"`);
     }
     expect(html).toMatch(/<summary[^>]*>[\s\S]*?More[\s\S]*?<\/summary>/);
-    const full = renderToStaticMarkup(<MemoryRouter><AppShell /></MemoryRouter>);
+    for (const heading of ["Care", "Jobs", "Grow", "Home"]) {
+      expect(html).toContain(heading);
+    }
+    const full = renderToStaticMarkup(
+      <MemoryRouter>
+        <AppShell />
+      </MemoryRouter>,
+    );
     const desktop = full.match(/<nav[^>]*aria-label="Main"[^>]*>([\s\S]*?)<\/nav>/)?.[1] ?? "";
+    const desktopPrimary = desktop.split("<details")[0];
+    expect((desktopPrimary.match(/<a /g) ?? []).length).toBe(4);
+    expect(desktop).toContain("Care");
+    expect(desktop).toContain("Jobs");
     const paths = (markup: string) => [...markup.matchAll(/href="([^"]+)"/g)].map((match) => match[1]).sort();
     expect(paths(html)).toEqual(paths(desktop));
     expect(new Set(paths(html)).size).toBe(paths(html).length);
