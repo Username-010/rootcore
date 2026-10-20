@@ -33,3 +33,9 @@ docker compose up -d --build
 ```
 
 App: http://localhost:8000
+
+## Menus and iPhone alerts
+
+Today, Find care, Plants and Tasks stay in the main bar. Everything else is under **More**, grouped as Care, Jobs, Grow and Home.
+
+iPhone alerts: open **https://rootcore.home** in Safari (install the homelab CA if needed), Share → Add to Home Screen, open the icon, then Settings → Enable browser notifications. This is not an App Store app.
